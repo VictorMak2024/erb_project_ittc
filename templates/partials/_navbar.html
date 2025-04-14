@@ -1,0 +1,51 @@
+{% load static %}
+<!-- Responsive Nav Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #6610f2;">
+    <a href="#" class="navbar-brand" style="font-size: 50px;" class="d-inline-block align-top p-lg-5">
+        <img src="{% static "img/ittc_logo.png" %}" width="120" height="90" class="logo" alt="ITTC Logo"> ITTC
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbaritems">
+        <ul class="navbar-nav" style="font-size: 20px;">
+            <li class="nav-item">
+                <a href="{% url "index" %}" class="nav-link"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>News & Events</b></a>
+            </li>   
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>Worker Info</b></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>About ITTC</b></a>
+                <ul class="dropdown-menu" style="background-color: #6610f2; font-size: 20px;">
+                    <div class="d-flex flex-column">
+                        <li><a class="dropdown-item text-light" href="#"><b>Products</b></a></li>
+                        <li><a class="dropdown-item text-light" href="https://www.google.com"><b>Courses</b></a></li>
+                        <li><a class="dropdown-item text-light" href="#"><b>Activities</b></a></li>
+                    </div>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>Job Vacancies</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>Support & Resource</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b>Contact Us</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url "register_login" %}" class="nav-link"><i class="fas fa-user"></i> <b>Register/Login</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </li>
+        </ul>
+    </div>
+</nav>
