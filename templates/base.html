@@ -15,6 +15,26 @@
     <link rel="stylesheet" href="{% static "css/register_login.css" %}">
     <!--Shortcut Icon-->
     <link rel="shortcut icon" href="{% static "img/ittc_logo.png" %}" sizes="16x16" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'css/custom-bs.css' %}">
+        <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+       
+   
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    
+    <style>
+        .no-underline {
+          text-decoration: none;
+        }
+        .no-underline:hover {
+          text-decoration: none;
+        }
+      </style>
     <title>Welcome to ITTC</title>
 </head>
 <body>
@@ -38,5 +58,26 @@
     crossorigin="anonymous"></script>
     <!--Register_Login JS-->
     <script src="{% static "js/register_login.js" %}"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const requirementElement = document.getElementById("job-requirement");
+          const text = requirementElement.textContent;
+          // Split text by periods 
+          const sentences = text.split(/(?<=[.])\s/);
+          // Replace the content with formatted sentences
+          requirementElement.innerHTML = sentences.map(sentence => `<span>${sentence}</span><br>`).join('');
+      });
+      
+      document.addEventListener("DOMContentLoaded", function () {
+            const requirementElement = document.getElementById("job-responsibilities");
+            const text = requirementElement.textContent;
+            // Split text by periods 
+            const sentences = text.split(/(?<=[.])\s/);
+            // Replace the content with formatted sentences
+            requirementElement.innerHTML = sentences.map(sentence => `<span>${sentence}</span><br>`).join('');
+        });
+        
+    </script>
 </body>
 </html>

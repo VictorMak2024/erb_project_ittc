@@ -1,0 +1,1 @@
+[{"model": "applicants.applicant", "pk": 22, "fields": {"job_id": 16, "name": "tommy cheung", "email": "at@com", "phone": "9888888", "apply_date": "2025-04-12T07:48:47.168Z", "user_id": 0, "company": "Shiji Information Technology (Hong Kong) Limited", "title": "Full Stack Web Developer", "cv_file": "cv/Resume_Abc.odt"}}]

@@ -38,7 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'pages.apps.PagesConfig',
+	'jobspost.apps.JobspostConfig',
+	'applicants.apps.ApplicantsConfig',
+    'activities.apps.ActivitiesConfig',
+    'courses.apps.CoursesConfig',
+    'products.apps.ProductsConfig',
+    'salesmens.apps.SalesmensConfig',
+    'contact.apps.ContactConfig',
     'accounts.apps.AccountsConfig',
 ]
 
@@ -84,6 +92,8 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ittcdb',
+		#'USER':'postgres',
+        #'PASSWORD' :'1234',
         'USER': 'ittcadmin',
         'PASSWORD': '123',
         'HOST': 'localhost'

@@ -1,0 +1,196 @@
+{% extends "base.html" %} {% load humanize %} {% load static %} {% block content %}
+
+<!-- showcase-inner -->
+<section id="showcase-inner" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="display-4">{{activity.title | title}}</h1>
+        <p class="lead">{{Activity.name | title}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Breadcrumb -->
+<section id="bc" class="mt-3">
+  <div class="container">
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="{% url 'index' %}">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="{% url 'activities' %}">activities</a>
+        </li>
+        <li class="breadcrumb-item active">{{activities.title |title}}</li>
+      </ol>
+    </nav>
+  </div>
+</section>
+
+<!-- Activitise -->
+<section id="activity" class="py-4">
+  <div class="container">
+    <a href="{% url 'activities' %}" class="btn btn-light mb-4">Back To Activities</a>
+    <div class="row">
+      <div class="col-md-9">
+        <!-- Home Main Image -->
+        <img
+          src="{{activity.photo.url}}"
+          alt=""
+          class="img-main img-fluid mb-3"
+          style="filter: "
+        />
+        </div>
+
+        <!-- Description -->
+        <div class="row mb-5">
+          <div class="col-md-12">
+            {{activity.description}}
+          </div>
+        </div>
+
+        <!-- Fields -->
+        <div class="row mb-5 fields">
+          <div class="col-md-9">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-bed"></i> Location: 
+                <span class="float-right">{{activity.location}}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-calendar"></i> Date:
+                <span class="float-right">
+                  {% if activity.date_start == activity.date_end %}
+                  {{activity.date_start}}
+                  {% else %}
+                  {{activity.date_start}} To {{activity.date_end}}                  {% endif %}
+                </span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-times-circle"></i> Time:
+                <span class="float-right">           {% if activity.time_start == activity.time_end %}
+                  {{activity.time_start}}
+                  {% else %}
+                  {{activity.time_start}} To {{activity.time_end}}                  {% endif %}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-th-large"></i> Medium:
+                <span class="float-right">{{activity.medium}}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-tasks"></i> Target:
+                <span class="float-right">{{activity.target}}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-tag"></i> Trainer:
+                <span class="float-right">{{activity.trainer}}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-times"></i> Sit:
+                <span class="float-right">{{activity.total_sit}}</span>
+              </li>
+              <li class="list-group-item text-secondary">
+                <i class="fas fa-money-bill-alt"></i> Course Fee:
+                <span class="float-right"> ${{activity.price | intword}}</span>
+              </li>
+            </ul>
+          </div>
+      <!-- Enquiry -->
+      <div class="col-md-3">
+        <div class="card mb-3">
+          <img
+            class="card-img-top"
+            src="{{activity.salesmen.photo.url}}"
+            alt="{{activity.salesmen.name | title}}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Contact: </h5>
+            <h6 class="text-secondary">{{activity.salesmen.name | title}}</h6>
+          </div>
+        </div>
+        <button
+          class="btn-primary btn-block btn-lg"
+          data-toggle="modal"
+          data-target="#inquiryModal"
+        >
+          Make An Inquiry
+        </button>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inquiry Modal -->
+{% comment %} <div class="modal fade" id="inquiryModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- add action in form -->
+        <form action="{% url 'contact' %}" method="POST"> 
+          {% csrf_token %} 
+          <!-- check user id -->
+          {% if user.is_authenticated %}
+          <input type="hidden" name="user_id" value="{{user.id}}" />          
+          {% else %}
+          <input type="hidden" name="user_id" value="0" />
+          {% endif %}
+          <input type="hidden" name="listing_id" value="{{listing.id}}" />
+          <input type="hidden" name="realtor_email" value="{{listing.realtor.email}}" />
+          <!-- end checking -->
+          <div class="form-group">
+            <label for="property_name" class="col-form-label">Property:</label>
+            <input
+              type="text"
+              name="listing"
+              class="form-control"
+              value="{{listing.title}}"
+              readonly
+            />
+          </div>
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name:</label>
+            {% if user.is_authenticated %}
+            <input type="text" name="name" value="{{user.first_name}} {{user.last_name}}" class="form-control" readonly />            
+            {% else %}
+            <input type="text" name="name" class="form-control" required />
+            {% endif %}
+          
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-form-label">Email:</label>
+            {% if user.is_authenticated %}
+            <input type="email" name="email" class="form-control" value="{{user.email}}" required />
+            {% else %}
+            <input type="email" name="email" class="form-control" required />
+            {% endif %}
+          </div>
+          <div class="form-group">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="text" name="phone" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-form-label">Message:</label>
+            <textarea name="message" class="form-control"></textarea>
+          </div>
+          <hr />
+          <input
+            type="submit"
+            value="Send"
+            class="btn btn-block btn-secondary"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</div> {% endcomment %}
+{% endblock %}

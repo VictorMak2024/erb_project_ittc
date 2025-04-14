@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+  
+
+      <section id="showcase-inner" class="text-white py-5">
+        <div class="container" >    
+          <div class="row text-center ">
+            <div class="col-md-12 " >
+              <form action="{% url 'search' %}">
+                <!-- Form Row 1 -->
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                  <label class="sr-only">Keywords</label>
+                  <input
+                    type="text"
+                    name="keywords"
+                    class="form-control"
+                    placeholder="Keyword, Job title,Company, etc"
+                    value="{{values.keywords}}"
+                  />
+                  </div>
+          
+                 
+                  <div class="col-md-3 mb-3">
+                  <label class="sr-only">Location</label>
+                  <input
+                    type="text"
+                    name="location"
+                    class="form-control"
+                    placeholder="tai po, kwun tong , etc"
+                    value="{{values.location}}"
+                  />
+                  </div>
+                  <div class="col-md-2 mb-3">
+                  <label class="sr-only">Job Type</label>
+                  <select name="jobtype" class="form-control">
+                    <option {% if not values.jobtype %} selected="true" {% endif %} value="">
+                    Select Job Type
+                    </option>
+                    
+                    <option value="Full time">Full time</option>
+                    <option value="Part time">Part time</option>
+                    <option value="Contract">Contract</option>
+                    <option value="Internship">Internship</option>
+                    <option value="Temporary">Temporary</option>
+
+                   
+                  
+                  </select>
+                  </div>
+                  
+
+                  <div class="col-md-2 mb-3">
+                  <select name="salary" class="form-control">
+                  <!--  <option selected="true" disabled="disabled">-->
+                  <option  {% if not values.salary %} selected="true" {% endif %} value="">
+                    Max Salary (All)
+                    </option>
+                    {% for key,value in salary_choices.items %}
+                    <option {% if values.salary == key %} selected {% endif %} value="{{key}}">{{value}}</option>
+                    {% endfor %}
+                    
+                  </select>
+                  </div>
+                  
+                  <div class="col-md-1 mb-3">
+                  <button class="btn btn-secondary btn-block" type="submit" style="height: 100%;">
+                  Search
+                  </button>
+                </div>
+                </div>
+               
+              </form>
+            </div>
+          </div>
+        </div>
+      
+      {% comment %} <section id="jobs" class="py-4" style="margin-top: 0px;"> {% endcomment %}
+        <div class="container">
+
+        <div class="row mb-5">
+            <div class="col-md-12 d-flex justify-content-end" style="margin-right: 300px; padding-right: 50px; margin-top:5px">
+            {% if jobs.has_other_pages %}
+            <ul class="pagination" style="margin-right: 15px;">
+            {% if jobs.has_previous %}
+            <li class="page-item">
+              <a href="?page={{jobs.previous_page_number}}" class="page-link">&laquo;</a>
+            </li>
+              {% else %}
+            <li class="page-item disabled">
+              <a class="page-link" href="#">&laquo;</a>
+            </li>
+            {% endif %}
+            <!--for loop all the page number-->
+            {% for i in jobs.paginator.page_range %}
+            <!--if page number eq to current page then display the numbe and go nowhere-->
+            {% if jobs.number == i %}
+            <li class="page-item active">
+              <a class="page-link">{{i}}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{i}}">{{i}}</a>
+            </li>
+            {% endif %} {% endfor %} {% if jobs.has_next %}
+            <li class="page-item">
+              <a href="?page={{jobs.next_page_number}}" class="page-link">&raquo;</a>
+            </li>
+              {% else %}
+            <li class="page-item disabled">
+              <a class="page-link" href="#">&raquo;</a>
+            </li>
+            {% endif %}
+            </ul>
+            {% endif %}
+          </div>
+        </div>
+        
+          <div class="row">
+            <!-- jobs 1 -->
+            {% if jobs %}
+            {% for job in jobs %}
+            
+            <div class="col-md-6 col-lg-4 mb-1" style="margin-top: -20px;">
+
+             <div class="card border-info h-75 zoom-hover" style="width: 20rem; text-align: left; margin-bottom: 100px;">
+             <a href="{% url 'jobspost_detail' job.id %}" class="no-underline">
+
+               <div class="card-header d-flex align-items-center">
+          {% if job.logo_url %}
+          <img src="{{ job.logo_url }}" alt="Image" style="width: 80px; margin-right: 10px;">
+          {% else %}
+          <span class="icon-briefcase" style="margin-right: 10px;"></span> 
+          {% endif %}
+            <h6 class="mb-0">{{ job.title | title }}</h6>
+               </div>
+
+               <div class="card-body">
+
+          <h6 class="text-info mr-10">
+          <span class="icon-briefcase mr-2"></span>
+          {{job.company}}
+          </h6>
+          
+          <h6 class="text-info mr-10">
+          <span class="icon-room mr-2"></span>
+          {{job.location}}
+          </h6>
+          <h6 class="text-info mr-10">
+          <span class="icon-clock-o mr-2"></span>
+          {{job.job_type}}
+          </h6>
+          <h6 class="text-info mr-10">
+          <span class="icon-calendar mr-2"></span>
+          {{job.post_date | timesince}}
+          </h6>
+          <h6 class="text-info mr-10">
+          <span class="icon-usd mr-2"></span>
+           {{job.salary}}
+          </h6>
+          
+               </div>
+             </a>
+             </div>
+          
+            
+            </div>
+           
+            {% endfor %}
+            {% else %}
+            <div class="col-md-12">
+              <p> No Listing Available</p>
+            </div>
+          
+            {% endif %}
+              
+          </div>
+          
+        
+        </div>
+       
+      {% comment %} </section> {% endcomment %}
+      </section
+  
+    
+  {% endblock %} 
+  

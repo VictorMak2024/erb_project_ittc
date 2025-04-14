@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+ 
+<section class="site-section">
+    <div class="container">
+      {% include 'partials/_alert.html' %}
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <div class="d-flex align-items-center">
+            {% if job.logo_url %}
+
+            <div class="border p-2 d-inline-block mr-3 rounded">
+             <img src="{{ job.logo_url }}"alt="Image" style="width: 160px; height: 60px;">
+             
+            </div>
+            {% endif %}
+
+            <div>
+              <h2>{{ job.title }}</h2>
+              <div >
+                <span class="ml-0 mr-2 mb-2 mt-2 text-info"><span class="icon-briefcase mr-2"></span>{{job.company}}</span>
+                <span class="m-2 text-info"><span class="icon-room mr-2"></span>{{job.location}}</span>
+                <span class="m-2 text-info"><span class="icon-clock-o mr-2"></span>{{job.job_type}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="mb-5">
+           
+            <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-align-left mr-3"></span>Job Description</h3>
+            
+            <p id="job-responsibilities">{{ job.responsibilities }}</p>
+
+          </div>
+          <div class="mb-5">
+           
+            <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-align-left mr-3"></span>Job Requirement</h3>
+            
+            <p id="job-requirement">{{ job.requirement }}</p>
+          </div>
+         
+          {% comment %} <div class="mb-5">
+            <h3 class="h5 d-flex align-items-center mb-4 text-primary"><span class="icon-turned_in mr-3"></span>Other Benifits</h3>
+           
+          </div>  {% endcomment %}
+
+          
+
+        </div>
+        <div class="col-lg-4">
+          <div class="bg-light p-3 border rounded mb-4">
+            <h3 class="text-primary mt-3 h5 pl-3 mb-3">Job Summary</h3>
+            <ul class="list-unstyled pl-3 mb-0">
+              <li class="mb-2"><strong class="text-black">Published on:</strong> {{job.post_date|timesince}}</li>
+              <li class="mb-2"><strong class="text-black">Employment Status:</strong> {{job.job_type}}</li>
+              <li class="mb-2"><strong class="text-black">Job Location:</strong> {{job.location}}</li>
+              <li class="mb-2"><strong class="text-black">Salary:</strong> ${{job.salary}}</li>
+            </ul>
+            <br>
+            <div class="row mb-5">
+              <div class="col-6 mb-3">
+              <a href="{% url 'jobspost' %}" class="btn btn-primary btn-block btn-md" style="width: 100%;">Job search</a>
+              </div>
+              <div class="col-6">
+              <button
+                class="btn btn-danger btn-block btn-md"
+                style="width: 100%;"
+                data-toggle="modal"
+                data-target="#applyModal"
+              >
+                Apply Now
+              </button>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="applyModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Fill in form</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="{% url 'applicant' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% if user.is_authenticated %}
+            <input type="hidden" name="user_id" value="{{user.id}}" />
+            {% else %}
+            <input type="hidden" name="user_id" value="0" />
+            {% endif %}
+            <input type="hidden" name="job_id" value="{{job.id}}" />
+            <input type="hidden" name="employer_email" value="{{job.email}}" />
+            <div class="form-group">
+              <label for="job_name" class="col-form-label">Job title:</label>
+              <input type="text" name="job" class="form-control" value="{{job.title}}" readonly />
+            </div>
+            <div class="form-group">
+              <label for="name" class="col-form-label">Name:</label>
+              {% if user.is_authenticated %}
+              <input type="text" name="name" value="{{user.first_name}} {{user.last_name}}" class="form-control" readonly />
+              {% else %}
+              <input type="text" name="name" class="form-control" required />
+              {% endif %}
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              {% if user.is_authenticated %}
+              <input type="email" name="email" class="form-control" value="{{user.email}}" required />
+              {% else %}
+              <input type="email" name="email" class="form-control" required />
+              {% endif %}
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="text" name="phone" class="form-control" />
+            </div>
+            
+            <div class="form-group">
+              <label for="cv_file" class="col-form-label">Upload CV:</label>
+              <input type="file" name="cv_file" class="form-control-file" required />
+            </div>
+            <hr />
+            <input type="submit" value="Send" class="btn btn-block btn-secondary" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock  %}
+  
