@@ -29,9 +29,7 @@ def jobspost(request):
    # listings = Listing.objects.filter(Q(district='tst') | ~Q(district='mk'))
   #  listings = Listing.objects.filter(district=F('address'))
 
-    print("jobspost")
-    print(request.user)  # Prints the user object
-    print(request.user.is_authenticated)
+    
     Jobss=Jobs.objects.order_by('-post_date')
     paginator=Paginator(Jobss,5) 
     page = request.GET.get('page')
@@ -55,9 +53,7 @@ def jobspost(request):
 #     context = {'Jobs': job}
 #     return render(request, 'jobspost/jobsdetail.html', context)
 def jobspost_detail(request, job_id):
-     print("jobspost_detail")
-     print(request.user)  # Prints the user object
-     print(request.user.is_authenticated)
+    
      job = get_object_or_404(Jobs, pk=job_id)
      context = {'job': job}
      return render(request, 'jobspost/jobsdetail.html', context)

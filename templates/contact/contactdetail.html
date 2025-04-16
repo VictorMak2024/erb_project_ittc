@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        
+        <div class="container">
+            {% include 'partials/_alert.html' %}
+        <div class="row">
+            <div class="col text-left">
+                <h1 class="text-info font-weight-black pl-2 mt-3">{{contact.center}}</h1>
+            </div>
+        </div>
+        {% comment %} <div class="row">
+            <div class="col text-left">
+                <h2 class="text-info font-weight-black pl-2 mt-3">{{contact.center}}</h2>
+            </div>
+        </div> {% endcomment %}
+        <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid blue; background-color: yellow;">
+          <form action="{% url 'contactmessage' %}" method="POST" >
+            {% csrf_token %}
+            {% if user.is_authenticated %}
+            <input type="hidden" name="user_id" value="{{user.id}}" />
+            {% else %}
+            <input type="hidden" name="user_id" value="0" />
+            {% endif %}
+            <input type="hidden" name="contact_center" value="{{contact.center}}" />
+            <input type="hidden" name="contact_id" value="{{contact.id}}" />
+            <div class="form-group">
+              <label for="name" class="col-form-label">Name:</label>
+              {% if user.is_authenticated %}
+              <input type="text" name="name" value="{{user.first_name}} {{user.last_name}}" class="form-control" readonly />
+              {% else %}
+              <input type="text" name="name" class="form-control" required />
+              {% endif %}
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              {% if user.is_authenticated %}
+              <input type="email" name="email" class="form-control" value="{{user.email}}" required />
+              {% else %}
+              <input type="email" name="email" class="form-control" required />
+              {% endif %}
+            </div>
+            <div class="form-group">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="text" name="phone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label for="message" class="col-form-label">Message:</label>
+                <textarea name="message" class="form-control"></textarea>
+              </div>
+           
+            <hr />
+            <input type="submit" value="Send" class="btn btn-block btn-secondary" />
+          </form>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid #333">
+            <iframe src={{contact.iframe}} class="w-100"  style="height: 500px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>    
+        </div>
+
+        </div>
+{% endblock  %}

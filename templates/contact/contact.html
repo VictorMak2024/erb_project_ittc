@@ -40,8 +40,13 @@
 
                                 Website: <a href="{{contact.website}}" class="text-secondary" target="_blank">{{contact.website}}</a><br>
                                 {% endif %}
-                                
-                                <button type="button" class="btn btn-info float-right" data-parent="#accordion" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" style="text-decoration: none; font-weight: bold; margin-top: -10px;">
+                                {% comment %} <button type="button" class="btn btn-danger float-right mr-5" style="text-decoration: none; font-weight: bold; margin-top: -10px; margin-right: 10px;"
+                                data-toggle="modal" data-target="#applyModal">
+                                Contact us
+                                </button> {% endcomment %}
+                                <a href="{% url 'contactdetail' contact.id %}" class="btn btn-danger float-right mr-5" style="text-decoration: none; font-weight: bold; margin-top: -10px; margin-right: 10px;" role="button">Contact us</a>
+
+                                <button type="button" class="btn btn-info float-right mr-3" data-parent="#accordion" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" style="text-decoration: none; font-weight: bold; margin-top: -10px;">
                                     View Map 
                                 </button>
                                  
