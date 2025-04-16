@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
     'products.apps.ProductsConfig',
@@ -150,7 +151,8 @@ MEDIA_URL = '/media/'
 
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
-    messages.SUCCESS: 'success'
+    messages.SUCCESS :'success',
+    messages.WARNING : 'warning'
 }
 
 # Email Config
