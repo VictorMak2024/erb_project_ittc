@@ -16,6 +16,7 @@ def activity_contact(request):
         phone = request.POST['phone']
         message = request.POST['message']
         user_id = request.POST['user_id']
+        is_paid = request.POST['is_paid']
         salesmen_email = request.POST['salesmen_email']
         if request.user.is_authenticated:
             #user_id = request.user.id
@@ -23,7 +24,7 @@ def activity_contact(request):
             if has_contacted:
                 messages.error(request, "You have already applied sitting for this activity !")
                 return redirect('/activities/'+activity_id)
-        activity_contact = Activity_Contact(activity=activity, activity_id=activity_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
+        activity_contact = Activity_Contact(activity=activity, activity_id=activity_id, name=name, email=email, phone=phone, message=message, user_id=user_id, is_paid=is_paid)
         activity_contact.save()
         
         activitys = Activity.objects.get(id=activity_id)
@@ -57,6 +58,7 @@ def course_contact(request):
         phone = request.POST['phone']
         message = request.POST['message']
         user_id = request.POST['user_id']
+        is_paid = request.POST['is_paid']
         salesmen_email = request.POST['salesmen_email']
         if request.user.is_authenticated:
             #user_id = request.user.id
@@ -64,12 +66,12 @@ def course_contact(request):
             if has_contacted:
                 messages.error(request, "You have already applied for this course !")
                 return redirect('/courses/'+course_id)
-        course_contact = Course_Contact(course=course, course_id=course_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
+        course_contact = Course_Contact(course=course, course_id=course_id, name=name, email=email, phone=phone, message=message, user_id=user_id, is_paid=is_paid)
         course_contact.save()
 
         courses = Course.objects.get(id=course_id)
         if courses.onenquiry_sit == courses.total_sit:
-            messages.error(request,                "Course is full",
+            messages.error(request, "Course is full",
             )
             return redirect('/courses/'+course_id)
         elif courses.price != 0:
@@ -106,7 +108,7 @@ def product_contact(request):
             #user_id = request.user.id
             has_contacted = Product_Contact.objects.all().filter(product_id=product_id, user_id=user_id)
             if has_contacted:
-                messages.error(request, "You have already made an inquiry for this listing !")
+                messages.error(request, "You have already made an inquiry for this product !")
                 return redirect('/products/'+product_id)
         product_contact = Product_Contact(product=product, product_id=product_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
         product_contact.save()

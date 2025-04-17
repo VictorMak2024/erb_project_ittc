@@ -37,7 +37,6 @@
   <div class="container">
     <div class="row">
       {% if category %}
-      
       <div class="col-4">
         <h1>{{category.title}}</h1>
         <img class="card-img-top" src={{category.photos.url}} alt="" />
@@ -58,9 +57,9 @@
     <div class="row">
       <!-- product -->
       {% if products %}
-      {% for product in products %}      
-      <div class="col-md-6 col-lg-4 mb-4">
-        <div class="card product-preview">
+      {% for product in products %}
+      <div class="col-md-6 col-lg-4 mb-4">     
+        <div class="card">
           <img class="card-img-top" src={{product.photo_main.url}} alt="" />
           <div class="card-img-overlay">
             <h4>
@@ -117,7 +116,7 @@
             >
           </div>
         </div>
-      </div>
+      </div> 
       
       {% endfor %}
       {% else %}

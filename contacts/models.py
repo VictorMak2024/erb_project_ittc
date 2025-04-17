@@ -11,6 +11,7 @@ class Activity_Contact(models.Model):
     message = models.TextField(blank=True)
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField()
+    is_paid = models.BooleanField(default=False)
     def __str__(self):
         return self.name
 
@@ -23,6 +24,7 @@ class Course_Contact(models.Model):
     message = models.TextField(blank=True)
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField()
+    is_paid = models.BooleanField(default=False)
     def __str__(self):
         return self.name
     
