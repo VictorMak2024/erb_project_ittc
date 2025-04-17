@@ -16,10 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf import settings
+from django.conf.urls.static import static
+from debug_toolbar.toolbar import debug_toolbar_urls
 
 urlpatterns = [
     path('', include('pages.urls')),
+    path('products/', include('products.urls')),
+    path('activities/', include('activities.urls')),
+    path('courses/', include('courses.urls')),
+    path('jobposts/', include('jobspost.urls')),
+    path('applicants/', include('applicants.urls')),
+    path('contactmessage/', include('contactmessage.urls')),
+    #path('contact/', include('contact.urls')),
+    path('contactus/', include('contact.urls')),
+    path('contacts/', include('contacts.urls')),
     path('accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
-    
-]
+]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)+ debug_toolbar_urls()

@@ -38,7 +38,18 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
+    'debug_toolbar',
     'pages.apps.PagesConfig',
+	'jobspost.apps.JobspostConfig',
+	'applicants.apps.ApplicantsConfig',
+    'contactmessage.apps.ContactmessageConfig',
+    'activities.apps.ActivitiesConfig',
+    'courses.apps.CoursesConfig',
+    'products.apps.ProductsConfig',
+    'salesmens.apps.SalesmensConfig',
+    'contact.apps.ContactConfig',
+    'contacts.apps.ContactsConfig',
     'accounts.apps.AccountsConfig',
 ]
 
@@ -50,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'ittc.urls'
@@ -84,6 +96,8 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ittcdb',
+		#'USER':'postgres',
+        #'PASSWORD' :'1234',
         'USER': 'ittcadmin',
         'PASSWORD': '123',
         'HOST': 'localhost'

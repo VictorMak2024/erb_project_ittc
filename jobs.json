@@ -1,0 +1,210 @@
+[
+    {
+        "model": "jobspost.jobs",
+        "pk": 5,
+        "fields": {
+            "title": "software engineer",
+            "job_type": "full time",
+            "salary": 25000,
+            "post_date": "2025-04-06T01:31:26Z",
+            "location": "tai po",
+            "company": "VTECH Corporate Services Ltd",
+            "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "Design and develop embedded software applications and firmware for various hardware platforms\r\n    Perform testing and debugging to ensure the reliability and performance of embedded systems\r\n    Work with AI in software development life cycle\r\n    Work independently and as part of a team to deliver solutions\r\n    Stay up-to-date with the latest trends and technologies in the embedded systems industry",
+            "requirement": "Bachelor’s degree or higher diploma in Computer Science, Information Technology, Computer   Engineering or related disciplines\r\n    Experience in embedded application development\r\n    Excel in C/C++, Python programming\r\n    Fast learner, self-motivated, passionate and good team player\r\n    Excellent communication, analytical, and problem-solving skills\r\n    Experience in AI model training & AI assisted development is highly desirable",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 6,
+        "fields": {
+            "title": "software engineer",
+            "job_type": "full time",
+            "salary": 30000,
+            "post_date": "2025-04-06T01:33:04Z",
+            "location": "tsuen wan",
+            "company": "Availink hong kong ltd",
+            "logo_url": "https://image-service-cdn.seek.com.au/9e19f06f6bb9eb387b5ddcafedd0dd530a236455/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "• Design, develop, and debug embedded software applications and firmware for various hardware platforms.\r\n\r\n• Apply software design principles, such as modularity, encapsulation, and abstraction, to create scalable and maintainable software solutions.\r\n\r\n• Leverage media technology to develop embedded software solutions for multimedia applications, such as audio/video processing and streaming.\r\n\r\n• Perform low-level programming, including device drivers, peripheral interfaces, and system initialization.\r\n\r\n• Conduct hardware-software integration and testing to ensure seamless functionality and compatibility.",
+            "requirement": "Bachelor's degree or higher in Computer Science or the related ones.\r\nBachelor's degree with 3-5 years or Master's degree with 1-3 years of experience in developing embedded software using C/C++.\r\nUnderstanding of software and hardware interfaces, familiar with at least one RTOS. Experience in device driver development is a plus.",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 7,
+        "fields": {
+            "title": "Embedded Software Development Lead",
+            "job_type": "full time",
+            "salary": 30000,
+            "post_date": "2025-04-06T01:34:36Z",
+            "location": "Hong Kong SAR",
+            "company": "philips",
+            "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "Analyses, designs, tests, codes, secures, debugs, modifies, deploys, integrates and maintains (system) software enhancements, test environment and/or new software to have an impact on the product and solutions direction and customer experience.\r\n\r\n•Uses state-of-the-art technologies and practices to drive superior customer value. Interacts with users/ product owners to define/ adjust requirements and/or necessary modifications.\r\n\r\n•Keeps abreast of technical developments and practices in own field through literature, courses/trainings, technical contacts, and competitive environment, all to ensure the development of great customer digital solutions.",
+            "requirement": "Master or PhD in Software or Electronics engineering\r\n\r\n•Solid Experience (>5 years) in working from new ​product development to life cycle sustaining engineering and quality improvement projects.\r\n\r\n•Ability to collaborate with a wide range of professionals in matrix organization & lead through influence​, both internally and externally with suppliers/partners.\r\n\r\n•Solid experience in Software development (>5 years), from Firmware to Cloud and Mobile App types of use cases for B2C IoT devices such as Connected Baby Video Monitor, Vital Sign Monitors, etc.\r\n\r\n•Programming languages & paradigms, methodologies and techniques. Lean / Agile / SAFe.\r\n\r\n•Very familiar with product development process waterfall type and V-model as PDLM.\r\n\r\n•Fluency in Chinese Mandarin and/or Cantonese written/spoken is a must, next fluency in English written/spoken.",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 8,
+        "fields": {
+            "title": "EMBEDDED SOFTWARE ENGINEER ( HONG KONG BASE )",
+            "job_type": "full time",
+            "salary": 25000,
+            "post_date": "2025-04-06T05:08:12Z",
+            "location": "Kwun Tong District",
+            "company": "Shine Success Limited",
+            "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "Responsible for handling software development in 4bit/8bit/16bit/32bit\r\n\r\nMicrocontroller including programming, debugging, performance testing and project follow-up of electrical safety device and consumer products.\r\n\r\nWrite efficient, scalable, and maintainable code using appropriate programming languages and tools\r\n\r\nOptimize embedded software for performance, power consumption, and resource utilization\r\n\r\nParticipate in code reviews, testing, and debugging to ensure the quality and reliability of the software\r\n\r\nStay up-to-date with the latest trends and technologies in the embedded software industry\r\n\r\nProvide technical guidance and mentorship to junior team members",
+            "requirement": "Diploma graduate or above in Electronic or Computer Engineering or related discipline\r\n\r\nAt least 2 years of experience in MCU embedded software programming\r\n\r\nCandidates with less experience or fresh graduates will be considered as Junior Embedded Software Engineer with training provide\r\n\r\nCandidates with more experience will be considered as Senior Embedded Software Engineer\r\n\r\nGood Command of English & Mandarin\r\n\r\nAbility to work collaboratively in a team environment",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 9,
+        "fields": {
+            "title": "Electronic Hardware Engineer",
+            "job_type": "full time",
+            "salary": 25000,
+            "post_date": "2025-04-06T05:14:21Z",
+            "location": "Sha Tin District",
+            "company": "Altai Technologies Ltd",
+            "logo_url": "https://image-service-cdn.seek.com.au/f2993b2027e3d68adf8c0f0ea19e8af0d540b911/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "•Responsible for testing and evaluating performance of WiFi access points or routers.\r\n\r\n•Project support for the new WiFi products during EVT/DVT and PVT.\r\n\r\n•Conduct indoor/outdoor field testings to verify performance.\r\n\r\n•Carry out data analysis of the measurement results.",
+            "requirement": "•High Cert/High Diploma/Bachelor degree in Electronic Engineering or equivalent.\r\n\r\n•3 to 5 years experience of electronic products development.\r\n\r\n•Fresh graduate is also welcome for those who have passion for hardware development.\r\n\r\n•Hands-on experience with prototyping/testing of wireless electronic hardware is preferred.\r\n\r\n•Hands-on experience with test equipment such as oscilloscope, DVM and RF communication equipment is preferred.\r\n\r\n•       Programming experience for embedded environment such as RPi/Arduino or other SBC is a plus;\r\n\r\n•       Knowledge of WiFi is preferred but on-job training will be provided; \r\n\r\n•       Good command of English, Chinese and PTH",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 10,
+        "fields": {
+            "title": "Electronic Engineer",
+            "job_type": "Part time",
+            "salary": 20000,
+            "post_date": "2025-04-06T05:23:14Z",
+            "location": "Kwun Tong District",
+            "company": "Avantec Manufacturing Ltd",
+            "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "• Electronic product circuit design\r\n• Embedded MCU",
+            "requirement": "• Proficient in C-programming\r\n• Graduate in Computer Engineering / Electronic Engineering\r\n• Assembly programming and debugging experience\r\n• One year of work experience in the development of one or more of the following :\r\n\r\nThermostats\r\n\r\nLVGL or relevant GUI scripting experience\r\n\r\nFlutter or relevant App design experience\r\n\r\nWi-Fi / BLE / LoRaWAN / Zigbee\r\n\r\nAWS / Thingsboard\r\n\r\nembedded Linux product development",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 11,
+        "fields": {
+            "title": "Programmer / Senior Programmer",
+            "job_type": "part time",
+            "salary": 15000,
+            "post_date": "2025-04-06T06:29:21Z",
+            "location": "Hong Kong SAR",
+            "company": "Pathsight Limited",
+            "logo_url": "https://image-service-cdn.seek.com.au/7a746ff9183aea66735e32682a31ea2253932057/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "End-to-end system development from requirement collections, feasibility study, system design, implementation, to system deployment\r\n    Perform quality assurance on project deliverable\r\n    Support and facilitate Project Manager in planning, executing, monitoring and reporting to ensure project success",
+            "requirement": "HD or above in Computer Science or IT related disciplines\r\n    For Analyst Programmer min 2 years of IT experience \r\n    For Senior Analyst Programmer min 4 years of IT experience \r\n    Hands on Experience in the following:  \r\n    JAVA, Spring, Spring boot or,\r\n    .NET \r\n    JavaScript / PHP \r\n    React.js, Node.js\r\n    C/C++\r\n    React native / Flutter\r\n    Swift / Kotlin / Java(Mobile)",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 12,
+        "fields": {
+            "title": "Analyst Programmer / Senior Programmer",
+            "job_type": "part time",
+            "salary": 15000,
+            "post_date": "2025-04-06T06:36:02Z",
+            "location": "Central, Central and Western District",
+            "company": "Bangkok Bank Public Co Ltd",
+            "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+            "responsibilities": "Provide business-process automation and IT solutions to overseas branches\r\n    Focus on system development/maintenance/technical support\r\n    Participate in the technical solutions, programs coding and implementations\r\n    Involve in new core banking system implementations\r\n    Provide applications training to end users",
+            "requirement": "Bachelor Degree in Computer Science or related disciplines \r\n    Skillful technique on developing IT solutions to meet our business needs and enhancing our systems\r\n    A positive, 'can-do' working attitude, and an active self-starter character that will continuously add values to own responsibilities\r\n    Good understanding of system documentation and familiar with SDLC\r\n    2 to 3 years development experience on C# / VB.net, ASP.net, Java, JavaScript, MS SQL, Oracle and any web based applications\r\n    Good hands-on knowledge on Windows, Unix, or Linux platform is a definite advantage\r\n    General banking, Treasury and Trade Finance systems knowledge is a plus but no compulsory\r\n    Proficient in English & Chinese",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 13,
+        "fields": {
+            "title": "Computer Vision Engineer",
+            "job_type": "full time",
+            "salary": 25000,
+            "post_date": "2025-04-06T06:42:09Z",
+            "location": "Tsing Yi, Kwai Tsing District",
+            "company": "ASMPT Technology Hong Kong Limited",
+            "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "Develop Computer Vision products and solutions to enable semiconductor world\r\n    On-job training will be provided to master computer vision technology\r\n    Work as a team and cooperate with different R&D teams\r\n    Implement computer vision software and design inspection algorithm\r\n    Opportunity to design computer vision and imaging system\r\n    Algorithm prove-of-concept and capability enhancement",
+            "requirement": "Bachelor Degree or above in Computer Engineering / Computer Science / Electronic Engineering / Information Engineering or relevant disciplines\r\n    Experience in C/C++ programming\r\n    Passion in research and development\r\n    Interested in problem solving\r\n\r\n \r\n\r\nAttractive salary and fringe benefits package will be offered to the right candidates.\r\n\r\nPlease visit our company website for our company background, products and other useful information.\r\nWebsite: https://www.asmpt.com/",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 14,
+        "fields": {
+            "title": "Control Engineer / Senior Control Engineer",
+            "job_type": "full time",
+            "salary": 30000,
+            "post_date": "2025-03-04T06:45:55Z",
+            "location": "Tsing Yi, Kwai Tsing District",
+            "company": "ASMPT Technology Hong Kong Limited",
+            "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "Focus on electro-mechanical system motion and process control\r\n    Develop advanced motion control algorithm to achieve submicron precision motion\r\n    Develop the machine diagnostic and prognostic mechanisms for mechatronic system\r\n    Improve the process performance of semiconductor packaging machinery",
+            "requirement": "Bachelor/ Master/ PhD Degree with specialization in Electrical, Mechanical, Automation, Mechatronics, or relevant disciplines\r\n    Control engineering fundamentals in classical and modern control methodologies\r\n    Enjoy tackling technical challenges of providing creative solutions to complex engineering system\r\n    Candidate possesses one or more of the following competencies is preferred:\r\n        Hands-on experience in time domain and frequency domain instrumentation, e.g. scope, dynamic signal analyzers, modal analysis, laser sensors, accelerometer, etc.; or\r\n        Familiar with system analysis and system modeling, particularly mechanical servo, system dynamics, vibration, thermal process, motor, sensors and drive system; or\r\n        Experience in robust control and adaptive control; or\r\n        Proficient in MATLAB, C/C++ and real-time computer system; or\r\n        Experience in machine learning and data analysis.\r\n    A good hands-on problem solver, with analytical mind and attention to details\r\n    Good command of English is a must\r\n    Good command of Mandarin is preferred\r\n\r\n \r\n\r\nAttractive salary and fringe benefits package will be offered to the right candidates.\r\n\r\nPlease visit our company website for our company background, products and other useful information.\r\nWebsite: https://www.asmpt.com/",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 15,
+        "fields": {
+            "title": "Electrical Engineer (Fresh Graduate / IANG Holder Is Welcome)",
+            "job_type": "Full time",
+            "salary": 20000,
+            "post_date": "2025-04-01T06:49:57Z",
+            "location": "Tsing Yi, Kwai Tsing District",
+            "company": "ASMPT Technology Hong Kong Limited",
+            "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "Design and development of electrical power system for electrical machines",
+            "requirement": "Bachelor's Degree in Electrical Engineering or relevant disciplines\r\n    Electrical power system design for industrial machines\r\n    Power estimation of the machines\r\n    Machine power system design for safety\r\n    With rich experiences and in-depth knowledge in the area of electrical system design will be considered for senior post\r\n\r\n \r\n\r\nAttractive salary and fringe benefits package will be offered to the right candidates.\r\n\r\nPlease visit our company website for our company background, products and other useful information.\r\nWebsite: https://www.asmpt.com/",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 16,
+        "fields": {
+            "title": "Full Stack Web Developer",
+            "job_type": "full time",
+            "salary": 30000,
+            "post_date": "2025-04-06T15:08:22Z",
+            "location": "Kwun Tong, Kwun Tong District",
+            "company": "Shiji Information Technology (Hong Kong) Limited",
+            "logo_url": "",
+            "responsibilities": "Participate in innovative Cloud-based Applications Development for Hotels, Theme Parks, and Restaurants\r\n    Develop Cloud API for partners and customers to build their own app to integrate to our cloud infrastructure\r\n    Develop E-Commerce Mobile Applications for our Cloud-based Applications\r\n    Performance testing and optimization in APIs\r\n    Work as a team to contribute on tertiary level application support for global implementations\r\n    Work on Agile Scrum Development methodology",
+            "requirement": "Bachelor Degree holder in Computer Science or related disciplines\r\n    Experience in PHP Framework e.g. CakePHP, Laravel, CodeIgniter, Symfony or Yii is a plus\r\n    Experience in React, Vue.js, Angular or jQuery is a plus\r\n    Experience in MySQL, SQLServer or any RDBMS is a plus\r\n    Experience in RESTful API and/or web services development is a plus\r\n    Experience in Mobile App development (Swift, Flutter) is a plus\r\n    Knowledge in Amazon Web Services, Microsoft Azure, Google Cloud Platform, or other IaaS cloud service providers is a plus\r\n    Self-motivated, good team player and strong sense of responsibility\r\n    Good command of both spoken and written English and Chinese. Mandarin is an advantage\r\n    More experienced candidate can be considered as Senior Full Stack Web Developer",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    },
+    {
+        "model": "jobspost.jobs",
+        "pk": 17,
+        "fields": {
+            "title": "Assistant IT Engineer",
+            "job_type": "full time",
+            "salary": 25000,
+            "post_date": "2025-04-06T17:11:35Z",
+            "location": "Tai Kok Tsui, Yau Tsim Mong District",
+            "company": "Lenovo PCCW Solutions",
+            "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+            "responsibilities": "Conduct requirement study, analysis & design, prepare documentation and co-ordinate with users, technical and operations teams\r\nLead the analyst programmers/programmers by providing guidelines and assistance to enable solution development and implementation, with passion to be hands-on with coding\r\nDevelop and maintain application programs\r\nPrepare test plan, test cases/scripts, test environments, data and perform testing\r\nSupport user acceptance testing and system implementation\r\nPrepare system and operations documents\r\nProvide ongoing user and application support",
+            "requirement": "Degree holder in Computer Science, Information Technology or related disciplines\r\nA minimum of 1-2 years’ experience in IT profession\r\nKnowledgeable and experienced in design, programming and microservices\r\nProficiency in Java, J2EE, AngularJS , JavaScript, XML, JSON, Oracle/MySQL, Unix\r\nKnowledgeable in ReactJS is advantageous\r\nEffective verbal and written communication in English and Chinese\r\nWith passion in technology forefront, such as microservices, DevOps, RPA and Customer Experience\r\nGood analytical, inter-personal and problem solving skills\r\nGood team player, positive attitude, innovative, self-initiating, eager to learn and share with other team members, hardworking, able to work under pressure and work independently\r\nCandidates with less qualification and experience will be considered as Analyst Programmer or Programmer\r\nExperience in BRM 7.3 and 12 is advantageous",
+            "email": "atkincheung@yahoo.com.hk"
+        }
+    }
+]

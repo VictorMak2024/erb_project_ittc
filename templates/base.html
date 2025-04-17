@@ -15,7 +15,30 @@
     <link rel="stylesheet" href="{% static "css/register_login.css" %}">
     <!--Shortcut Icon-->
     <link rel="shortcut icon" href="{% static "img/ittc_logo.png" %}" sizes="16x16" type="image/x-icon"/>
+    
+	<!--link rel="stylesheet" href="{% static 'css/custom-bs.css' %}"-->
+        <!--link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}"-->
+        <!--link rel="stylesheet" href="{% static 'css/bootstrap-select.min.css' %}"-->
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/line-icons/style.css' %}">
+        <!--link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}"-->
+        <!--link rel="stylesheet" href="{% static 'css/animate.min.css' %}"-->
+       
+   
+    <!--link href="assets/vendor/aos/aos.css" rel="stylesheet"-->
+    <!--link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"-->
+    
+    <style>
+        .no-underline {
+          text-decoration: none;
+        }
+        .no-underline:hover {
+          text-decoration: none;
+        }
+      </style>
     <title>Welcome to ITTC</title>
+    <!-- Lightbox CSS by wc -->
+    <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}" />
 </head>
 <body>
     <!--Navbar-->
@@ -25,6 +48,7 @@
     <!--partials/_footer.html-->
     {% include "partials/_footer.html" %}
     <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script 
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -38,5 +62,29 @@
     crossorigin="anonymous"></script>
     <!--Register_Login JS-->
     <script src="{% static "js/register_login.js" %}"></script>
+    <!--script src="{% static "js/register.js" %}"></script-->
+    <!--Lightbox.min.js by wc-->
+    <script src="{% static 'js/lightbox.min.js' %}"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const requirementElement = document.getElementById("job-requirement");
+          const text = requirementElement.textContent;
+          // Split text by periods 
+          const sentences = text.split(/(?<=[.])\s/);
+          // Replace the content with formatted sentences
+          requirementElement.innerHTML = sentences.map(sentence => `<span>${sentence}</span><br>`).join('');
+      });
+      
+      document.addEventListener("DOMContentLoaded", function () {
+            const requirementElement = document.getElementById("job-responsibilities");
+            const text = requirementElement.textContent;
+            // Split text by periods 
+            const sentences = text.split(/(?<=[.])\s/);
+            // Replace the content with formatted sentences
+            requirementElement.innerHTML = sentences.map(sentence => `<span>${sentence}</span><br>`).join('');
+        });
+        
+    </script>
 </body>
 </html>

@@ -15,3 +15,4 @@ const loginText = document.querySelector(".title-text .login");
         registerBtn.click();
         return false;
       });
+      

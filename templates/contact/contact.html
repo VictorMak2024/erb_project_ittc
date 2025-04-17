@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="showcase-inner">
+ <div class="container">     
+        <!-- Standard 01 : Page title & Description  -->
+        <div class="row">
+            <div class="col text-left">
+                <h1 class="text-info font-weight-black pl-2 mt-3">Office Locations</h1>
+            </div>
+        </div>
+        {% if contacts %}
+        
+         <div class="row"> 
+            <div class="col-d-sm-block col-xl-12" >   
+              {% for contact in contacts %}
+            
+               <div class="mt-4 col-sm-12 col-md-12 col-lg-12 col-xl-12 zoom-hover"    style="background-color: rgba(255, 255, 255, 0.94); text-align: left;">  
+                   
+                <div id="accordion">  
+                        <div class="mr-0 ml-0 ml-xl-4  pl-2 pt-3 pr-2 pb-3" >        
+                            <h5 class="text-secondary   mb-4">{{contact.center}}</  h5>
+                            <div class="mb4 text-secondary text-left">
+                                <span class="icon-room mr-2"></span>
+                                Address:{{contact.address}}<br>
+                                <span class="icon-phone mr-2"></span>
+                                Tel:{{contact.phone}}<br>
+                                {% if contact.fax %}
+                                <span class="icon-phone mr-2"></span>
+                                Fax:{{contact.fax}}<br>
+                                {% endif %}
+                                {% if contact.email %}
+                                <span class="icon-envelope mr-2"></span>
+                                E-mail: <a href="mailto:hkpcenq@hkpc.org" class="text-secondary">{{contact.email}}</a><br>
+                                {% endif %}
+                                <span class="icon-clock-o mr-2"></span>
+                                Office hour: {{contact.office_hours}}<br>
+                                {% if contact.website %}
+                                <span class="icon-globe mr-2"></span>
+
+                                Website: <a href="{{contact.website}}" class="text-secondary" target="_blank">{{contact.website}}</a><br>
+                                {% endif %}
+                                {% comment %} <button type="button" class="btn btn-danger float-right mr-5" style="text-decoration: none; font-weight: bold; margin-top: -10px; margin-right: 10px;"
+                                data-toggle="modal" data-target="#applyModal">
+                                Contact us
+                                </button> {% endcomment %}
+                                <a href="{% url 'contactdetail' contact.id %}" class="btn btn-danger float-right mr-5" style="text-decoration: none; font-weight: bold; margin-top: -10px; margin-right: 10px;" role="button">Contact us</a>
+
+                                <button type="button" class="btn btn-info float-right mr-3" data-parent="#accordion" data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" style="text-decoration: none; font-weight: bold; margin-top: -10px;">
+                                    View Map 
+                                </button>
+                                 
+                           
+                            </div>
+                        </div>
+                    
+                        
+                     
+                 
+                        <div class="collapse" id="collapse{{ forloop.counter }}">
+                            <iframe src={{contact.iframe}} class="w-100"  style="height: 500px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         
+
+                      
+                         </div>
+      
+                    </div>
+              
+      
+                </div>
+                
+
+
+              {% endfor %}
+            </div>
+            
+                
+        </div>
+            
+        
+           
+        {% endif %}
+    
+</div>
+</section>
+{% endblock %}
