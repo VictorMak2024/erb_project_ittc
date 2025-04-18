@@ -17,4 +17,6 @@
   width: 100%;
   min-height: 1000px;
   opacity: 1; /* Fully visible */
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem; /* Reduces the font size for smaller text */
 }

@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'salesmens.apps.SalesmensConfig',
     'contact.apps.ContactConfig',
     'accounts.apps.AccountsConfig',
+    'newsevents.apps.NewseventsConfig',
 ]
 
 MIDDLEWARE = [
@@ -95,8 +96,8 @@ DATABASES = {
         # 'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ittcdb',
-		#'USER':'postgres',
-        #'PASSWORD' :'1234',
+		# 'USER':'postgres',
+        # 'PASSWORD' :'1234',
     	'USER': 'ittcadmin',
         'PASSWORD': '123',
         'HOST': 'localhost'

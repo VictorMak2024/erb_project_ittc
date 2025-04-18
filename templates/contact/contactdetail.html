@@ -6,17 +6,15 @@
         <div class="container">
             {% include 'partials/_alert.html' %}
         <div class="row">
-            <div class="col text-left">
-                <h1 class="text-info font-weight-black pl-2 mt-3">{{contact.center}}</h1>
+            <div class="col d-flex justify-content-between align-items-center">
+              <h1 class="text-info font-weight-black pl-2 mt-3">{{contact.center}}</h1>
+              <a href="{% url 'contact' %}" class="btn btn-primary btn-md" style="width: 200px;">back to center</a>
             </div>
+            
         </div>
-        {% comment %} <div class="row">
-            <div class="col text-left">
-                <h2 class="text-info font-weight-black pl-2 mt-3">{{contact.center}}</h2>
-            </div>
-        </div> {% endcomment %}
+       
         <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid blue; background-color: yellow;">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid blue; background-color: light;">
           <form action="{% url 'contactmessage' %}" method="POST" >
             {% csrf_token %}
             {% if user.is_authenticated %}
@@ -55,9 +53,16 @@
             <input type="submit" value="Send" class="btn btn-block btn-secondary" />
           </form>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid #333">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" style="border:1px solid #333">
             <iframe src={{contact.iframe}} class="w-100"  style="height: 500px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <br>
+            <div style="dflex; justify-content: center; align-items: center;">
+            <span class="icon-room mr-2"></span>
+            Address:{{contact.address}}
+            <br>
+            <span class="icon-phone mr-2"></span>
+            Tel:{{contact.phone}}
+          </div>
         </div>    
         </div>
 
