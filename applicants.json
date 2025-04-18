@@ -1,17 +1,1 @@
-[
-    {
-        "model": "applicants.applicant",
-        "pk": 22,
-        "fields": {
-            "job_id": 16,
-            "name": "tommy cheung",
-            "email": "at@com",
-            "phone": "9888888",
-            "apply_date": "2025-04-12T07:48:47.168Z",
-            "user_id": 0,
-            "company": "Shiji Information Technology (Hong Kong) Limited",
-            "title": "Full Stack Web Developer",
-            "cv_file": "cv/Resume_Abc.odt"
-        }
-    }
-]
+[{"model": "applicants.applicant", "pk": 31, "fields": {"jobtitle": 6, "job_id": 17, "name": "tommy cheung", "email": "tommyatkin98@gmail.com", "phone": "97789439", "apply_date": "2025-04-16T16:45:42.844Z", "user_id": 0, "company": "Lenovo PCCW Solutions", "title": "Assistant IT Engineer", "cv_file": "cv/Resume_Abc_uBZHDD6.odt"}}]
