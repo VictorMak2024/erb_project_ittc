@@ -25,7 +25,7 @@ urlpatterns = [
     path('products/', include('products.urls')),
     path('activities/', include('activities.urls')),
     path('courses/', include('courses.urls')),
-    path('jobposts/', include('jobspost.urls')),
+    path('jobspost/', include('jobspost.urls')),
     path('applicants/', include('applicants.urls')),
     path('contactmessage/', include('contactmessage.urls')),
     #path('contact/', include('contact.urls')),

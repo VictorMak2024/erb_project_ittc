@@ -1,8 +1,11 @@
 from django.db import models
 from datetime import datetime
+from jobspost.models import Jobs
 # Create your models here.
 class Applicant(models.Model):
-    #job = models.CharField(max_length=200)
+
+    jobtitle = models.ForeignKey(Jobs, on_delete=models.DO_NOTHING, default=6)
+
     job_id = models.IntegerField()
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
