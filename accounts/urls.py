@@ -4,4 +4,6 @@ from . import views
 # related to templates (.html)
 urlpatterns = [
     path('register_login', views.register_login, name='register_login'),
+    path('dashboard', views.dashboard, name='dashboard'),
+    path('shoppingCart', views.shoppingCart, name='shoppingCart'),
 ]

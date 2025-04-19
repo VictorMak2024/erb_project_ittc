@@ -244,14 +244,8 @@
           <input type="hidden" name="salesmen_email" value="{{product.salesmen.email}}" />
           <!-- end checking -->
           <div class="form-group">
-            <label for="product_no" class="col-form-label">Product:</label>
-            <input
-              type="text"
-              name="product"
-              class="form-control"
-              value="{{product.title}}"
-              readonly
-            />
+            <label for="product" class="col-form-label">Product:</label>
+            <input type="text" name="product" class="form-control" value="{{product.no}}" readonly />
           </div>
           <div class="form-group">
             <label for="name" class="col-form-label">Name:</label>
@@ -260,7 +254,6 @@
             {% else %}
             <input type="text" name="name" class="form-control" required />
             {% endif %}
-          
           </div>
           <div class="form-group">
             <label for="email" class="col-form-label">Email:</label>
@@ -272,7 +265,7 @@
           </div>
           <div class="form-group">
             <label for="phone" class="col-form-label">Phone:</label>
-            <input type="text" name="phone" class="form-control" />
+            <input type="text" name="phone" class="form-control" required/>
           </div>
           <div class="form-group">
             <label for="message" class="col-form-label">Message:</label>
@@ -289,4 +282,66 @@
     </div>
   </div>
 </div>
+
+<!-- Take Order -->
+<div class="modal fade" id="takeOrderModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="takeOrderModalLabel">Take it to Order</h5>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- add action in form -->
+        <form action="{% url 'takeOrder' %}" method="POST"> 
+          {% csrf_token %}
+          {% if user.is_authenticated %}
+          <input type="hidden" name="user_id" value="{{user.id}}" />          
+          <input type="hidden" name="product_id" value="{{product.id}}" />
+          <input type="hidden" name="salesmen_id" value="{{product.salesmen.id}}" />
+          <input type="hidden" name="name" value="{{user.first_name}} {{user.last_name}}" class="form-control" />            
+          <!-- end checking -->
+          <div class="form-group row">
+            <div class="col-5 col-md-6 col-sm-6">
+              <img src="{{product.photo_main.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
+            </div>
+            <div class="from-group action-checkbox-column col-7 col-md7 col-sm-6">
+              <div class="form-group">
+                <label for="product" class="col-form-label">Catergory: {{product.title}}</label>
+                <input type="hidden" name="product_title" class="form-control" value="{{product.title}}"/>
+              </div>
+              <div class="form-group">
+                <label for="product_no" class="col-form-label">Product: {{product.no}}</label>
+                <input type="hidden" name="product" class="form-control" value="{{product.no}}"/>
+              </div>
+              <div class="form-group">              
+                <label for="product_price" class="col-form-label">Price: ${{product.price}}</label>
+                <input type="hidden" name="price" class="form-control" value="{{product.price}}"/>
+              </div>
+              <div class="form-group">
+                <label for="onOrderQty" class="col-form-label">Qty:</label>
+                <div class="btn-group btn-group-xs col-md-8" role="group">
+                  <button class="btn btn-default decrement" type="button">-</button>
+                  <input type="text" name="onOrderQty" class="form-control qty-input" value="0"/>
+                  <button class="btn btn-default increment" type="button">+</button>
+                </div>pcs.
+              </div>
+              <a>Amount: $<span id="amount">0</span></a>
+            </div>
+          </div>
+          <!-- check user id -->
+          <div class="from-group">
+            <input type="submit" value="Add to shopping car" class="btn btn-block btn-secondary"/>            
+          </div>
+          {% else %}
+          <a href="{% url 'login' %}" class="btn btn-light mb-4">go to login</a>
+          {% endif %}
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}

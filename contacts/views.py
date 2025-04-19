@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
-from .models import Activity_Contact, Course_Contact, Product_Contact
+from .models import Activity_Contact, Course_Contact, Product_Contact, TakeOrder
 from activities.models import Activity
 from courses.models import Course
 from products.models import Product
@@ -71,16 +71,13 @@ def course_contact(request):
 
         courses = Course.objects.get(id=course_id)
         if courses.onenquiry_sit == courses.total_sit:
-            messages.error(request, "Course is full",
-            )
+            messages.error(request, "Course is full")
             return redirect('/courses/'+course_id)
         elif courses.price != 0:
             messages.warning(request, "You need to pay $"+str(courses.price)+" for this course to enroll. Once payment is done, you can proceed to enroll in this course !")
         else:
             courses.onenquiry_sit = courses.onenquiry_sit +1
             courses.save()
-
-
         
         # Send Email
         send_mail(
@@ -112,10 +109,7 @@ def product_contact(request):
                 return redirect('/products/'+product_id)
         product_contact = Product_Contact(product=product, product_id=product_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
         product_contact.save()
-        # products = Product.objects.get(id=product_id)
-        # products.onenquiry_sit = products.onenquiry_sit +1
-        # products.save()
-
+        
         # Send Email
         send_mail(
             'Product Inquiry',
@@ -127,10 +121,31 @@ def product_contact(request):
         messages.success(request, "Your request has been submitted, a direct sale will get back to you soon !")
     return redirect('/products/'+product_id)
     #return render(request, 'contacts/contact.html')
+def takeOrder(request):
+    if request.method == 'POST':
+        product_id = request.POST['product_id']
+        product = request.POST['product']
+        product_title = request.POST['product_title']
+        name = request.POST['name']
+        price = request.POST['price']
+        onOrderQty = request.POST['onOrderQty']
+        user_id = request.POST['user_id']
+        salesmen_id = request.POST['salesmen_id']
+        if request.user.is_authenticated:
+            #user_id = request.user.id
+            has_contacted = TakeOrder.objects.all().filter(product_id=product_id, user_id=user_id)
+            if has_contacted:
+                messages.error(request, "You have already made an inquiry for this product at this time !")
+                return redirect('/products/'+product_id)
+        takeOrder = TakeOrder(product_id=product_id,  product=product, product_title=product_title, price=price, name=name, onOrderQty=onOrderQty, user_id=user_id, salesmen_id=salesmen_id)
+        takeOrder.save()
+
+        messages.success(request, "This product has been added to your shopping cart!")
+    return redirect('/products/'+product_id)
 
 
 
-# def delete_contact(request, contact_id):
-#     contact = get_object_or_404(Product_Contact, pk=contact_id)
-#     contact.delete()
-#     return redirect('dashboard')
+def delete_takeOrder(request, takeOrder_id):
+    contact = get_object_or_404(TakeOrder, pk=takeOrder_id)
+    contact.delete()
+    return redirect('dashboard')

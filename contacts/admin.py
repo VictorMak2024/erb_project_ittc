@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Activity_Contact, Course_Contact, Product_Contact
+from .models import Activity_Contact, Course_Contact, Product_Contact, TakeOrder
 
 # Register your models here.
 class Activity_ContactAdmin(admin.ModelAdmin):
@@ -25,3 +25,11 @@ class Product_ContactAdmin(admin.ModelAdmin):
     list_per_page = 25
 
 admin.site.register(Product_Contact, Product_ContactAdmin)
+
+class TakeOrderAdmin(admin.ModelAdmin):
+    list_display = ('id', 'product', 'price','onOrderQty', 'contact_date')
+    list_display_links = ('id', 'product')
+    #search_fields = ('product')
+    list_per_page = 25
+
+admin.site.register(TakeOrder, TakeOrderAdmin)

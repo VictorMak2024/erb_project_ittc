@@ -1,0 +1,151 @@
+{% extends "base.html" %} {% load humanize %} {% block content %}
+<!-- showcase-inner -->
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">User Dashboard</h1>
+          <p class="lead">Manage your ITTC account</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'index' %}"> <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="dashboard" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Welcome {{user.first_name | title}}</h2>
+          {% comment %} Activities inqury {% endcomment %}
+          {% if activity_contacts %}
+          <p>Here are the Activity listings that you have applied about :</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">activity</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for activity_contact in activity_contacts %}
+              <tr>
+                <td>{{activity_contact.activity_id}}</td>
+                <td>{{activity_contact.activity}}</td>
+                <td><a class="btn btn-info" href="{% url 'activity' activity_contact.activity_id %}">Activity Detail Info</a>
+                </td>
+              </tr>
+              {% endfor %}                                
+            </tbody>
+          </table>
+          {% else %}
+          <p>You had no apply activity!</p>
+          {% endif %}
+          <hr/>
+          <br/>
+          <hr/>
+          {% comment %} course inquiry {% endcomment %}
+          {% if course_contacts %}
+          <p>Here are the course listings that you have applied about :</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">course</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for course_contact in course_contacts %}
+              <tr>
+                <td>{{course_contact.course_id}}</td>
+                <td>{{course_contact.course}}</td>
+                <td><a class="btn btn-info" href="{% url 'course' course_contact.course_id %}">Course Detail Info
+              </tr>
+              {% endfor %}                                
+            </tbody>
+          </table>
+          {% else %}
+          <p>You had no apply course</p>
+          {% endif %}
+          <hr/>
+          <br/>
+          <hr/>
+          {% comment %} products inquiry {% endcomment %}
+          {% if product_contacts %}
+          <p>Here are the product inquity lists that you have applied about :</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">product</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for product_contact in product_contacts %}
+              <tr>
+                <td>{{product_contact.product_id}}</td>
+                <td>{{product_contact.product}}</td>
+                <td><a class="btn btn-info" href="{% url 'product' product_contact.product_id %}">Product Detail Info</a>
+                </td>
+              </tr>
+              {% endfor %}                                
+            </tbody>
+          </table>
+          {% else %}
+          <p>You had no any product info inquiry</p>
+          {% endif %}
+          <hr/>
+          <br/>
+          <hr/>
+          {% comment %} products inquiry {% endcomment %}
+          {% if takeOrders %}
+          <p>Here are the product lists that you have keep it about :</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">product</th>
+                <th scope="col">price</th>
+                <th scope="col">Order Qty</th>               
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for takeOrder in takeOrders %}
+              <tr>
+                <td>{{takeOrder.id}}</td>
+                <td>{{takeOrder.product}}</td>
+                <td>{{takeOrder.price}}</td> 
+                <td>{{takeOrder.onOrderQty}}</td> 
+                <td><a class="btn btn-info" href="{% url 'product' takeOrder.product_id %}">Product Detail Info</a>
+                  <a class="btn btn-danger" href="{% url 'delete_takeOrder' takeOrder.id %}">Delete Target</a>
+                </td>
+              </tr>
+              {% endfor %}                      
+            </tbody>
+          </table>
+          {% else %}
+          <p>You had no take notice any product!</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
