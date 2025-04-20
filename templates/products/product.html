@@ -32,9 +32,10 @@
 <!-- Product -->
 <section id="product" class="py-4">
   <div class="container">
+    {% include "partials/_alert.html" %}
     <a href="{% url 'products' %}" class="btn btn-light mb-4">Back To Products</a>
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-8">
         <!-- Home Main Image -->
         <img
           src="{{product.photo_main.url}}"
@@ -323,12 +324,15 @@
               <div class="form-group">
                 <label for="onOrderQty" class="col-form-label">Qty:</label>
                 <div class="btn-group btn-group-xs col-md-8" role="group">
+                  <!--button class="btn btn-default decrement" type="button">-</button-->
                   <button class="btn btn-default decrement" type="button">-</button>
                   <input type="text" name="onOrderQty" class="form-control qty-input" value="0"/>
                   <button class="btn btn-default increment" type="button">+</button>
+                  <!--button class="btn btn-default increment" type="button">+</button-->
                 </div>pcs.
               </div>
-              <a>Amount: $<span id="amount">0</span></a>
+              
+              <a>Amount: $<span id="amount"><var>amount</var> = <var>price</var> * <var>onOrderQty</var></span></a>
             </div>
           </div>
           <!-- check user id -->
@@ -336,7 +340,7 @@
             <input type="submit" value="Add to shopping car" class="btn btn-block btn-secondary"/>            
           </div>
           {% else %}
-          <a href="{% url 'login' %}" class="btn btn-light mb-4">go to login</a>
+          <a href="{% url 'register_login' %}" class="btn btn-light mb-4">go to login</a>
           {% endif %}
         </form>
       </div>

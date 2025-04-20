@@ -1,10 +1,11 @@
 from django.db import models
 from datetime import datetime
-
+from activities.models import Activity
+from courses.models import Course
+from products.models import Product
 # Create your models here.
 class Activity_Contact(models.Model):
-    activity = models.CharField(max_length=200)
-    activity_id = models.IntegerField()
+    activity = models.ForeignKey(Activity, on_delete=models.CASCADE)  # Link to Activity model
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -16,8 +17,7 @@ class Activity_Contact(models.Model):
         return self.name
 
 class Course_Contact(models.Model):
-    course = models.CharField(max_length=200)
-    course_id = models.IntegerField()
+    course = models.ForeignKey(Course, on_delete=models.CASCADE) 
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -29,8 +29,7 @@ class Course_Contact(models.Model):
         return self.name
     
 class Product_Contact(models.Model):
-    product = models.CharField(max_length=50)
-    product_id = models.IntegerField()
+    product = models.ForeignKey(Product, on_delete=models.CASCADE) 
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -41,9 +40,7 @@ class Product_Contact(models.Model):
         return self.name
 
 class TakeOrder(models.Model):
-    product_id = models.IntegerField()
-    product = models.CharField(max_length=50)
-    product_title = models.CharField(max_length=50)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE) 
     name = models.CharField(max_length=200)
     price = models.IntegerField(default=0)
     onOrderQty = models.IntegerField(default=0)

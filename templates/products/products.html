@@ -4,9 +4,9 @@
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
-      <div class="col-md-12">
+      <div class="col-md-12 bg-primary">
         {% if category.title == none %}
-        <h1 class="display-4 bg-primary">Browse Our Products Category</h1>
+        <h1 class="display-4">Browse Our Products Category</h1>
         <p class="lead">
           Following is the Category of our product, you can select the category for that you want to see the product.
         </p>
@@ -26,7 +26,8 @@
         <li class="breadcrumb-item">
           <a href="{% url 'index' %}"> <i class="fas fa-home"></i> Home</a>
         </li>
-        <li class="breadcrumb-item active">Products/ {% if category.title == none %}Category:{% else %} {{category.title}}{% endif %}</li>
+        <li class="breadcrumb-item active"><a href="{% url 'products' %}">Products /</a>
+          {% if category.title == none %}Category/{% else %}Category/ {{category.title}}{% endif %}</li>
       </ol>
     </nav>
   </div>
@@ -37,7 +38,7 @@
     {% if categories %}
     <div class="row">
       {% for category in categories %}
-      <a class="card col-md-4 btn btn-block" href="{% url 'products_by_category' category.title %}" value="{{category.title}}">
+      <a class="card col-md-4 btn btn-block btn-outline-success" href="{% url 'products_by_category' category.title %}" value="{{category.title}}">
         <img src="{{category.photos.url}}" class="d-block w-100" alt="...">
         <h4 class="text-center">{{category.title}}</h4>
         <p class="">{{category.description}}</p>
@@ -61,7 +62,6 @@
 {% if category.title %}
 <section id="products" class="py-4">
   <div class="container">
-    {% include "partials/_alert.html" %}
     <div class="row">
       <!-- product -->
       {% if products %}
@@ -108,20 +108,18 @@
                 </div>
             </div>
             <div class="row py-2 text-secondary">
-              <div class="col-12">
+              <div class="col-6">
                 <!--<i class="fas fa-user"></i> -->
                 Power: {{product.power}}
               </div>
-            </div> 
-            {% comment %} <div class="row text-secondary pb-2">
-              <div class="col-12">
+              <div class="col-6">
                 <p> Store Qty.: {{product.stockQty}} pcs.</p>
               </div>
-            </div>{% endcomment %}
+            </div> 
             <hr />
-            <a href="{% url 'product' product.id %}" class="btn btn-primary btn-block"
-              >More Info</a
-            >
+            <div class="col-12">
+              <a href="{% url 'product' product.id %}" class="btn btn-primary btn-block">More Info</a>
+            </div>
           </div>
         </div>
       </div> 
@@ -142,7 +140,7 @@
         <ul class="pagination">
           {% if products.has_previous %}
           <li class="page-item">
-            <a href="?page={{listings.previous_page_number}}" class="page-link">&laquo;</a>          
+            <a href="?page={{products.previous_page_number}}" class="page-link">&laquo;</a>          
           </li>
           {% comment "add function" %}{% endcomment %}
           {% else %}
@@ -168,7 +166,7 @@
           {% endfor %}
           {% if products.has_next %}
           <li class="page-item">
-            <a href="?page={{listings.next_page_number}}" class="page-link">&raquo;</a>          
+            <a href="?page={{products.next_page_number}}" class="page-link">&raquo;</a>          
           </li>
           {% comment "add function" %}{% endcomment %}
           {% else %}

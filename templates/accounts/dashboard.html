@@ -1,9 +1,9 @@
 {% extends "base.html" %} {% load humanize %} {% block content %}
 <!-- showcase-inner -->
-<section id="showcase-inner" class="py-5 text-white">
+<section id="" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
-        <div class="col-md-12">
+        <div class="col-md-12 bg-primary">
           <h1 class="display-4">User Dashboard</h1>
           <p class="lead">Manage your ITTC account</p>
         </div>
@@ -37,19 +37,47 @@
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">activity</th>
+                <th scope="col">Activity</th>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Price</th>
+                <th scope="col">Paid</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               {% for activity_contact in activity_contacts %}
+              
+              {% comment %} {% with activity.id= activity_contact.activity_id %}{% endwith %} {% endcomment %}
+              <h2>Activity Contacts</h2>
+              <ul>
+                  {% for contact in activity_contacts %}
+                      <li>
+                          {{ contact.name }} - {{ contact.activity.name }} ({{ contact.contact_date }})
+                      </li>
+                  {% endfor %}
+              </ul>
+              {{activity_contact.activity.activity_title}}
               <tr>
+                <td>{{activity_contact.activity_title}}</td>
                 <td>{{activity_contact.activity_id}}</td>
                 <td>{{activity_contact.activity}}</td>
+                <td>{% if activity_contact.activity_id.activity_date_start == activity_contact.activity_id.activity_date_end %}
+                  {{activity_contact.activity_id.activity_date_start}}
+                  {% else %}
+                  {{activity_contact.activity_id.activity_date_start}} To {{activity_contact.activity_id.activity_date_end}}
+                  {% endif %}</td>
+                <td>{% if activity_contact.activity_id.activity_date_start == activity_contact.activity_id.activity_date_end %}
+                  {{activity_contact.activity_id.activity_time_start}}
+                  {% else %}
+                  {{activity_contact.activity_id.activity_time_start}} To {{activity_contact.activity_id.activity_time_end}}
+                  {% endif %}</td>
+                <td>{{activity_contact.activity_id.activity_price}}</td>
+                <td>{{activity_contact.is_paid}}</td>
                 <td><a class="btn btn-info" href="{% url 'activity' activity_contact.activity_id %}">Activity Detail Info</a>
                 </td>
               </tr>
-              {% endfor %}                                
+              {% endfor %}     
             </tbody>
           </table>
           {% else %}
@@ -99,7 +127,7 @@
             <tbody>
               {% for product_contact in product_contacts %}
               <tr>
-                <td>{{product_contact.product_id}}</td>
+                <td>{{product_contact.id}}</td>
                 <td>{{product_contact.product}}</td>
                 <td><a class="btn btn-info" href="{% url 'product' product_contact.product_id %}">Product Detail Info</a>
                 </td>
@@ -131,7 +159,7 @@
               <tr>
                 <td>{{takeOrder.id}}</td>
                 <td>{{takeOrder.product}}</td>
-                <td>{{takeOrder.price}}</td> 
+                <td>${{takeOrder.price}}</td> 
                 <td>{{takeOrder.onOrderQty}}</td> 
                 <td><a class="btn btn-info" href="{% url 'product' takeOrder.product_id %}">Product Detail Info</a>
                   <a class="btn btn-danger" href="{% url 'delete_takeOrder' takeOrder.id %}">Delete Target</a>

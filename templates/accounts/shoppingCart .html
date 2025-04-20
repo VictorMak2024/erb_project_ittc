@@ -3,42 +3,19 @@
 {% comment %} {% if user.is_authenticated %} {% endcomment %}
 {% if takeOrders %}
 <button id="toggle-nav-sidebar" class="sticky toggle-nav-sidebar float-right" aria-label="Toggle navigation">>></button> 
-<aside class="sticky toggle-nav-sidebar float-right" id="toggle-nav-sidebar" aria-label="Toggle navigation" aria-expanded="false">shopping cart list :
+<aside class="sticky toggle-nav-sidebar float-right" id="toggle-nav-sidebar" aria-label="Toggle navigation" aria-expanded="false">
     <div class="card">
         <!-- loop take order -->
     {% for takeOrder in takeOrders %}
         <div class="from-group">
-            <!--label for="order" type="hidden">Order ID: {{takeOrder.id}}</label-->
+            <label for="order" type="hidden">Order ID: {{takeOrder.id}}</label>
             <!-- text field group -->
-            <div class="card" style="width: 16rem;">
-                <img src="{{takeOrder.product.photo_main.url}}" class="img-main img-fluid mb-2" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Category: {{takeOrder.product.title}}</h5>
-                    <p class="card-text">Product No: {{takeOrder.product}}</p>
-                    <p class="card-text">Price: ${{takeOrder.price}}</p>
-                    <div class="card-columns">
-                        <label for="onOrderQty" class="col-form-label">Qty:</label>
-                        <div class="btn-group btn-group-xs col-md-8" role="group">
-                            <button class="btn btn-default decrement" type="button">-</button>
-                            <input type="text" name="onOrderQty" class="form-control qty-input" value="{{takeOrder.onOrder}}"/>
-                            <button class="btn btn-default increment" type="button">+</button>
-                        </div>pcs.
-                    </div>
-                    
-                    <a href="{% url 'delete_take' takeOrder.id %}" class="btn btn-primary">Remove Take It.</a>
-                </div>
-            </div>
-            {% comment %} <div class="col-5 col-md-6 col-sm-6">
+            <div class="col-5 col-md-6 col-sm-6">
                 <img src="{{takeOrder.product.photo_main.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
             </div>
-            <div class="col-5 col-md-6 col-sm-6">
-                <label for="category" class="col-form-label">Category: {{takeOrder.product_title}}</label>
-            </div>
-            <div class="col-5 col-md-6 col-sm-6">
-                <label for="product_no" class="col-form-label">Product No: {{takeOrder.product}}</label>
-            </div>
-            <div class="col-5 col-md-6 col-sm-6">
-                <label for="price" class="col-form-label">Price: {{takeOrder.price}}</label>
+            <label for="category" class="col-form-label">Category: {{takeOrder.product_title}}</label>
+            <label for="product_no" class="col-form-label">Product No: {{takeOrder.product}}</label>
+            <label for="price" class="col-form-label">Price: {{takeOrder.price}}</label>
             <div class="form-group">
                 <label for="onOrderQty" class="col-form-label">Qty:</label>
                 <div class="btn-group btn-group-xs col-md-8" role="group">
@@ -49,18 +26,12 @@
             </div>
             <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
             <label for="product" class="col-form-label">Catergory: {{product.title}}</label>
-            <input type="hidden" name="product_title" class="form-control" value="{{product.title}}"/> {% endcomment %}
+            <input type="hidden" name="product_title" class="form-control" value="{{product.title}}"/>
         </div>
     {% endfor %}
-    </div>
+    </div>/
 </aside>
 {% endif %}
-{% comment %} <div class="from-group">
-    Order ID: {{takeOrder.id}}
-    <!-- text field group -->
-    <label for="name">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
-</div> {% endcomment %}
 {% comment %} <aside class="bd-sidebar float-right" >
     <div class="from-group" style="width: 18rem">
         <h4>Customer ID: {{user.id}}</h4>
@@ -118,8 +89,8 @@
             </div>
         </div>
     </div>
-</aside>
- {% endcomment %}
+</aside> {% endcomment %}
+
 
 
 {% comment %} <a href="#content-start" class="skip-tocontent-link">skip to main content</a> {% endcomment %}
