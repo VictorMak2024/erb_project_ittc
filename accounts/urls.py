@@ -3,5 +3,8 @@ from . import views
 
 # related to templates (.html)
 urlpatterns = [
-    path('register_login', views.register_login, name='register_login'),
+    path('register', views.register, name='register'),
+    path('login', views.login, name='login'),
+    path('logout', views.logout, name='logout'),
+    path('dashboard', views.dashboard, name='dashboard')
 ]

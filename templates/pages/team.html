@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<!-- Team Section -->
+<section class="team-section" id="teambody">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: #d1b3ff;">Meet Our Team</h2>
+        <div class="row">
+            <!-- Worker 1 -->
+            <div class="col-md-4 team-member">
+                <img src="{% static "img/sasuke.jpeg" %}" alt="Victor Mak">
+                <h3>Victor Mak</h3>
+                <p>Lead Innovator</p>
+                <p>Victor is the driving force behind ITTC's cutting-edge solutions.</p>
+                <a href="{% url "victor" %}" style="color: #8e44ad" class="btn btn-light">More Info</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Worker 2 -->
+            <div class="col-md-4 team-member">
+                <img src="{% static "img/kurama.jpeg" %}" alt="WC Ng">
+                <h3>WC Ng</h3>
+                <p>Research & Development Engineer</p>
+                <p>WC develops scalable and efficient systems and innovative products for our clients.</p>
+                <a href="{% url "wc" %}" style="color: #8e44ad" class="btn btn-light">More Info</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- Worker 3 -->
+            <div class="col-md-4 team-member">
+                <img src="{% static "img/pikachu.jpeg" %}" alt="Tommy Cheung">
+                <h3>Tommy Cheung</h3>
+                <p>Data Scientist</p>
+                <p>Tommy specializes in AI and data-driven insights and delivers professional technical support.</p>
+                <a href="{% url "tommy" %}" style="color: #8e44ad" class="btn btn-light">More Info</a>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock  %}

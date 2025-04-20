@@ -1,7 +1,8 @@
 {% load static %}
+{% load humanize %}
 <!-- Responsive Nav Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #6610f2;">
-    <a href="#" class="navbar-brand" style="font-size: 50px;" class="d-inline-block align-top p-lg-5">
+    <a href="{% url "index" %}" class="navbar-brand" style="font-size: 50px;" class="d-inline-block align-top p-lg-5">
         <img src="{% static "img/ittc_logo.png" %}" width="120" height="90" class="logo" alt="ITTC Logo"> ITTC
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,43 +10,151 @@
     </button>
     <div class="collapse navbar-collapse" id="navbaritems">
         <ul class="navbar-nav" style="font-size: 20px;">
+            {% if '/' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "index" %}" class="nav-link" style="color: yellow;"><b>Home</b></a>
+            </li>
+            {% else %}
             <li class="nav-item">
                 <a href="{% url "index" %}" class="nav-link"><b>Home</b></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><b>About Us</b></a>
+            {% endif %}
+            {% if '/about' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "about" %}" class="nav-link" style="color: yellow;"><b>About Us</b></a>
             </li>
+            {% else %}
             <li class="nav-item">
-                <a href="#" class="nav-link"><b>News & Events</b></a>
-            </li>   
-            <li class="nav-item">
-                <a href="#" class="nav-link"><b>Worker Info</b></a>
+                <a href="{% url "about" %}" class="nav-link"><b>About Us</b></a>
             </li>
+            {% endif %}
+            {% if '/newsevents/newsevents' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "newsevents" %}" class="nav-link" style="color: yellow;"><b>News & Events</b></a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a href="{% url "newsevents" %}" class="nav-link"><b>News & Events</b></a>
+            </li>
+            {% endif %}
+            {% if '/team' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "team" %}" class="nav-link" style="color: yellow;"><b>Team</b></a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a href="{% url "team" %}" class="nav-link"><b>Team</b></a>
+            </li>
+            {% endif %}
+            
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><b>About ITTC</b></a>
                 <ul class="dropdown-menu" style="background-color: #6610f2; font-size: 20px;">
                     <div class="d-flex flex-column">
+                        {% if '/products/' == request.path %}
+                        <li><a class="dropdown-item text-warning" href="{% url "products" %}"><b>Products</b></a></li>
+                        {% else %}
                         <li><a class="dropdown-item text-light" href="{% url "products" %}"><b>Products</b></a></li>
+                        {% endif %}
+                        {% if '/courses/' == request.path %}
+                        <li><a class="dropdown-item text-warning" href="{% url 'courses' %}"><b>Courses</b></a></li>
+                        {% else %}
                         <li><a class="dropdown-item text-light" href="{% url 'courses' %}"><b>Courses</b></a></li>
+                        {% endif %}
+                        {% if '/activities/' == request.path %}
+                        <li><a class="dropdown-item text-warning" href="{% url 'activities' %}"><b>Activities</b></a></li>
+                        {% else %}
                         <li><a class="dropdown-item text-light" href="{% url 'activities' %}"><b>Activities</b></a></li>
+                        {% endif %}
                     </div>
                 </ul>
             </li>
+            {% if '/jobspost/' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "jobspost" %}" class="nav-link" style="color: yellow;"><b>Job Vacancies</b></a>
+            </li>
+            {% else %}
             <li class="nav-item">
                 <a href="{% url "jobspost" %}" class="nav-link"><b>Job Vacancies</b></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><b>Support & Resource</b></a>
+            {% endif %}
+            {% if '/supportresources/' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "supportresources" %}" class="nav-link" style="color: yellow;"><b>Support & Resource</b></a>
             </li>
+            {% else %}
+            <li class="nav-item">
+                <a href="{% url "supportresources" %}" class="nav-link"><b>Support & Resource</b></a>
+            </li>
+            {% endif %}
+            {% if '/contact/contact' == request.path %}
+            <li class="nav-item active">
+                <a href="{% url "contact" %}" class="nav-link" style="color: yellow;"><b>Contact Us</b></a>
+            </li>
+            {% else %}
             <li class="nav-item">
                 <a href="{% url "contact" %}" class="nav-link"><b>Contact Us</b></a>
             </li>
-            <li class="nav-item">
-                <a href="{% url "register_login" %}" class="nav-link"><i class="fas fa-user"></i> <b>Register/Login</b></a>
+            {% endif %}
+            
+            {% if user.is_authenticated %}
+            <li class="nav-item" hidden>
+                <a href="{% url "login" %}" class="nav-link"><i class="fas fa-user"></i> <b>Register/Login</b></a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
-            </li>
+            {% else %}
+                {% if '/accounts/login' == request.path %}
+                <li class="nav-item active">
+                    <a href="{% url "login" %}" class="nav-link" style="color: yellow;"><i class="fas fa-user"></i> <b>Register/Login</b></a>
+                    
+                </li>
+                {% elif '/accounts/register' == request.path %}
+                <li class="nav-item active">
+                    <a href="{% url "register" %}" class="nav-link" style="color: yellow;"><i class="fas fa-user"></i> <b>Register/Login</b></a>
+                    
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a href="{% url "login" %}" class="nav-link"><i class="fas fa-user"></i> <b>Register/Login</b></a>
+                </li>
+                {% endif %}
+            {% endif %}
         </ul>
+        <ul class="navbar-nav" style="font-size: 20px;">
+            {% if user.is_authenticated %}
+                {% if '/accounts/dashboard' == request.path %}
+                <li class="nav-item active mr-3 ">
+                    <a href="{% url 'dashboard' %}" class="nav-link" style="text-transform: capitalize; color: yellow;"><b>Hi, {{user.username | title}} (Dashboard)</b></a>
+                  </li>
+                {% else %}
+                <li class="nav-item mr-3">
+                    <a href="{% url 'dashboard' %}" class="nav-link" style="text-transform: capitalize;"><b>Hi, {{user.username | title}} (Dashboard)</b></a>
+                  </li>
+                {% endif %}
+            
+            <!-- Shoppong Cart -->
+             {% if 'shoppingcart' == request.path %}
+             <li class="nav-item active">
+                <a href="#" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </li>
+             {% else %}
+             <li class="nav-item">
+                <a href="#" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
+             </li>
+             {% endif %}
+            
+            <!-- Logout -->
+            <li class="nav-item mr-3">
+              <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
+                <i class="fas fa-sign-out-alt"></i>Logout</a>
+              <form action="{% url "logout" %}" method="POST" id="logout">
+                {% csrf_token %}
+              <input type="hidden"/>
+              </form>
+            </li>
+            <!-- End Logout -->
+            {% else %}
+            
+            {% endif %}
+          </ul>
     </div>
 </nav>

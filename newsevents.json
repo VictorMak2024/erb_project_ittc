@@ -1,0 +1,156 @@
+[
+    {
+        "model": "newsevents.newsevents",
+        "pk": 1,
+        "fields": {
+            "title": "AI Innovation Summit Singapore 2024",
+            "post_date": "2025-04-02T03:57:39Z",
+            "location": "Singapore Expo Convention Center",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/singapore.jpg",
+            "detail": "The AI Summit Singapore aims to foster a vibrant ecosystem for AI development and adoption in Asia by bringing together leading experts and innovators from around the world to explore the latest trends and applications of AI.\r\n    Dynamic discussions and interactive sessions aim to provide attendees with actionable insights into the latest AI trends and best practices."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 2,
+        "fields": {
+            "title": "Robotics Training Program Launch",
+            "post_date": "2025-05-08T04:07:17Z",
+            "location": "ITTC Headquarters",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/robotics.jpg",
+            "detail": "A comprehensive Robotics Training Program was launched to equip innovators with cutting-edge skills in robotics and automation."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 3,
+        "fields": {
+            "title": "InnoEX 2025",
+            "post_date": "2025-05-31T04:11:03Z",
+            "location": "Hong Kong Convention and Exhibition Centre",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/innoex.jpg",
+            "detail": "InnoEx 2025 is Asia's most anticipated innovation and technology event. Gather first-hand market intelligence and meet potential partners."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 4,
+        "fields": {
+            "title": "I Innovation Summit London 2025",
+            "post_date": "2025-06-05T04:13:59Z",
+            "location": "Tobacco Dock",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/london.jpg",
+            "detail": "The AI Summit London unites the UK's and Europe's most innovative technologists and business leaders to explore AI’s transformative real-world applications.We are going to join this immersive, two-day conference to discuss groundbreaking AI applications for actionable insights and game-changing connections."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 5,
+        "fields": {
+            "title": "Cybersecurity Workshop",
+            "post_date": "2025-04-24T04:15:58Z",
+            "location": "ITTC Headquarters",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/securityworkshop.jpg",
+            "detail": "ITTC conducted a hands-on Cybersecurity Workshop to equip attendees with practical skills for securing modern IT infrastructures."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 6,
+        "fields": {
+            "title": "September 2025 Learn basic design principles, advanced power-supply concepts and \"real-world\" application examples",
+            "post_date": "2025-09-16T04:37:31Z",
+            "location": "ITTC Headquarter",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/power.png",
+            "detail": "Since its introduction in 1977, the Power Supply Design Seminar (PSDS) series has provided rich, technical and practical training combining new advanced power supply concepts, basic design principles and \"real-world\" application examples. Whether this seminar is used to gain fresh knowledge of power management, or as a review for those experienced in power supply design, the topics presented will be worthwhile for all levels of expertise."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 7,
+        "fields": {
+            "title": "online classroom for analog signal chain and embedded processing designers.",
+            "post_date": "2025-10-04T08:17:22Z",
+            "location": "ITTC Training Centre",
+            "is_News": false,
+            "is_Events": true,
+            "iframe": null,
+            "image": "photos/2025/04/18/ti-precision-labs-magnetic-sensing-homepage-banner-background.jpeg",
+            "detail": "ITTC Labs is the most comprehensive online classroom for analog signal chain and embedded processing designers. From foundational knowledge to advanced concepts, our logical, sequenced and comprehensive teaching approach is both intuitive and practical. The training series, which includes videos and downloadable reference materials, will deepen the technical expertise of experienced engineers and accelerate the development of those early in their career."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 8,
+        "fields": {
+            "title": "Tiny Robot Bug Hops and Jumps  Your weekly selection of awesome robot videos",
+            "post_date": "2025-05-03T08:34:13Z",
+            "location": "MIT",
+            "is_News": true,
+            "is_Events": false,
+            "iframe": null,
+            "image": "photos/2025/04/18/robotnews.png",
+            "detail": "MIT engineers developed an insect-sized jumping robot that can traverse challenging terrains while using far less energy than an aerial robot of comparable size. This tiny, hopping robot can leap over tall obstacles and jump across slanted or uneven surfaces carrying about 10 times more payload than a similar-sized aerial robot, opening the door to many new applications."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 9,
+        "fields": {
+            "title": "Nvidia’s AI robot ‘Blue’ stuns with live interaction",
+            "post_date": "2025-03-19T09:18:14Z",
+            "location": "usa",
+            "is_News": true,
+            "is_Events": false,
+            "iframe": "https://www.youtube.com/embed/6oWo3YhYzZg",
+            "image": "",
+            "detail": "Nvidia CEO Jensen Huang unveiled groundbreaking AI advancements at the company’s developer conference, introducing the AI-powered robot 'Blue'."
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 10,
+        "fields": {
+            "title": "Gemini Robotics: Bringing AI to the physical world",
+            "post_date": "2025-01-06T12:19:54Z",
+            "location": "usa",
+            "is_News": true,
+            "is_Events": false,
+            "iframe": null,
+            "image": "",
+            "detail": "Our new Gemini Robotics model brings Gemini 2.0 to the physical world. It's our most advanced vision language action model, enabling robots that are interactive, dexterous, and general. Learn more about how we're enabling the next generation of robotic AI agents at deepmind.google/robotics"
+        }
+    },
+    {
+        "model": "newsevents.newsevents",
+        "pk": 11,
+        "fields": {
+            "title": "Crazy Robot Can Move Like a Human",
+            "post_date": "2025-05-16T12:43:28Z",
+            "location": "usa",
+            "is_News": true,
+            "is_Events": false,
+            "iframe": "https://www.youtube.com/embed/CIIZUHD2xl0",
+            "image": "",
+            "detail": "Crazy Robot Can Move Like a Human"
+        }
+    }
+]

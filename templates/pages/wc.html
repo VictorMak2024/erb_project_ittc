@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<section class="profile-section" id="profilebody">
+    <div class="container">
+        <div class="profile-content">
+            <!-- Profile Photo and Title -->
+            <div class="profile-photo">
+                <img src="{% static "img/kurama.jpeg" %}" alt="WC Chan" class="img photo-size">
+                <h2>Research & Development Engineer</h2>
+            </div>
+            <!-- Profile Text -->
+            <div class="profile-text">
+                <p>WC spends his time and experience helping clients and teams grow and bring innovative and transformative products to the world. He oversees the entire development of a project through a process of researching, creating engineering plans for new products,designing new products, redesigning and refining existing products, experimenting,  and testing prototypes for functionality and longevity.
+                
+                As a Research & Development Engineer, WC leads our consumer products & retail portfolio, building more beautiful, seamless, and sustainable futures for the things we buy—and the ways that we buy them.</p>
+            </div>
+        </div>
+        <!-- Center Button -->
+        <div class="center-button">
+            <a href="{% url "team" %}" style="color: #8e44ad" class="btn btn-light">Back to Team</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

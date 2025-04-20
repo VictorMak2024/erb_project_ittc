@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!--link rel="stylesheet" href="{% static "css/register_login.css" %}"-->
+<div class="row justify-content-center">
+  <div class="wrapper">
+      <!-- add alert -->
+      <div>{% include "partials/_alert.html" %}</div>
+      <div class="title-text2">
+        <div class="title login2">Login</div>
+        <div class="title register2">Register</div>
+      </div>
+      <div class="form-container2">
+        <div class="slide-controls2">
+          <a href="{% url "login" %}" class="slide2 login2" id="login2-tab2" onclick="toggleTab2('login2')" style="text-decoration: none;">Login</a>
+          <a href="{% url "register" %}" class="slide2 register2" id="register-tab2" onclick="toggleTab2('register2')" style="text-decoration: none;">Register</a>
+          <div class="slider-tab2"></div>
+        </div>
+      
+      
+        <div class="form-inner">
+          <form action="#" class="login2">
+            <div class="field">
+              <input type="text" placeholder="Username" required>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required>
+            </div>
+            <!--div class="pass-link"><a href="#">Forgot password?</a></div-->
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="register-link">Not a member ? <a href="{% url "register" %}">Register now</a></div>
+          </form>
+          
+          <form action="{% url "register" %}" class="register2" method="POST">
+            {% csrf_token %}
+            <div class="field">
+              <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="field">
+              <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="field">
+              <input type="password" name="confirm_password" placeholder="Confirm password" required>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock  %}
+
