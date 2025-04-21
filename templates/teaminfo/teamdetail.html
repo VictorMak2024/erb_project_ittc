@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+
+ 
+    <!-- Profile Section -->
+    <section id="profilebody" class="profile-section">
+        <h1 class="text-center">{{team}}</h1>
+        <br>
+        <div class="container">
+            <div class="profile-content">
+                <!-- Profile Photo and Title -->
+                <div class="profile-photo">
+                    <img src="{{ team.photo.url }}" alt="{{team.name}}" class="img photo-size">
+                    <h2>{{team.position}}</h2>
+                </div>
+                <!-- Profile Text -->
+                <div class="profile-text">
+                    <p>{{team.detail}}
+                    </p>
+                </div>
+            </div>
+            <!-- Center Button -->
+            <div class="center-button">
+                <a href="{% url 'teaminfo' %}" style="color: #8e44ad" class="btn btn-light">Back to Team</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+{% endblock %}

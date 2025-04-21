@@ -31,7 +31,7 @@ def jobspost(request):
 
     
     Jobss=Jobs.objects.order_by('-post_date')
-    paginator=Paginator(Jobss,9) 
+    paginator=Paginator(Jobss,18) 
     page = request.GET.get('page')
     paged_Jobs = paginator.get_page(page)
     #print(paged_Jobs)
@@ -85,12 +85,12 @@ def search(request):
     if 'salary' in request.GET:
         salary = request.GET['salary']
         if salary:
-            queryset_list = queryset_list.filter(salary__lte=salary)
+            queryset_list = queryset_list.filter(salary__gte=salary)
     # if 'company' in request.GET:
     #     company = request.GET['company']
     #     if company:
     #         queryset_list = queryset_list.filter(company__iexact=company)
-    paginator=Paginator(queryset_list,9) 
+    paginator=Paginator(queryset_list,18) 
     page = request.GET.get('page')
     paged_jobs = paginator.get_page(page)  
     values = request.GET.copy()  

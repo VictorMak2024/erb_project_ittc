@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'contacts.apps.ContactsConfig',
     'accounts.apps.AccountsConfig',
     'newsevents.apps.NewseventsConfig',
+    'supportresources.apps.SupportresourcesConfig',
+	'teaminfo.apps.TeaminfoConfig',
 ]
 
 MIDDLEWARE = [

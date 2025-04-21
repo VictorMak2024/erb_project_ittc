@@ -56,7 +56,7 @@
                   <select name="salary" class="form-control">
                   <!--  <option selected="true" disabled="disabled">-->
                   <option  {% if not values.salary %} selected="true" {% endif %} value="">
-                    Max Salary (All)
+                    Min Salary 
                     </option>
                     {% for key,value in salary_choices.items %}
                     <option {% if values.salary == key %} selected {% endif %} value="{{key}}">{{value}}</option>
@@ -182,7 +182,7 @@
         </div>
        
       {% comment %} </section> {% endcomment %}
-      </section
+      </section>
   
     
   {% endblock %} 
