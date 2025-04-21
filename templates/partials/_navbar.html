@@ -44,6 +44,14 @@
                 <a href="{% url 'register_login' %}" class="nav-link"><i class="fas fa-user"></i> <b>Register/Login</b></a>
             </li>
             <li class="nav-item">
+                <!--a class="fa-solid" data-toggle="collapse" href="#shoppingCart" role="button" aria-expanded="false" aria-controls="shoppingCart"><i class="fa-solid fa-cart-arrow-down"></i></a-->
+                
+                <div class="collapse" id="shoppingCart">
+                    {% block shoppingCart %}{% endblock %}
+                    {% comment %} <aside class="sticky toggle-nav-sidebar float-right" id="toggle-nav-sidebar" aria-label="Toggle navigation" aria-expanded="false">
+                        
+                    </aside> {% endcomment %}
+                </div>    
                 <a href="{% url 'shoppingCart' %}" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
             </li>
         </ul>

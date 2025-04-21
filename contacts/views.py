@@ -4,6 +4,7 @@ from .models import Activity_Contact, Course_Contact, Product_Contact, TakeOrder
 from activities.models import Activity
 from courses.models import Course
 from products.models import Product
+from accounts.models import ShoppingCart
 from django.core.mail import send_mail
 
 # Create your views here.
@@ -20,7 +21,6 @@ def activity_contact(request):
 
         activity = get_object_or_404(Activity, pk=activity_id)
 
-  
         if request.user.is_authenticated:
             #user_id = request.user.id
             has_contacted = Activity_Contact.objects.all().filter(activity=activity, user_id=user_id)
@@ -118,7 +118,7 @@ def product_contact(request):
             if has_contacted:
                 messages.error(request, "You have already made an inquiry for this product !")
                 return redirect('/products/'+product_id)
-        product_contact = Product_Contact(product_id=product_id, name=name, email=email, phone=phone, message=message, user_id=user_id)
+        product_contact = Product_Contact(product=product, name=name, email=email, phone=phone, message=message, user_id=user_id)
         product_contact.save()
         
         # Send Email
@@ -136,25 +136,47 @@ def product_contact(request):
 def takeOrder(request):
     if request.method == 'POST':
         product_id = request.POST['product_id']
-        #name = request.POST['name']
-        price = request.POST['price']
+        name = request.POST['name']
+        price = int(request.POST['price'])
         onOrderQty = int(request.POST['onOrderQty'])
+        #amount = int(request.POST['amount'])
         user_id = request.POST['user_id']
         salesmen_id = request.POST['salesmen_id']
+
+        # Calculate the amount
+        amount = price * onOrderQty
         
         product = get_object_or_404(Product, pk=product_id)
-        
-        if request.user.is_authenticated:
-            #user_id = request.user.id
-            has_contacted = TakeOrder.objects.all().filter(product_id=product_id, user_id=user_id)
-            if has_contacted:
-                messages.error(request, "You have already made an inquiry for this product at this time !")
-                return redirect('/products/'+product_id)
-        takeOrder = TakeOrder(product=product, price=price, onOrderQty=onOrderQty, user_id=user_id, salesmen_id=salesmen_id)
-        takeOrder.save()
+        # Check if the user already has this product in their cart
+        if onOrderQty > product.stockQty:
+            messages.error(request, "Quantity exceeds available stock.")
+            return redirect('product', product_id=product_id)
+
+        existing_order = TakeOrder.objects.filter(product=product, user_id=user_id).first()
+        if existing_order:
+            existing_order.onOrderQty += onOrderQty
+            existing_order.amount = existing_order.price * existing_order.onOrderQty  # Update amount
+            existing_order.save()
+        else:
+            # Create a new order
+            takeOrder = TakeOrder(product=product, price=price, onOrderQty=onOrderQty, amount=amount, name=name, user_id=user_id, salesmen_id=salesmen_id)
+            takeOrder.save()
+
 
         messages.success(request, "This product has been added to your shopping cart!")
-    return redirect('/products/'+product_id)
+    return redirect('/products/' + product_id)
+        
+    #     if request.user.is_authenticated:
+    #         #user_id = request.user.id
+    #         has_contacted = TakeOrder.objects.all().filter(product=product, user_id=user_id)
+    #         if has_contacted:
+    #             messages.error(request, "You have already made an inquiry for this product at this time !")
+    #             return redirect('/products/'+product_id)
+    #     takeOrder = TakeOrder(product=product, price=price, onOrderQty=onOrderQty, name=name, user_id=user_id, salesmen_id=salesmen_id)
+    #     takeOrder.save()
+
+    #     messages.success(request, "This product has been added to your shopping cart!")
+    # return redirect('/products/'+product_id)
 
 # def inc_Qty(request):
 #     onOrederQty += 1

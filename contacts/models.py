@@ -44,8 +44,14 @@ class TakeOrder(models.Model):
     name = models.CharField(max_length=200)
     price = models.IntegerField(default=0)
     onOrderQty = models.IntegerField(default=0)
+    amount = models.IntegerField(default=0)
     salesmen_id = models.IntegerField()
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField()
+
+    def save(self, *args, **kwargs):
+        # Automatically calculate the amount before saving
+        self.amount = self.price * self.onOrderQty
+        super().save(*args, **kwargs)
     def __str__(self):
         return self.name

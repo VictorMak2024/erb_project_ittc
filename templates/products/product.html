@@ -1,5 +1,43 @@
 {% extends "base.html" %} {% load humanize %} {% load static %} {% block content %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const decrementButtons = document.querySelectorAll(".decrement");
+    const incrementButtons = document.querySelectorAll(".increment");
+    const qtyInputs = document.querySelectorAll(".qty-input");
+    const amountSpan = document.getElementById("amount");
+    const price = parseFloat(document.querySelector("input[name='price']").value);
 
+    // Handle decrement button click
+    decrementButtons.forEach((button, index) => {
+      button.addEventListener("click", function () {
+        const qtyInput = qtyInputs[index];
+        let qty = parseInt(qtyInput.value);
+        if (qty > 0) {
+          qty -= 1;
+          qtyInput.value = qty;
+          updateAmount(qty);
+        }
+      });
+    });
+
+    // Handle increment button click
+    incrementButtons.forEach((button, index) => {
+      button.addEventListener("click", function () {
+        const qtyInput = qtyInputs[index];
+        let qty = parseInt(qtyInput.value);
+        qty += 1;
+        qtyInput.value = qty;
+        updateAmount(qty);
+      });
+    });
+
+    // Update the amount dynamically
+    function updateAmount(qty) {
+      const amount = price * qty;
+      amountSpan.textContent = `$${amount.toFixed(0)}`;
+    }
+  });
+</script>
 <!-- showcase-inner -->
 <section id="" class="py-5 text-white">
   <div class="container">
@@ -302,6 +340,7 @@
           <input type="hidden" name="user_id" value="{{user.id}}" />          
           <input type="hidden" name="product_id" value="{{product.id}}" />
           <input type="hidden" name="salesmen_id" value="{{product.salesmen.id}}" />
+          <input type="hidden" name="price" value="{{ product.price }}" />
           <input type="hidden" name="name" value="{{user.first_name}} {{user.last_name}}" class="form-control" />            
           <!-- end checking -->
           <div class="form-group row">
@@ -324,20 +363,18 @@
               <div class="form-group">
                 <label for="onOrderQty" class="col-form-label">Qty:</label>
                 <div class="btn-group btn-group-xs col-md-8" role="group">
-                  <!--button class="btn btn-default decrement" type="button">-</button-->
                   <button class="btn btn-default decrement" type="button">-</button>
                   <input type="text" name="onOrderQty" class="form-control qty-input" value="0"/>
                   <button class="btn btn-default increment" type="button">+</button>
-                  <!--button class="btn btn-default increment" type="button">+</button-->
                 </div>pcs.
               </div>
-              
-              <a>Amount: $<span id="amount"><var>amount</var> = <var>price</var> * <var>onOrderQty</var></span></a>
+              <a name="amount" >Amount: $<span id="amount">0</span></a>
             </div>
           </div>
+                    
           <!-- check user id -->
           <div class="from-group">
-            <input type="submit" value="Add to shopping car" class="btn btn-block btn-secondary"/>            
+            <input type="submit" value="Add to shopping cart" class="btn btn-block btn-secondary"/>            
           </div>
           {% else %}
           <a href="{% url 'register_login' %}" class="btn btn-light mb-4">go to login</a>
@@ -349,3 +386,29 @@
 </div>
 
 {% endblock %}
+
+{% comment %} import logging
+
+logger = logging.getLogger(__name__)
+
+def takeOrder(request):
+    if request.method == 'POST':
+        try:
+            product_id = request.POST['product_id']
+            name = request.POST['name']
+            price = int(request.POST['price'])
+            onOrderQty = int(request.POST['onOrderQty'])
+            user_id = request.POST['user_id']
+            salesmen_id = request.POST['salesmen_id']
+
+            logger.info(f"Price: {price}, Qty: {onOrderQty}")
+
+            # Calculate the amount
+            amount = price * onOrderQty
+            logger.info(f"Amount: {amount}")
+
+            # Rest of the logic...
+        except Exception as e:
+            logger.error(f"Error in takeOrder: {e}")
+            messages.error(request, "An error occurred while processing your order.")
+            return redirect('product', product_id=product_id) {% endcomment %}
