@@ -6,7 +6,7 @@ from .choices import district_choices
 
 # Create your models here.
 class ShoppingCart(models.Model):
-    user_id = models.IntegerField()
+    user_id = models.ForeignKey('auth.User', on_delete=models.DO_NOTHING)
     orders = models.ManyToManyField(TakeOrder)  # Link to multiple TakeOrder entries
     is_paid = models.BooleanField(default=False)
     created_at = models.DateTimeField(default=datetime.now, blank=True)
