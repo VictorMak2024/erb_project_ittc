@@ -1,0 +1,1 @@
+[{"model": "applicants.applicant", "pk": 31, "fields": {"jobtitle": 6, "job_id": 17, "name": "tommy cheung", "email": "tommyatkin98@gmail.com", "phone": "97789439", "apply_date": "2025-04-16T16:45:42.844Z", "user_id": 0, "company": "Lenovo PCCW Solutions", "title": "Assistant IT Engineer", "cv_file": "cv/Resume_Abc_uBZHDD6.odt"}}]

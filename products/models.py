@@ -13,7 +13,7 @@ class Category(models.Model):
 class Product(models.Model):
     hotitem = models.BooleanField(default=False)
     salesmen = models.ForeignKey(Salesmen, on_delete=models.DO_NOTHING)
-    title = models.ForeignKey(Category, on_delete=models.DO_NOTHING,default=1)
+    title = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     no = models.CharField(max_length=50)
     operation = models.CharField(max_length=50, choices=operation_choices.items())
     control = models.CharField(max_length=50, choices=control_choices.items())

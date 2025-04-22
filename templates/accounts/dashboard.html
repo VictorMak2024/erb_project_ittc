@@ -163,6 +163,7 @@
                 <th scope="col">product</th>
                 <th scope="col">price</th>
                 <th scope="col">Order Qty</th>
+                <th scorp="col">ordered</th>
                 <th></th>
               </tr>
           </thead>
@@ -172,7 +173,8 @@
                 <td>{{takeOrder.id}}</td>
                 <td>{{takeOrder.product}}</td>
                 <td>${{takeOrder.price}}</td> 
-                <td>{{takeOrder.onOrderQty}}</td> 
+                <td>{{takeOrder.onOrderQty}}</td>
+                <td>{{takeOrder.ordered}}</td> 
                 <td><a class="btn btn-info" href="{% url 'product' takeOrder.product_id %}">Product Detail Info</a>
                   <a class="btn btn-danger" href="{% url 'delete_takeOrder' takeOrder.id %}">Delete Target</a>
                 </td>
