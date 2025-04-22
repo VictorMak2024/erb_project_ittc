@@ -18,5 +18,8 @@ class CourseAdmin(admin.ModelAdmin):
     }
 
 admin.site.register(Course, CourseAdmin)
+<<<<<<< HEAD
 
 # Register your models here.
+=======
+>>>>>>> origin/WCNgApps

@@ -1,12 +1,21 @@
 {% extends "base.html" %} {% load humanize %} {% load static %} {% block content %}
 
 <!-- showcase-inner -->
+<<<<<<< HEAD
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h1 class="display-4 bg-primary">{{course.title | title}}</h1>
         <p class="lead bg-primary">{{course.name | title}}</p>
+=======
+<section id="showcase-inner" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="display-4">{{course.title | title}}</h1>
+        <p class="lead">{{course.name | title}}</p>
+>>>>>>> origin/WCNgApps
       </div>
     </div>
   </div>
@@ -39,6 +48,7 @@
         <!-- Home Main Image -->
         <img src="{{course.photo.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
       </div>
+<<<<<<< HEAD
 
         <!-- Description -->
 
@@ -46,6 +56,13 @@
 
         <!-- Fields -->
         <div class="row mb-5 fields">
+=======
+      <!-- Description -->
+      <div class="col-md-12">{{course.description}}</div>
+
+      <!-- Fields -->
+      <div class="row mb-5 fields">
+>>>>>>> origin/WCNgApps
           <div class="col-md-9">
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-secondary">
@@ -95,6 +112,7 @@
               </li>
             </ul>
           </div>
+<<<<<<< HEAD
           {% comment %} <div class="col-md-6">
             <ul class="list-group list-group-flush">
               <li class="list-group-item text-secondary">
@@ -115,6 +133,9 @@
               </li>
             </ul>
           </div> {% endcomment %}
+=======
+
+>>>>>>> origin/WCNgApps
           <!-- Enquiry -->
           <div class="col-md-3">
             <div class="card mb-3">
@@ -128,11 +149,16 @@
                 <h6 class="text-secondary">{{course.salesmen.name | title}}</h6>
               </div>
             </div>
+<<<<<<< HEAD
             <button  class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal"> Make An Inquiry
+=======
+            <button  class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal"> Apply Now
+>>>>>>> origin/WCNgApps
             </button>
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <!-- Enquiry -->
       {% comment %} <div class="col-md-3">
         <div class="card mb-3">
@@ -154,6 +180,8 @@
           Make An Inquiry
         </button>
       </div> {% endcomment %}
+=======
+>>>>>>> origin/WCNgApps
     </div>
   </div>
 </section>

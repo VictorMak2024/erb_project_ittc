@@ -13,4 +13,8 @@ class Salesmen(models.Model):
     hire_date = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
+<<<<<<< HEAD
         return self.name
+=======
+        return self.name
+>>>>>>> origin/WCNgApps

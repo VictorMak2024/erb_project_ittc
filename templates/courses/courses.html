@@ -1,11 +1,20 @@
 {% extends "base.html" %} {% load humanize %} {% block content %}
 <!-- showcase-inner -->
+<<<<<<< HEAD
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h1 class="display-4 bg-primary">Courses</h1>
         <p class="lead bg-primary">Courses List</p>
+=======
+<section id="showcase-inner" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="display-4">Courses</h1>
+        <p class="lead">Courses List</p>
+>>>>>>> origin/WCNgApps
       </div>
     </div>
   </div>
@@ -34,7 +43,11 @@
         <table class="table">
           <thead>
             <tr>
+<<<<<<< HEAD
               <th class="col-2 col-md-3"></th>
+=======
+              <th class="col-2 col-md-4"></th>
+>>>>>>> origin/WCNgApps
               <th class="col-1 col-md-1">Course</th>
               <th class="col col-md">Title</th>
               <th class="col-1 col-md-1">Detail</th>
@@ -45,11 +58,15 @@
           <tbody>
             {% for course in courses %}
             <tr>
+<<<<<<< HEAD
               <td>
                 <div class="col-6 col-md-9 col-sm-9">
                   <img src="{{course.photo.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
                 </div>    
               </td>
+=======
+              <td><a class="col-2 col-md-4" href="{{course.photo.url}}"><img src="{{course.photo.url}}" alt="" /></a></td>
+>>>>>>> origin/WCNgApps
               <td class="col-1 col-md-1">{{course.name}}</td>
               <td class="col col-md">{{course.title}}</td>
               <td class="col-1 col-md-1">

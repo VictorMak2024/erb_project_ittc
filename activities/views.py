@@ -1,5 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Activity
+<<<<<<< HEAD
+=======
+#from contacts.models import ActivityContact
+>>>>>>> origin/WCNgApps
 
 # Create your views here.
 def activities(request):
@@ -13,3 +17,7 @@ def activity(request, activity_id):
     activity.total_sit = activity.total_sit - activity.onenquiry_sit
     context = {'activity' : activity}
     return render(request, 'activities/activity.html', context)
+<<<<<<< HEAD
+=======
+# Create your views here.
+>>>>>>> origin/WCNgApps

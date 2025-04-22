@@ -1,11 +1,20 @@
 {% extends "base.html" %} {% load humanize %} {% block content %}
 <!-- showcase-inner -->
+<<<<<<< HEAD
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h1 class="display-4 bg-primary">Activities</h1>
         <p class="lead bg-primary">Activities List</p>
+=======
+<section id="showcase-inner" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="display-4">Activities</h1>
+        <p class="lead">Activities List</p>
+>>>>>>> origin/WCNgApps
       </div>
     </div>
   </div>
@@ -34,8 +43,13 @@
         <table class="table">
           <thead>
             <tr>
+<<<<<<< HEAD
               <th class="col-2 col-md-3"></th>
               <th class="col-2 col-md-2">No.</th>
+=======
+              <th class="col-2 col-md-4"></th>
+              <th class="col-1 col-md-1">No.</th>
+>>>>>>> origin/WCNgApps
               <th class="col col-md">Ativity</th>
               <th class="col-1 col-md-1">Detail</th>
 
@@ -45,11 +59,16 @@
           <tbody>
             {% for activity in activities %}
             <tr>
+<<<<<<< HEAD
               <td>
                 <div class="col-6 col-md-9 col-sm-9">
                   <img src="{{activity.photo.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/></div>
               </td>
               <td class="col-2 col-md-2">{{activity.name}}</td>
+=======
+              <td class="col-2 col-md-4"><a href="{{activity.photo.url}}"><img src="{{activity.photo.url}}" alt="" /></a></td>
+              <td class="col-1 col-md-1">{{activity.name}}</td>
+>>>>>>> origin/WCNgApps
               <td class="col col-md">{{activity.title}}</td>
               <td class="col-1 col-md-1">
                 <a class="btn btn-info" href="{% url 'activity' activity.id %}">View Detail</a>

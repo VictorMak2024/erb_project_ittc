@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% load humanize %} {% block content %}
 
 <!-- showcase-inner -->
+<<<<<<< HEAD
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
@@ -13,25 +14,48 @@
         {% else %}
         <h1 class="display-4">Browse Category</h1>
         {% endif %}
+=======
+<section id="showcase-inner" class="py-5 text-white">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1 class="display-4">Browse Our Products</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
+          pariatur!
+        </p>
+>>>>>>> origin/WCNgApps
       </div>
     </div>
   </div>
 </section>
 
 <!-- Breadcrumb -->
+<<<<<<< HEAD
 <section id="" class="mt-3">
+=======
+<section id="bc" class="mt-3">
+>>>>>>> origin/WCNgApps
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="{% url 'index' %}"> <i class="fas fa-home"></i> Home</a>
         </li>
+<<<<<<< HEAD
         <li class="breadcrumb-item active"><a href="{% url 'products' %}">Products /</a>
           {% if category.title == none %}Category/{% else %}Category/ {{category.title}}{% endif %}</li>
+=======
+        <li class="breadcrumb-item active">Products/ Category: {% if not category %}
+        All
+        {% else %}
+        {{category.title}}{% endif %}</li>
+>>>>>>> origin/WCNgApps
       </ol>
     </nav>
   </div>
 </section>
+<<<<<<< HEAD
 <!-- Category -->
 <section id="Category" class="py-5">
   <div class="container">
@@ -62,6 +86,31 @@
 {% if category.title %}
 <section id="products" class="py-4">
   <div class="container">
+=======
+
+<!-- Category -->
+<section id="Category" class="py-5">
+  <div class="container">
+    <div class="row">
+      {% if category %}
+      <div class="col-4">
+        <h1>{{category.title}}</h1>
+        <img class="card-img-top" src={{category.photos.url}} alt="" />
+      </div>      
+      
+      {% else %}
+      <div class="text-center col-md-4">
+      </div>
+      {% endif %}
+    </div>  
+  </div>
+</section>
+
+<!-- Products -->
+<section id="products" class="py-4">
+  <div class="container">
+    {% include "partials/_alert.html" %}
+>>>>>>> origin/WCNgApps
     <div class="row">
       <!-- product -->
       {% if products %}
@@ -108,6 +157,7 @@
                 </div>
             </div>
             <div class="row py-2 text-secondary">
+<<<<<<< HEAD
               <div class="col-6">
                 <!--<i class="fas fa-user"></i> -->
                 Power: {{product.power}}
@@ -120,6 +170,22 @@
             <div class="col-12">
               <a href="{% url 'product' product.id %}" class="btn btn-primary btn-block">More Info</a>
             </div>
+=======
+              <div class="col-12">
+                <!--<i class="fas fa-user"></i> -->
+                Power: {{product.power}}
+              </div>
+            </div> 
+            {% comment %} <div class="row text-secondary pb-2">
+              <div class="col-12">
+                <p> Store Qty.: {{product.stockQty}} pcs.</p>
+              </div>
+            </div>{% endcomment %}
+            <hr />
+            <a href="{% url 'product' product.id %}" class="btn btn-primary btn-block"
+              >More Info</a
+            >
+>>>>>>> origin/WCNgApps
           </div>
         </div>
       </div> 
@@ -140,7 +206,11 @@
         <ul class="pagination">
           {% if products.has_previous %}
           <li class="page-item">
+<<<<<<< HEAD
             <a href="?page={{products.previous_page_number}}" class="page-link">&laquo;</a>          
+=======
+            <a href="?page={{listings.previous_page_number}}" class="page-link">&laquo;</a>          
+>>>>>>> origin/WCNgApps
           </li>
           {% comment "add function" %}{% endcomment %}
           {% else %}
@@ -166,7 +236,11 @@
           {% endfor %}
           {% if products.has_next %}
           <li class="page-item">
+<<<<<<< HEAD
             <a href="?page={{products.next_page_number}}" class="page-link">&raquo;</a>          
+=======
+            <a href="?page={{listings.next_page_number}}" class="page-link">&raquo;</a>          
+>>>>>>> origin/WCNgApps
           </li>
           {% comment "add function" %}{% endcomment %}
           {% else %}
@@ -181,5 +255,9 @@
     </div>
   </div>
 </section>
+<<<<<<< HEAD
 {% endif %}
+=======
+
+>>>>>>> origin/WCNgApps
 {% endblock %}
