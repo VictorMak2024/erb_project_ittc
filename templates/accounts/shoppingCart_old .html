@@ -1,0 +1,146 @@
+<!-- shopping Cart -->
+{% extends "base.html" %} {% load humanize %} {% block shoppingCart %}
+{% comment %} {% if user.is_authenticated %} {% endcomment %}
+{% if takeOrders %}
+<button id="toggle-nav-sidebar" class="sticky toggle-nav-sidebar float-right" aria-label="Toggle navigation">>></button> 
+<aside class="sticky toggle-nav-sidebar float-right" id="toggle-nav-sidebar" aria-label="Toggle navigation" aria-expanded="false">
+    <div class="card">
+        <!-- loop take order -->
+    {% for takeOrder in takeOrders %}
+        <div class="from-group">
+            <label for="order" type="hidden">Order ID: {{takeOrder.id}}</label>
+            <!-- text field group -->
+            <div class="col-5 col-md-6 col-sm-6">
+                <img src="{{takeOrder.product.photo_main.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
+            </div>
+            <label for="category" class="col-form-label">Category: {{takeOrder.product_title}}</label>
+            <label for="product_no" class="col-form-label">Product No: {{takeOrder.product}}</label>
+            <label for="price" class="col-form-label">Price: {{takeOrder.price}}</label>
+            <div class="form-group">
+                <label for="onOrderQty" class="col-form-label">Qty:</label>
+                <div class="btn-group btn-group-xs col-md-8" role="group">
+                    <button class="btn btn-default decrement" type="button">-</button>
+                    <input type="text" name="onOrderQty" class="form-control qty-input" value="{{takeOrder.onOrder}}"/>
+                    <button class="btn btn-default increment" type="button">+</button>
+                </div>pcs.
+            </div>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+            <label for="product" class="col-form-label">Catergory: {{product.title}}</label>
+            <input type="hidden" name="product_title" class="form-control" value="{{product.title}}"/>
+        </div>
+    {% endfor %}
+    </div>/
+</aside>
+{% endif %}
+{% comment %} <aside class="bd-sidebar float-right" >
+    <div class="from-group" style="width: 18rem">
+        <h4>Customer ID: {{user.id}}</h4>
+        <h4>Customer Name: {{user.first_name}}</h4>
+        <br/>
+        <!-- text field group -->
+        <div class="card-body">
+            {% if product_contacts %}
+            <h5 class="card-title">Products Inquiry: </h5>
+            <ul>
+                {% for product_contact in product_contacts %}
+                <li class="text-secondary">product: {{product_contact.product | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+            <br/>
+            {% if activity_contacts %}
+            <h5 class="card-title">Activities Inquiry: </h5>
+            <ul>
+                {% for activity_contact in activity_contacts %}
+                <li class="text-secondary">Activity {{activity_contact.activity | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+            <br/>
+            {% if course_contacts %}
+            <h5 class="card-title">Courses Inquiry Products: </h5>
+            <ul>
+                {% for course_contact in course_contacts %}
+                <li class="text-secondary">product{{course_contact.course | title}}</li>
+                <li class="text-secondary">product{{course_contact.course | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+        </div>
+
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+    
+    </div>
+    <div class="container" id="takeOrder">
+        <div class="float-right">
+            <div class="toggle-nav-sidebar">
+                <div class="from-group">
+                    Order ID: {{takeOrder.id}}
+                    <!-- text field group -->
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+                
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</aside> {% endcomment %}
+
+
+
+{% comment %} <a href="#content-start" class="skip-tocontent-link">skip to main content</a> {% endcomment %}
+
+
+{% comment %} <nav class="sticky float-right" id="nav-sidebar" aria-label="Sidebar" aria-expanded="false">
+
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">shopping cart</h5>
+            <p class="card-text">you had select following item:</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <div class="app-activities module current-app">
+        <table>
+            <caption>
+                <a href="/admin/activities/" class="section" title="Models in the Activities application">Activities</a>
+            </caption>
+            <tbody><tr class="model-activity current-model">
+                <th scope="row"><a href="/admin/activities/activity/" aria-current="page">Activitys</a></th>
+                <td><a href="/admin/activities/activity/add/" class="addlink">Add</a></td>
+            </tr>
+        </tbody></table>
+    </div>
+    
+    <div class="app-contacts module">
+        <table>
+            <caption>
+                <a href="/admin/contacts/" class="section" title="Models in the Contacts application">Contacts</a>
+            </caption>
+            <tbody><tr class="model-activity_contact">
+                <th scope="row"><a href="/admin/contacts/activity_contact/">Activity_ contacts</a></th>
+                <td><a href="/admin/contacts/activity_contact/add/" class="addlink">Add</a></td>
+            </tr>
+            <tr class="model-course_contact">
+                <th scope="row"><a href="/admin/contacts/course_contact/">Course_ contacts</a></th>
+                <td><a href="/admin/contacts/course_contact/add/" class="addlink">Add</a></td>
+            </tr>
+            <tr class="model-product_contact">
+                <th scope="row"><a href="/admin/contacts/product_contact/">Product_ contacts</a></th>
+                <td><a href="/admin/contacts/product_contact/add/" class="addlink">Add</a></td>
+            </tr>
+        </tbody></table>
+    </div>
+    
+</nav> {% endcomment %}
+
+{% comment %}{% else %}
+{% endif %} {% endcomment %}
+
+{% endblock %}

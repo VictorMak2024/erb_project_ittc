@@ -34,7 +34,7 @@
         <table class="table">
           <thead>
             <tr>
-              <th class="col-2 col-md-4"></th>
+              <th class="col-2 col-md-3"></th>
               <th class="col-1 col-md-1">Course</th>
               <th class="col col-md">Title</th>
               <th class="col-1 col-md-1">Detail</th>
@@ -45,7 +45,11 @@
           <tbody>
             {% for course in courses %}
             <tr>
-              <td><a class="col-2 col-md-4" href="{{course.photo.url}}"><img src="{{course.photo.url}}" alt="" /></a></td>
+              <td>
+                <div class="col-6 col-md-9 col-sm-9">
+                  <img src="{{course.photo.url}}" alt="" class="img-main img-fluid mb-3" style="filter: "/>
+                </div>    
+              </td>
               <td class="col-1 col-md-1">{{course.name}}</td>
               <td class="col col-md">{{course.title}}</td>
               <td class="col-1 col-md-1">

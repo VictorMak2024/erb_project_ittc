@@ -16,7 +16,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url "index" %}" class="nav-link"><b>Home</b></a>
+                <a href="{% url 'index' %}" class="nav-link"><b>Home</b></a>
             </li>
             {% endif %}
             {% if '/about' == request.path %}
@@ -75,7 +75,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url "jobspost" %}" class="nav-link"><b>Job Vacancies</b></a>
+                <a href="{% url 'jobspost' %}" class="nav-link"><b>Job Vacancies</b></a>
             </li>
             {% endif %}
             {% if '/supportresources/' == request.path %}
@@ -93,7 +93,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url "contact" %}" class="nav-link"><b>Contact Us</b></a>
+                <a href="{% url 'contact' %}" class="nav-link"><b>Contact Us</b></a>
             </li>
             {% endif %}
             
