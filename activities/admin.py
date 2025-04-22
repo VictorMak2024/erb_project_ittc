@@ -17,8 +17,4 @@ class ActivityAdmin(admin.ModelAdmin):
         models.IntegerField: {'widget': NumberInput(attrs={'size' : '10'})},
     }
 
-<<<<<<< HEAD
 admin.site.register(Activity, ActivityAdmin)
-=======
-admin.site.register(Activity, ActivityAdmin)
->>>>>>> origin/WCNgApps

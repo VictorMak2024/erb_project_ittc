@@ -30,8 +30,4 @@ class Course(models.Model):
     phaseOut = models.BooleanField(default=False)
 
     def __str__(self):
-<<<<<<< HEAD
         return self.title
-=======
-        return self.title
->>>>>>> origin/WCNgApps

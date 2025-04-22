@@ -1,19 +1,11 @@
 from django.db import models
 from datetime import datetime
-<<<<<<< HEAD
 from activities.models import Activity
 from courses.models import Course
 from products.models import Product
 # Create your models here.
 class Activity_Contact(models.Model):
     activity = models.ForeignKey(Activity, on_delete=models.CASCADE)  # Link to Activity model
-=======
-
-# Create your models here.
-class Activity_Contact(models.Model):
-    activity = models.CharField(max_length=200)
-    activity_id = models.IntegerField()
->>>>>>> origin/WCNgApps
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -25,12 +17,7 @@ class Activity_Contact(models.Model):
         return self.name
 
 class Course_Contact(models.Model):
-<<<<<<< HEAD
     course = models.ForeignKey(Course, on_delete=models.CASCADE) 
-=======
-    course = models.CharField(max_length=200)
-    course_id = models.IntegerField()
->>>>>>> origin/WCNgApps
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -42,12 +29,7 @@ class Course_Contact(models.Model):
         return self.name
     
 class Product_Contact(models.Model):
-<<<<<<< HEAD
     product = models.ForeignKey(Product, on_delete=models.CASCADE) 
-=======
-    product = models.CharField(max_length=200)
-    product_id = models.IntegerField()
->>>>>>> origin/WCNgApps
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -57,7 +39,6 @@ class Product_Contact(models.Model):
     def __str__(self):
         return self.name
 
-<<<<<<< HEAD
 class TakeOrder(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE) 
     name = models.CharField(max_length=200)
@@ -74,5 +55,3 @@ class TakeOrder(models.Model):
         super().save(*args, **kwargs)
     def __str__(self):
         return self.name
-=======
->>>>>>> origin/WCNgApps

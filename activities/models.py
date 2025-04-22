@@ -30,8 +30,3 @@ class Activity(models.Model):
 
     def __str__(self):
         return self.name
-<<<<<<< HEAD
-=======
-# Create your models here.
-
->>>>>>> origin/WCNgApps

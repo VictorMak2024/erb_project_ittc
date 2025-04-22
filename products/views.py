@@ -21,7 +21,6 @@ def products(request, category_title = None):
     if category_title:
         category = get_object_or_404(Category, title=category_title)
         products = Product.objects.filter(title=category).order_by('no')
-<<<<<<< HEAD
         paginator = Paginator(products, 3)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
@@ -36,17 +35,6 @@ def products(request, category_title = None):
         paged_products = paginator.get_page(page)
 
         context = {'products': paged_products, 'categories': categories}
-=======
-    else:
-        category = None
-        products = Product.objects.all()
-
-    paginator = Paginator(products, 3)
-    page = request.GET.get('page')
-    paged_products = paginator.get_page(page)
-
-    context = {'products': paged_products, 'category': category}
->>>>>>> origin/WCNgApps
     return render(request, 'products/products.html', context)
 
 def product(request, product_id):

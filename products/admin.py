@@ -4,21 +4,6 @@ from django.db import models
 from .models import Product, Category
 
 # Register your models here.
-<<<<<<< HEAD
-=======
-from django.http import HttpResponse
-import subprocess
-
-# @admin.action(description="Export Products as JSON")
-# def export_products_json(modeladmin, request, queryset):
-#     response = HttpResponse(content_type='application/json')
-#     response['Content-Disposition'] = 'attachment; filename="products.json"'
-#     data = subprocess.check_output(['python', 'manage.py', 'dumpdata', 'products.Product', '--indent', '2'])
-#     response.write(data)
-#     return response
-
-
->>>>>>> origin/WCNgApps
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'photos')
     display_links = ('title', 'description', 'photos')
@@ -28,11 +13,6 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 class ProductAdmin(admin.ModelAdmin):
-<<<<<<< HEAD
-=======
-    #actions = [export_products_json] # try to add this line for export json file
-
->>>>>>> origin/WCNgApps
     list_display = ('hotitem','title', 'no', 'price', 'stockQty', 'onOrderQty', 'phaseOut','photo_main')
     list_display_links = ('title',)
     search_fields = ('title', 'name')
@@ -45,7 +25,3 @@ class ProductAdmin(admin.ModelAdmin):
     }
 
 admin.site.register(Product, ProductAdmin)
-<<<<<<< HEAD
-=======
-#admin.site.register(Category)
->>>>>>> origin/WCNgApps

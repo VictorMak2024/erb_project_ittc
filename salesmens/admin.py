@@ -11,8 +11,4 @@ class SalesmenAdmin(admin.ModelAdmin):
     list_editable = ('is_mvp',)
     list_per_page = 25
 
-<<<<<<< HEAD
 admin.site.register(Salesmen, SalesmenAdmin)
-=======
-admin.site.register(Salesmen, SalesmenAdmin)
->>>>>>> origin/WCNgApps

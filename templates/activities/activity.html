@@ -1,21 +1,12 @@
 {% extends "base.html" %} {% load humanize %} {% load static %} {% block content %}
 
 <!-- showcase-inner -->
-<<<<<<< HEAD
 <section id="" class="py-5 text-white">
   <div class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h1 class="display-4 bg-primary">{{activity.title | title}}</h1>
         <p class="lead bg-primary">{{Activity.name | title}}</p>
-=======
-<section id="showcase-inner" class="py-5 text-white">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <h1 class="display-4">{{activity.title | title}}</h1>
-        <p class="lead">{{activity.name | title}}</p>
->>>>>>> origin/WCNgApps
       </div>
     </div>
   </div>
@@ -75,17 +66,12 @@
                   {% if activity.date_start == activity.date_end %}
                   {{activity.date_start}}
                   {% else %}
-<<<<<<< HEAD
                   {{activity.date_start}} To {{activity.date_end}}
                   {% endif %}
-=======
-                  {{activity.date_start}} To {{activity.date_end}}                  {% endif %}
->>>>>>> origin/WCNgApps
                 </span>
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-times-circle"></i> Time:
-<<<<<<< HEAD
                 <span class="float-right"> 
                   {% if activity.time_start == activity.time_end %}
                   {{activity.time_start}}
@@ -93,12 +79,6 @@
                   {{activity.time_start}} To {{activity.time_end}} 
                   {% endif %}
                 </span>
-=======
-                <span class="float-right">           {% if activity.time_start == activity.time_end %}
-                  {{activity.time_start}}
-                  {% else %}
-                  {{activity.time_start}} To {{activity.time_end}}                  {% endif %}</span>
->>>>>>> origin/WCNgApps
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-th-large"></i> Medium:
@@ -140,11 +120,7 @@
               data-toggle="modal"
               data-target="#inquiryModal"
             >
-<<<<<<< HEAD
               Make An Inquiry
-=======
-              Apply Now
->>>>>>> origin/WCNgApps
             </button>
           </div>
         </div>
@@ -174,18 +150,13 @@
           <input type="hidden" name="user_id" value="0" />
           {% endif %}
           <input type="hidden" name="activity_id" value="{{activity.id}}" />
-<<<<<<< HEAD
           {% if activity.price == '0' %}
-=======
-          {% if activity.price == "0" %}
->>>>>>> origin/WCNgApps
           <input type="hidden" name="is_paid" value="True" />
           {% else %}
           <input type="hidden" name="is_paid" value="False" />
           {% endif %}
           <input type="hidden" name="salesmen_email" value="{{activity.salesmen.email}}" />
           <!-- end checking -->
-<<<<<<< HEAD
           <!--div class="form-group"-->
             <label for="Activity_name" class="col-form-label">Activity:</label>
             <!--select name="activity" id="activity">
@@ -195,18 +166,6 @@
             </select-->
             <input type="text" name="activity" class="form-control" value="{{activity.name}}" readonly />
           <!--div-->
-=======
-          <div class="form-group">
-            <label for="Activity_name" class="col-form-label">Activity:</label>
-            <input
-              type="text"
-              name="activity"
-              class="form-control"
-              value="{{activity.name}}"
-              readonly
-            />
-          </div>
->>>>>>> origin/WCNgApps
           <div class="form-group">
             <label for="name" class="col-form-label">Name:</label>
             {% if user.is_authenticated %}
