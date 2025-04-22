@@ -132,13 +132,14 @@
                 {% endif %}
             
             <!-- Shoppong Cart -->
-             {% if 'shoppingcart' == request.path %}
+             {% if 'shoppingCart' == request.path %}
              <li class="nav-item active">
-                <a href="#" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <a href="{% url 'shoppingCartOrders' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                
             </li>
              {% else %}
              <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                <a href="{% url 'shoppingCart' %}" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
              </li>
              {% endif %}
             

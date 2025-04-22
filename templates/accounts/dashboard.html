@@ -1,5 +1,6 @@
 {% extends "base.html" %} {% load humanize %} {% block content %}
 <!-- showcase-inner -->
+
 <section id="" class="py-5 text-white">
     <div class="container">
       <div class="row text-center">
@@ -186,36 +187,13 @@
         <br/>
         <hr/>
         {% comment %} shipping status {% endcomment %}
-        {% if shoppingOrders %}
+        <a href="{% url 'shoppingCartOrders' %}" class="btn btn-primary mb-4">View Shopping Cart</a>
+        {% comment %} {% if shoppingCartOrders %}
         <p>Here are the shipment lists fro your Order :</p>
-        <table class="table">
-          <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">product</th>
-                <th scope="col">price</th>
-                <th scope="col">Order Qty</th>
-                <th scope="col">ship date</th>
-                <th></th>
-              </tr>
-          </thead>
-          <tbody>
-            {% for shoppingOrder in shoppingOrders %}
-            <tr>
-                <td>{{shoppingCart.id}}</td>
-                <td>{{shoppingCart.takeOrder.product}}</td>
-                <td>${{shoppingCart.takeOrder.price}}</td> 
-                <td>{{shppingCart.takeOrder.onOrderQty}}</td> 
-                <td>{{shoppingCart.ship_date}}</td>
-                <td>
-                </td>
-              </tr>
-              {% endfor %}                      
-          </tbody>
-        </table>
-        {% else %}
+        <a href="{% url 'shoppingCartOrders' %}" class="btn btn-primary mb-4">View Shopping Cart</a>
+               {% else %}
         <p>You had no take notice any product!</p>
-        {% endif %}
+        {% endif %} {% endcomment %}
         <hr/>
         <br/>
         <hr/>

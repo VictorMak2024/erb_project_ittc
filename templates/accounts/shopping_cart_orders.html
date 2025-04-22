@@ -1,0 +1,37 @@
+<!-- filepath: /home/wcng/project/erb_project_ittc/templates/accounts/shopping_cart_orders.html -->
+{% extends "base.html" %} {% load humanize %} {% block content %}
+<section id="shopping-cart-orders" class="py-5">
+    <div class="container">
+        <h1 class="mb-4">Your Shopping Cart</h1>
+
+        {% if orders %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ order.product.no }} - {{ order.product.title }}</td>
+                    <td>${{ order.price }}</td>
+                    <td>{{ order.onOrderQty }}</td>
+                    <td>${{ order.amount }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3 class="mt-4">Total Amount: ${{ shopping_cart.total_Amount }}</h3>
+        {% else %}
+        <p>Your shopping cart is empty.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
