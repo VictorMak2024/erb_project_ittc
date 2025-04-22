@@ -55,3 +55,76 @@ def dashboard(request):
     context = {'activity_contacts' : activity_contacts, 'course_contacts' : course_contacts, 'product_contacts' : product_contacts}
 
     return render(request, 'accounts/dashboard.html' , context)
+def shoppingCart(request):
+    if not request.user.is_authenticated:
+        messages.error(request, "You need to log in to view your shopping cart.")
+        return redirect('login')
+
+    # Retrieve or create a shopping cart for the user
+    shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user.id)
+
+    # Get all TakeOrder entries for the user
+    takeOrders = TakeOrder.objects.filter(user_id=request.user.id)
+
+    # Calculate the total amount
+    total_Amount = 0
+    for takeOrder in takeOrders:
+        shopping_cart.orders.add(takeOrder)
+        takeOrder.amount = takeOrder.price * takeOrder.onOrderQty
+        takeOrder.save()
+        total_Amount += takeOrder.amount
+
+    # Update the shopping cart's total amount
+    shopping_cart.total_Amount = total_Amount
+    shopping_cart.save()
+
+    context = {
+        'shopping_cart': shopping_cart,
+        'takeOrders': takeOrders,
+        "district_choices": district_choices,
+        'total_Amount': total_Amount,
+    }
+    return render(request, 'partials/_shoppingCart.html', context)
+
+
+def remove_from_cart(request, order_id):
+    if not request.user.is_authenticated:
+        messages.error(request, "You need to log in to modify your shopping cart.")
+        return redirect('login')
+
+    shopping_cart = get_object_or_404(ShoppingCart, user_id=request.user.id)
+    order = get_object_or_404(TakeOrder, id=order_id)
+
+    shopping_cart.orders.remove(order)
+    messages.success(request, "Item removed from your shopping cart.")
+    return redirect('shoppingCart')
+
+def confirmOrder(request):
+    if request.method == 'POST':
+        address = request.POST['address']
+        street = request.POST['street']
+        district = request.POST['district']
+        user_id = request.POST['user_id']
+        is_paid = request.POST['is_paid']
+        description = request.POST['description']
+
+        # Retrieve the user's shopping cart
+        shopping_cart = ShoppingCart.objects.filter(user_id=user_id).first()
+        if not shopping_cart:
+            messages.error(request, "Shopping cart not found.")
+            return redirect('shoppingCart')
+
+        # Update shopping cart details
+        shopping_cart.address = address
+        shopping_cart.street = street
+        shopping_cart.district = district
+        shopping_cart.is_paid = is_paid
+        shopping_cart.description = description
+        shopping_cart.total_Amount = sum(
+            order.price * order.onOrderQty for order in shopping_cart.orders.all()
+        )
+        shopping_cart.save()
+
+        messages.success(request, "Your order has been confirmed!")
+        return redirect('shoppingCart')
+    
