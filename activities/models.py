@@ -9,7 +9,7 @@ from .choices import medium_choices
 # https://www.hkpc.org/en/hkpc-spotlights/events/corporate-events
 # https://campaigninfo.hkpc.org/register-new-innovation-technology-studymission-germanyfrance
 class Activity(models.Model):
-    salesmen = models.ForeignKey(Salesmen, on_delete=models.DO_NOTHING)
+    salesmen = models.ForeignKey(Salesmen, on_delete=models.DO_NOTHING, null=True, blank=True)
     hotitem = models.BooleanField(default=False)
     title = models.CharField(blank=False)
     name = models.CharField(max_length=50)
