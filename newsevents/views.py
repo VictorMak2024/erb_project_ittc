@@ -13,10 +13,7 @@ def newsevents(request):
         
     }
     return render(request, 'newsevents/newsevents.html',context)
-def newsevents_detail(request, news_id):
-    newsevent= get_object_or_404(Newsevents, pk=news_id)
-    context = {'newsevent': newsevent}
-    return render(request, 'newsevents/newsevents_detail.html',context)
+
 def search_news(request):
     queryset_list = Newsevents.objects.order_by('-post_date')
     if 'keywords' in request.GET:

@@ -34,4 +34,4 @@ def contactmessage(request):
 
         # Send success message
         messages.success(request, 'Your Inquiry has been submitted, our staff will get back to you soon')
-        return redirect('/contactus/' + contact_id)
+        return redirect('/contact/' + contact_id)

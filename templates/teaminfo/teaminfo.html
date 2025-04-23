@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    
+
+
+    <!-- Team Section -->
+    <section id="teambody" class="team-section">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #d1b3ff;">Meet Our Team</h2>
+            <br>
+            <div class="row">
+                {% if teams %}
+                {% for team in teams %}
+                <div class="col-md-4 team-member">
+                    <img src="{{ team.photo.url }}"  alt="{{team.name}}">
+                    <h3>{{team.name}}</h3>
+                    
+                    <p>{{team.position}}</p>
+                    
+                    <p>{{team.duty}}</p>
+                    <br>
+                    <a href="{% url 'teamdetail' team.id %}" style="color: #8e44ad" class="btn btn-light">More Info</a>
+                    
+                </div>
+                {% endfor %}
+                {% else %}
+                <div class="col-md-12">
+                    <p class="text-center">No team members found.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+    
+

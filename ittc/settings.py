@@ -53,6 +53,8 @@ INSTALLED_APPS = [
     'accounts.apps.AccountsConfig',
     'newsevents.apps.NewseventsConfig',
     'supportresources.apps.SupportresourcesConfig',
+    'srdetails.apps.SrdetailsConfig',
+	'teaminfo.apps.TeaminfoConfig',
 ]
 
 MIDDLEWARE = [

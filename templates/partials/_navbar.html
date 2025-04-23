@@ -37,13 +37,13 @@
                 <a href="{% url "newsevents" %}" class="nav-link"><b>News & Events</b></a>
             </li>
             {% endif %}
-            {% if '/team' == request.path %}
+            {% if '/teaminfo/' == request.path %}
             <li class="nav-item active">
-                <a href="{% url "team" %}" class="nav-link" style="color: yellow;"><b>Team</b></a>
+                <a href="{% url "teaminfo" %}" class="nav-link" style="color: yellow;"><b>Team</b></a>
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url "team" %}" class="nav-link"><b>Team</b></a>
+                <a href="{% url "teaminfo" %}" class="nav-link"><b>Team</b></a>
             </li>
             {% endif %}
             
@@ -69,7 +69,7 @@
                     </div>
                 </ul>
             </li>
-            {% if '/jobspost/' == request.path %}
+            {% if '/jobspost/jobspost' == request.path %}
             <li class="nav-item active">
                 <a href="{% url "jobspost" %}" class="nav-link" style="color: yellow;"><b>Job Vacancies</b></a>
             </li>

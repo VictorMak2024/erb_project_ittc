@@ -33,5 +33,6 @@ urlpatterns = [
     path('newsevents/', include('newsevents.urls')),
     path('accounts/', include('accounts.urls')),
     path('supportresources/', include('supportresources.urls')),
+	path('teaminfo/', include('teaminfo.urls')),
     path('admin/', admin.site.urls),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)+ debug_toolbar_urls()

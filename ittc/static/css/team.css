@@ -3,11 +3,15 @@
     margin: 0;
     padding: 0;
     background-color: #1a1a2e; /* Dark background for cyber feel */
+    background: linear-gradient(135deg, #1a1a2e, #2e0066);
+
     background-size: cover;
     color: #fff;
-    min-height: 1000px;
-    background: linear-gradient(135deg, #1a1a2e, #2e0066);
+   
+    min-height: 100vh;
 }
+
+
 .team-section {
     padding: 50px 0;
 }
