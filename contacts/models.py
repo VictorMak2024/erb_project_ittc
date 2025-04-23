@@ -5,7 +5,7 @@ from courses.models import Course
 from products.models import Product
 # Create your models here.
 class Activity_Contact(models.Model):
-    activity = models.ForeignKey(Activity, on_delete=models.CASCADE)  # Link to Activity model
+    activity = models.ForeignKey(Activity, on_delete=models.DO_NOTHING)  # Link to Activity model
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -17,7 +17,7 @@ class Activity_Contact(models.Model):
         return self.name
 
 class Course_Contact(models.Model):
-    course = models.ForeignKey(Course, on_delete=models.CASCADE) 
+    course = models.ForeignKey(Course, on_delete=models.DO_NOTHING) 
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -29,7 +29,7 @@ class Course_Contact(models.Model):
         return self.name
     
 class Product_Contact(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE) 
+    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING) 
     name = models.CharField(max_length=200)
     email = models.CharField(max_length=100)
     phone = models.CharField(max_length=100)
@@ -40,7 +40,7 @@ class Product_Contact(models.Model):
         return self.name
 
 class TakeOrder(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE) 
+    product = models.ForeignKey(Product, on_delete=models.DO_NOTHING) 
     name = models.CharField(max_length=200)
     price = models.IntegerField(default=0)
     onOrderQty = models.IntegerField(default=0)
@@ -48,6 +48,7 @@ class TakeOrder(models.Model):
     salesmen_id = models.IntegerField()
     contact_date = models.DateTimeField(default=datetime.now, blank=True)
     user_id = models.IntegerField()
+    ordered = models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         # Automatically calculate the amount before saving

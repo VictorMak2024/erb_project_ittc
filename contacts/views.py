@@ -166,24 +166,6 @@ def takeOrder(request):
         messages.success(request, "This product has been added to your shopping cart!")
     return redirect('/products/' + product_id)
         
-    #     if request.user.is_authenticated:
-    #         #user_id = request.user.id
-    #         has_contacted = TakeOrder.objects.all().filter(product=product, user_id=user_id)
-    #         if has_contacted:
-    #             messages.error(request, "You have already made an inquiry for this product at this time !")
-    #             return redirect('/products/'+product_id)
-    #     takeOrder = TakeOrder(product=product, price=price, onOrderQty=onOrderQty, name=name, user_id=user_id, salesmen_id=salesmen_id)
-    #     takeOrder.save()
-
-    #     messages.success(request, "This product has been added to your shopping cart!")
-    # return redirect('/products/'+product_id)
-
-# def inc_Qty(request):
-#     onOrederQty += 1
-#     return(request)
-# def dec_Qty(request):
-#     onOrederQty -= 1
-#     return(request)
 
 def delete_takeOrder(request, takeOrder_id):
     contact = get_object_or_404(TakeOrder, pk=takeOrder_id)
