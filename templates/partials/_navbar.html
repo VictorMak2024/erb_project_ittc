@@ -16,7 +16,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url 'index' %}" class="nav-link"><b>Home</b></a>
+                <a href="{% url "index" %}" class="nav-link"><b>Home</b></a>
             </li>
             {% endif %}
             {% if '/about' == request.path %}
@@ -37,7 +37,7 @@
                 <a href="{% url "newsevents" %}" class="nav-link"><b>News & Events</b></a>
             </li>
             {% endif %}
-            {% if '/team' == request.path %}
+            {% if '/teaminfo/' == request.path %}
             <li class="nav-item active">
                 <a href="{% url "teaminfo" %}" class="nav-link" style="color: yellow;"><b>Team</b></a>
             </li>
@@ -69,13 +69,13 @@
                     </div>
                 </ul>
             </li>
-            {% if '/jobspost/' == request.path %}
+            {% if '/jobspost/jobspost' == request.path %}
             <li class="nav-item active">
                 <a href="{% url "jobspost" %}" class="nav-link" style="color: yellow;"><b>Job Vacancies</b></a>
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url 'jobspost' %}" class="nav-link"><b>Job Vacancies</b></a>
+                <a href="{% url "jobspost" %}" class="nav-link"><b>Job Vacancies</b></a>
             </li>
             {% endif %}
             {% if '/supportresources/' == request.path %}
@@ -93,7 +93,7 @@
             </li>
             {% else %}
             <li class="nav-item">
-                <a href="{% url 'contact' %}" class="nav-link"><b>Contact Us</b></a>
+                <a href="{% url "contact" %}" class="nav-link"><b>Contact Us</b></a>
             </li>
             {% endif %}
             

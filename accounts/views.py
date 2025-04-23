@@ -104,6 +104,9 @@ def shoppingCart(request):
     # Retrieve or create a shopping cart for the user
     shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user)
 
+    # if shopping_cart is None:
+    #     messages.error(request, "An error occurred while creating your shopping cart.")
+    #     return redirect('dashboard')
     # Get all TakeOrder entries for the user
     takeOrders = TakeOrder.objects.filter(user_id=request.user.id, ordered=False)
 

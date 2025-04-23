@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load humanize %}
 {% block content %}
 <section>
     <div class="container">
@@ -12,177 +13,46 @@
             <li class="breadcrumb-item active">Support & Resources</li>
           </ol>
         </nav>
+        {% comment %} add for loop in here {% endcomment %}
+        {% for item in combined_data %}
         <div class="card">
-          <div class="card-header" id="heading1">
+          {% comment %} fix heading no. {% endcomment %}
+          <div class="card-header" id="heading{{item.srdetail_id}}">
+              {% comment %} fix collapse no, {our partners} in span  {% endcomment %}
               <h2>
-                  <a href="#collapse1"  data-toggle="collapse" aria-expanded="true" aria-controls="collapse1" style="text-decoration: none;"><span style="font-weight: 700; font-size: xx-large;">Our Partners</span></a>
+                  <a href="#collapse{{item.srdetail_id}}"  data-toggle="collapse" aria-expanded="true" aria-controls="collapse{{item.srdetail_id}}" style="text-decoration: none;"><span style="font-weight: 700; font-size: xx-large;">{{item.itemsname}}</span></a>
               </h2>
           </div>
-          <div class="collapse show" id="collapse1" aria-labelledby="heading1" data-parent="#accordionExample">
+          {% comment %} fix collapse no, heading no {% endcomment %}
+          <div class="collapse" id="collapse{{item.srdetail_id}}" aria-labelledby="heading{{item.srdetail_id}}" data-parent="#accordionExample">
             <div class="container-fluid" style="overflow: auto; height: 500px;">
               <div class="row row-cols-1 row-cols-md-3">
+                {% comment %}add if statement and for loop in here{% endcomment %}
+                {% if item.supportresources %}
+                  {% for resource in item.supportresources %}
                 <div class="col mb-4">
                   <div class="card border-dark h-100">
-                    <img src="assets/img/ittc_logo3.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
+                    {% comment %} fix image {% endcomment %}
+                    <img src="{{resource.photo.url}}" class="card-img-top" alt="..." style="width: auto; height: 230px;">
                     <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
+                      {% comment %} fix card-title {% endcomment %}
+                      <h5 class="card-title">{{resource.title}}</h5>
+                      {% comment %} fix card-text {% endcomment %}
+                      <p class="card-text">{{resource.description}}</p>
+                      {% comment %} fix href url {% endcomment %}
+                      <a href="{{resource.web_url}}" class="btn btn-primary btn-block">View More</a>
                     </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
+                    {% comment %} fix list-data {% endcomment %}
+                    <div class="card-footer text-center"><i class="fas fa-clock"></i> {{resource.list_date | timesince}}</div>
                   </div>
                 </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/ittc_logo3.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/ittc_logo3.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/ittc_logo3.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
+                  {% endfor %}
+                {% endif %}
               </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="heading2">
-              <h2>
-                  <a href="#collapse2"  data-toggle="collapse" aria-expanded="true" aria-controls="collapse2" style="text-decoration: none;"><span style="font-weight: 700; font-size: xx-large;">Government Funding Schemes</span></a>
-              </h2>
-          </div>
-          <div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#accordionExample">
-            <div class="container-fluid" style="overflow: auto; height: 500px;">
-              <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/circlegradient2.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/circlegradient2.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/circlegradient2.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/circlegradient2.png" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="heading3">
-              <h2>
-                  <a href="#collapse3"  data-toggle="collapse" aria-expanded="true" aria-controls="collapse3" style="text-decoration: none;"><span style="font-weight: 700; font-size: xx-large;">Facilities</span></a>
-              </h2>
-          </div>
-          <div class="collapse" id="collapse3" aria-labelledby="heading3" data-parent="#accordionExample">
-            <div class="container-fluid" style="overflow: auto; height: 500px;">
-              <div class="row row-cols-1 row-cols-md-3">
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/robotgradientintro2.jpg" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/robotgradientintro2.jpg" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/robotgradientintro2.jpg" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-                <div class="col mb-4">
-                  <div class="card border-dark h-100">
-                    <img src="assets/img/robotgradientintro2.jpg" class="card-img-top" alt="..." style="width: auto; height: 350px;">
-                    <div class="card-body">
-                      <h5 class="card-title">Card-title</h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <a href="#" class="btn btn-primary btn-block">View More</a>
-                    </div>
-                    <div class="card-footer text-center"><i class="fas fa-clock"></i> list-data</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
     </div>      
   </div>
