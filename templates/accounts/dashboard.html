@@ -48,9 +48,7 @@
             </thead>
             <tbody>
               {% for activity_contact in activity_contacts %}
-              
               {% comment %} {% with activity.id= activity_contact.activity_id %}{% endwith %} {% endcomment %}
-              <h2>Activity Contacts</h2>
               <tr>
                 <td>{{activity_contact.activity_id}}</td>
                 <td>{{activity_contact.activity}}</td>
@@ -73,7 +71,7 @@
             </tbody>
           </table>
         {% else %}
-        <p>You had no apply/ activity!</p>
+        <p>You had no apply activity!</p>
         {% endif %}
         <hr/>
         <br/>

@@ -58,12 +58,12 @@ def dashboard(request):
     if not request.user.is_authenticated:
         messages.error(request, "You need to log in to view your dashboard.")
         return redirect('login')
-
-    activity_contacts = Activity_Contact.objects.filter(activity__salesmen__id=request.user.id).order_by('-contact_date')
-    course_contacts = Course_Contact.objects.filter(course__salesmen__id=request.user.id).order_by('-contact_date')
-    product_contacts = Product_Contact.objects.filter(product__salesmen__id=request.user.id).order_by('-contact_date')
-    takeOrders = TakeOrder.objects.filter(user_id=request.user.id)
-    shoppingCarts = ShoppingCart.objects.filter(user_id=request.user.id)
+    user_id = request.user.id
+    activity_contacts = Activity_Contact.objects.filter(user_id=user_id)
+    course_contacts = Course_Contact.objects.filter(user_id=user_id)
+    product_contacts = Product_Contact.objects.filter(user_id=user_id)
+    takeOrders = TakeOrder.objects.filter(user_id=user_id)
+    shoppingCarts = ShoppingCart.objects.filter(user_id=user_id)
 
     context = {
         'activity_contacts': activity_contacts,

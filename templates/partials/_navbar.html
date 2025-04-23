@@ -124,19 +124,24 @@
                 {% if '/accounts/dashboard' == request.path %}
                 <li class="nav-item active mr-3 ">
                     <a href="{% url 'dashboard' %}" class="nav-link" style="text-transform: capitalize; color: yellow;"><b>Hi, {{user.username | title}} (Dashboard)</b></a>
-                  </li>
+                </li>
                 {% else %}
                 <li class="nav-item mr-3">
                     <a href="{% url 'dashboard' %}" class="nav-link" style="text-transform: capitalize;"><b>Hi, {{user.username | title}} (Dashboard)</b></a>
-                  </li>
+                </li>
                 {% endif %}
             
-            <!-- Shoppong Cart -->
-            
-            <li {% if 'shoppingCart' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                <a href="{% url 'shoppingCart' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
-            </li>
-
+            <!-- Shoppong Cart --> <!-- modify by WCNg at 24Apr2025-->
+                {% if '/partials/_shoppingCart' == request.path %}
+                <li class="nav-item active mr-3 ">
+                    <a href="{% url 'shoppingCart' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                </li>
+                {% else %}
+                <li class="nav-item mr-3">
+                    <a href="{% url 'shoppingCart' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                </li>
+                {% endif %}
+        
             <!-- Logout -->
             <li class="nav-item mr-3">
               <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
