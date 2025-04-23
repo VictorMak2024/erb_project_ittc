@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-from django.shortcuts import render, redirect
-from django.contrib import messages, auth
-from django.contrib.auth.models import User
-from contacts.models import Activity_Contact, Course_Contact, Product_Contact
-=======
 from django.contrib.auth.decorators import login_required
 
 from django.shortcuts import render, redirect, get_object_or_404
@@ -16,7 +10,6 @@ from products.models import Product
 from .models import ShoppingCart
 from .choices import district_choices
 
->>>>>>> refs/remotes/origin/main
 # Create your views here.
 def register(request):
     # add code of register
@@ -60,18 +53,6 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
     return redirect('index')
-<<<<<<< HEAD
-
-def dashboard(request):
-    # add code of dashboard
-    activity_contacts = Activity_Contact.objects.order_by('-contact_date').filter(user_id=request.user.id)
-    course_contacts = Course_Contact.objects.order_by('-contact_date').filter(user_id=request.user.id)
-    product_contacts = Product_Contact.objects.order_by('-contact_date').filter(user_id=request.user.id)
-
-    context = {'activity_contacts' : activity_contacts, 'course_contacts' : course_contacts, 'product_contacts' : product_contacts}
-
-    return render(request, 'accounts/dashboard.html' , context)
-=======
 def dashboard(request):
     if not request.user.is_authenticated:
         messages.error(request, "You need to log in to view your dashboard.")
@@ -203,4 +184,3 @@ def confirmOrder(request):
         messages.success(request, "Your order has been confirmed!")
         return redirect('shoppingCart')
     
->>>>>>> refs/remotes/origin/main
