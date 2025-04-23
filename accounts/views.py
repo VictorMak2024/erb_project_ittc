@@ -102,7 +102,7 @@ def shoppingCart(request):
         return redirect('login')
 
     # Retrieve or create a shopping cart for the user
-    shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user.id)
+    shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user)
 
     # Get all TakeOrder entries for the user
     takeOrders = TakeOrder.objects.filter(user_id=request.user.id, ordered=False)

@@ -56,14 +56,31 @@
 <body>
     <!--Navbar-->
     {% include "partials/_navbar.html" %}
-    <!--Content-->
-    {% block content %}{% endblock %}
+  <!-- Shopping Cart Sidebar -->
+  {% comment %} {% if shopping_cart and shopping_cart.orders.all %}
+  <aside class="shopping-cart-sidebar">
+      <h3>Your Shopping Cart</h3>
+      <ul>
+          {% for order in shopping_cart.orders.all %}
+          <li>
+              {{ order.product.no }} - {{ order.product.title }} (Qty: {{ order.onOrderQty }})
+              <span>${{ order.amount }}</span>
+          </li>
+          {% endfor %}
+      </ul>
+      <p>Total: ${{ shopping_cart.total_Amount }}</p>
+      <a href="{% url 'shoppingCartOrders' %}" class="btn btn-primary">View Cart</a>
+  </aside>
+  {% endif %} {% endcomment %}
     <!--Shopping Cart-->
     {% block shoppingCart %}{% endblock %}
+    <!--Content-->
+    {% block content %}{% endblock %}
+
     <!--partials/_footer.html-->
     {% include "partials/_footer.html" %}
 
-
+</body>
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script 

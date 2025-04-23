@@ -132,17 +132,11 @@
                 {% endif %}
             
             <!-- Shoppong Cart -->
-             {% if 'shoppingCart' == request.path %}
-             <li class="nav-item active">
-                <a href="{% url 'shoppingCartOrders' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
-                
-            </li>
-             {% else %}
-             <li class="nav-item">
-                <a href="{% url 'shoppingCart' %}" class="nav-link"><i class="fa-solid fa-cart-arrow-down"></i></a>
-             </li>
-             {% endif %}
             
+            <li {% if 'shoppingCart' %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                <a href="{% url 'shoppingCart' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            </li>
+
             <!-- Logout -->
             <li class="nav-item mr-3">
               <a href="javascript:{document.getElementById('logout').submit()}" class="nav-link">
