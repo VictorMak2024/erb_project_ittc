@@ -1,0 +1,91 @@
+{% if user.is_authenticated%}
+<aside class="bd-sidebar float-right" >
+    <div class="from-group" style="width: 18rem">
+        <h4>Customer ID: {{user.id}}</h4>
+        <h4>Customer Name: {{user.first_name}}</h4>
+        <br/>
+        <!-- text field group -->
+        <div class="card-body">
+            {% if product_contacts %}
+            <h5 class="card-title">Products Inquiry: </h5>
+            <ul>
+                {% for product_contact in product_contacts %}
+                <li class="text-secondary">product: {{product_contact.product | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+            <br/>
+            {% if activity_contacts %}
+            <h5 class="card-title">Activities Inquiry: </h5>
+            <ul>
+                {% for activity_contact in activity_contacts %}
+                <li class="text-secondary">Activity {{activity_contact.activity | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+            <br/>
+            {% if course_contacts %}
+            <h5 class="card-title">Courses Inquiry Products: </h5>
+            <ul>
+                {% for course_contact in course_contacts %}
+                <li class="text-secondary">product{{course_contact.course | title}}</li>
+                <li class="text-secondary">product{{course_contact.course | title}}</li>
+            {% endfor %}
+            </ul>
+            {% else %}
+            {% endif %}
+        </div>
+
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+    
+    </div>
+    <div class="container" id="takeOrder">
+        <div class="float-right">
+            <div class="toggle-nav-sidebar">
+                <div class="from-group">
+                    Order ID: {{takeOrder.id}}
+                    <!-- text field group -->
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+                
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</aside>
+{% else %}
+{% endif %}
+
+
+{% if takeOrder %}
+<!-- loop take order -->
+{% for takeOrder in takeOrders %}
+<div class="container" id="takeOrder">
+    <div class="float-left">
+        <div class="from-group">
+            Order ID: {{takeOrder.id}}
+            <!-- text field group -->
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+        
+        </div>
+
+    </div>
+    
+    {% comment %} <div class="alert alert-{{message.tags}} alert-dismissible text-center" role="alert">
+        <button class="close" type="button" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>
+            {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %} Error : {% else %}
+            {{message.tags | title}} {% endif %}
+        </strong>
+        {{message}}
+    </div> {% endcomment %}
+</div>
+{% endfor %} {% endif %}
+

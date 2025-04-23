@@ -34,7 +34,7 @@ def jobspost(request):
     paginator=Paginator(Jobss,18) 
     page = request.GET.get('page')
     paged_Jobs = paginator.get_page(page)
-    # print(paged_Jobs)
+    #print(paged_Jobs)
     values = request.GET.copy()  
     context = {
         'salary_choices': Salary_choices,

@@ -125,15 +125,15 @@
             
             <div class="col-md-6 col-lg-4 mb-1" style="margin-top: -20px;">
 
-             <div class="card border-info h-75 zoom-hover" style="width: 20rem; text-align: left; margin-bottom: 100px;">
+             <div class="card border-info h-75 zoom-hover" style="width: 20rem; text-align: left; margin-bottom: 100px; border-radius: 10px;">
              <a href="{% url 'jobspost_detail' job.id %}" class="no-underline">
 
-               <div class="card-header d-flex align-items-center">
-          {% if job.logo_url %}
-          <img src="{{ job.logo_url }}" alt="Image" style="width: 80px; margin-right: 10px;">
-          {% else %}
-          <span class="icon-briefcase" style="margin-right: 10px;"></span> 
-          {% endif %}
+               <div class="card-header d-flex align-items-center" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            {% if job.logo_url %}
+            <img src="{{ job.logo_url }}" alt="Image" style="width: 80px; margin-right: 10px;">
+            {% else %}
+            <span class="icon-briefcase" style="margin-right: 10px;"></span> 
+            {% endif %}
             <h6 class="mb-0">{{ job.title | title }}</h6>
                </div>
 

@@ -26,7 +26,7 @@
     <!--Login Custom CSS-->
     <link rel="stylesheet" href="{% static "css/login.css" %}">
     <!--Shortcut Icon-->
-    <link rel="shortcut icon" href="{% static "img/ittc_logo.png" %}" sizes="16x16" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{% static 'img/ittc_logo.png' %}" sizes="16x16" type="image/x-icon"/>
     
 	<!--link rel="stylesheet" href="{% static 'css/custom-bs.css' %}"-->
         <!--link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}"-->
@@ -57,9 +57,13 @@
     <!--Navbar-->
     {% include "partials/_navbar.html" %}
     <!--Content-->
-    {% block content %}{% endblock  %}
+    {% block content %}{% endblock %}
+    <!--Shopping Cart-->
+    {% block shoppingCart %}{% endblock %}
     <!--partials/_footer.html-->
     {% include "partials/_footer.html" %}
+
+
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script 
@@ -102,5 +106,8 @@
         });
         
     </script>
+    <!--Lightbox.min.js by wc-->
+    <script src="{% static 'js/lightbox.min.js' %}"></script> 
+
 </body>
 </html>

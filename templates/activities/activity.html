@@ -21,7 +21,7 @@
           <a href="{% url 'index' %}">Home</a>
         </li>
         <li class="breadcrumb-item">
-          <a href="{% url 'activities' %}">activities</a>
+          <a href="{% url 'activities' %}">Activities</a>
         </li>
         <li class="breadcrumb-item active">{{activities.title |title}}</li>
       </ol>
@@ -34,6 +34,7 @@
   <div class="container">
     <a href="{% url 'activities' %}" class="btn btn-light mb-4">Back To Activities</a>
     <div class="row">
+      {% include "partials/_alert.html" %}
       <div class="col-md-9">
         <!-- Home Main Image -->
         <img
@@ -65,15 +66,19 @@
                   {% if activity.date_start == activity.date_end %}
                   {{activity.date_start}}
                   {% else %}
-                  {{activity.date_start}} To {{activity.date_end}}                  {% endif %}
+                  {{activity.date_start}} To {{activity.date_end}}
+                  {% endif %}
                 </span>
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-times-circle"></i> Time:
-                <span class="float-right">           {% if activity.time_start == activity.time_end %}
+                <span class="float-right"> 
+                  {% if activity.time_start == activity.time_end %}
                   {{activity.time_start}}
                   {% else %}
-                  {{activity.time_start}} To {{activity.time_end}}                  {% endif %}</span>
+                  {{activity.time_start}} To {{activity.time_end}} 
+                  {% endif %}
+                </span>
               </li>
               <li class="list-group-item text-secondary">
                 <i class="fas fa-th-large"></i> Medium:
@@ -97,27 +102,27 @@
               </li>
             </ul>
           </div>
-      <!-- Enquiry -->
-      <div class="col-md-3">
-        <div class="card mb-3">
-          <img
-            class="card-img-top"
-            src="{{activity.salesmen.photo.url}}"
-            alt="{{activity.salesmen.name | title}}"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Contact: </h5>
-            <h6 class="text-secondary">{{activity.salesmen.name | title}}</h6>
+          <!-- Enquiry -->
+          <div class="col-md-3">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                src="{{activity.salesmen.photo.url}}"
+                alt="{{activity.salesmen.name | title}}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Contact: </h5>
+                <h6 class="text-secondary">{{activity.salesmen.name | title}}</h6>
+              </div>
+            </div>
+            <button
+              class="btn-primary btn-block btn-lg"
+              data-toggle="modal"
+              data-target="#inquiryModal"
+            >
+              Make An Inquiry
+            </button>
           </div>
-        </div>
-        <button
-          class="btn-primary btn-block btn-lg"
-          data-toggle="modal"
-          data-target="#inquiryModal"
-        >
-          Make An Inquiry
-        </button>
-      </div>
         </div>
       </div>
     </div>
@@ -125,7 +130,7 @@
 </section>
 
 <!-- Inquiry Modal -->
-{% comment %} <div class="modal fade" id="inquiryModal" role="dialog">
+<div class="modal fade" id="inquiryModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -136,27 +141,31 @@
       </div>
       <div class="modal-body">
         <!-- add action in form -->
-        <form action="{% url 'contact' %}" method="POST"> 
-          {% csrf_token %} 
+        <form action="{% url 'activity_contact' %}" method="POST"> 
+          {% csrf_token %}   
           <!-- check user id -->
           {% if user.is_authenticated %}
           <input type="hidden" name="user_id" value="{{user.id}}" />          
           {% else %}
           <input type="hidden" name="user_id" value="0" />
           {% endif %}
-          <input type="hidden" name="listing_id" value="{{listing.id}}" />
-          <input type="hidden" name="realtor_email" value="{{listing.realtor.email}}" />
+          <input type="hidden" name="activity_id" value="{{activity.id}}" />
+          {% if activity.price == '0' %}
+          <input type="hidden" name="is_paid" value="True" />
+          {% else %}
+          <input type="hidden" name="is_paid" value="False" />
+          {% endif %}
+          <input type="hidden" name="salesmen_email" value="{{activity.salesmen.email}}" />
           <!-- end checking -->
-          <div class="form-group">
-            <label for="property_name" class="col-form-label">Property:</label>
-            <input
-              type="text"
-              name="listing"
-              class="form-control"
-              value="{{listing.title}}"
-              readonly
-            />
-          </div>
+          <!--div class="form-group"-->
+            <label for="Activity_name" class="col-form-label">Activity:</label>
+            <!--select name="activity" id="activity">
+              {% for activity in activities %}
+                  <option value="">{{ activity.name }}</option>
+              {% endfor %}
+            </select-->
+            <input type="text" name="activity" class="form-control" value="{{activity.name}}" readonly />
+          <!--div-->
           <div class="form-group">
             <label for="name" class="col-form-label">Name:</label>
             {% if user.is_authenticated %}
@@ -192,5 +201,5 @@
       </div>
     </div>
   </div>
-</div> {% endcomment %}
+</div>
 {% endblock %}

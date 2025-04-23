@@ -1,0 +1,17 @@
+[
+{
+    "model": "contacts.activity_contact",
+    "pk": 1,
+    "fields": {
+        "activity": "abc",
+        "activity_id": 1,
+        "name": "cheung chi leung",
+        "email": "victormak@gmail.com",
+        "phone": "64748104",
+        "message": "ffdf",
+        "contact_date": "2025-04-01T14:58:23Z",
+        "user_id": 1,
+        "is_paid": true
+    }
+}
+]

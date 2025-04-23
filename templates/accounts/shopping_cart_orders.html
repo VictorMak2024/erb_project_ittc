@@ -1,0 +1,75 @@
+<!-- filepath: /home/wcng/project/erb_project_ittc/templates/accounts/shopping_cart_orders.html -->
+{% extends "base.html" %} {% load humanize %} {% block content %}
+<section id="shopping-cart-orders" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="card border-success col col-md-4">
+                <div class="card-body">
+                    <h5 class="card-header">
+                        Customer: {{shopping_cart.user_id.username | title}}
+                    </h5>
+                    <h5 class="card-title">Shipping Address: </h5>
+                    <p class="card-text">{{shopping_cart.address | title}}</p>
+                    <p class="card-text">{{shopping_cart.street | title}}</p>
+                    <p class="card-text">{{shopping_cart.district | title}}</p>
+                </div>
+            </div>
+            <div class="card border-success col col-md-4">
+                <div class="card-body">
+                    <h5 class="card-title nav">Shipping Status </h5>
+                    <hr/>
+                    <p class="card-text">Payment Status: 
+                        {% if shopping_cart.is_paid %}
+                        Paid
+                        {% else %}
+                        Not paid
+                        {% endif %}
+                    </p>
+                    <p class="card-text">Ship Out: {{shopping_cart.ship_date}}</p>
+
+                </div>
+            </div>
+            <div class="card border-success col col-md-4">
+                <div class="card-body">
+                    <h5 class="card-text">Notice:</h5>
+                    <hr/>
+                    <p class="message">{{shopping_cart.description | title}}</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mb-4">Your Shopping Cart</h2>
+
+        {% if orders %}
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ order.product.no }} - {{ order.product.title }}</td>
+                    <td>${{ order.price }}</td>
+                    <td>{{ order.onOrderQty }}</td>
+                    <td>${{ order.amount }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h3 class="mt-4">Total Amount: ${{ shopping_cart.total_Amount }}</h3>
+        {% else %}
+        <p>Your shopping cart is empty.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}
