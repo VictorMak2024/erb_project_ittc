@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+import logging
 
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages, auth
@@ -73,23 +74,6 @@ def dashboard(request):
     }
 
     return render(request, 'accounts/dashboard.html', context)
-# def dashboard(request):
-#     activity_contacts = Activity_Contact.objects.filter(activity__salesmen__id=request.user.id).order_by('-contact_date')
-#     activities = Activity.objects.all()
-
-#     course_contacts = Course_Contact.objects.filter(course__salesmen__id=request.user.id).order_by('-contact_date')
-#     courses = Course.objects.all()
-
-#     product_contacts = Product_Contact.objects.filter(product__salesmen__id=request.user.id).order_by('-contact_date')
-#     products = Product.objects.all()
-
-#     takeOrders = TakeOrder.objects.all()
-
-#     shoppingCarts = ShoppingCart.objects.all()
-
-#     context = {'activity_contacts' : activity_contacts, 'course_contacts' : course_contacts, 'takeOrders' : takeOrders, 'product_contacts' : product_contacts, 'activities' : activities, 'courses' : courses, 'products' :products, 'shoppingCarts' : shoppingCarts}
-
-#     return render(request, 'accounts/dashboard.html' , context)
 
 @login_required
 def shoppingCartOrders(request):
@@ -99,17 +83,18 @@ def shoppingCartOrders(request):
     if not shopping_cart:
         messages.error(request, "You do not have any items in your shopping cart.")
         return redirect('dashboard')
+    
+    shipping_no = 10000 + shopping_cart.id
 
     # Retrieve all orders in the shopping cart
     orders = shopping_cart.orders.all()
 
     context = {
         'shopping_cart': shopping_cart,
-        'orders': orders,
+        'orders': orders, 'shipping_no': shipping_no,
     }
 
     return render(request, 'accounts/shopping_cart_orders.html', context)
-
 
 def shoppingCart(request):
     if not request.user.is_authenticated:
@@ -120,7 +105,7 @@ def shoppingCart(request):
     shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user.id)
 
     # Get all TakeOrder entries for the user
-    takeOrders = TakeOrder.objects.filter(user_id=request.user.id)
+    takeOrders = TakeOrder.objects.filter(user_id=request.user.id, ordered=False)
 
     # Calculate the total amount
     total_Amount = 0
@@ -128,6 +113,7 @@ def shoppingCart(request):
         shopping_cart.orders.add(takeOrder)
         takeOrder.amount = takeOrder.price * takeOrder.onOrderQty
         takeOrder.save()
+
         total_Amount += takeOrder.amount
 
     # Update the shopping cart's total amount
@@ -155,6 +141,7 @@ def remove_from_cart(request, order_id):
     messages.success(request, "Item removed from your shopping cart.")
     return redirect('shoppingCart')
 
+logger = logging.getLogger(__name__)
 def confirmOrder(request):
     if request.method == 'POST':
         address = request.POST['address']
@@ -163,6 +150,7 @@ def confirmOrder(request):
         user_id = request.POST['user_id']
         is_paid = request.POST['is_paid']
         description = request.POST['description']
+        ordered = request.POST['ordered']
 
         # Retrieve the user's shopping cart
         shopping_cart = ShoppingCart.objects.filter(user_id=user_id).first()
@@ -181,6 +169,12 @@ def confirmOrder(request):
         )
         shopping_cart.save()
 
+        for order in shopping_cart.orders.all():
+            product = order.product
+            product.onOrderQty += order.onOrderQty  # Increment the product's onOrderQty
+            product.save()
+        
         messages.success(request, "Your order has been confirmed!")
+
         return redirect('shoppingCart')
     

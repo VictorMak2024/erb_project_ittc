@@ -27,7 +27,7 @@ class Product_ContactAdmin(admin.ModelAdmin):
 admin.site.register(Product_Contact, Product_ContactAdmin)
 
 class TakeOrderAdmin(admin.ModelAdmin):
-    list_display = ('id', 'product', 'price','onOrderQty', 'contact_date')
+    list_display = ('id', 'product', 'price','onOrderQty', 'contact_date', 'ordered','user_id')
     list_display_links = ('id', 'product')
     #search_fields = ('product')
     list_per_page = 25

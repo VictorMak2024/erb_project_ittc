@@ -86,40 +86,26 @@
         <div class="row mb-5 thumbs">
           <div class="col-md-2">
             {% if product.photo_1 %}
-            <a
-              href="{{product.photo_1.url}}"
-              data-lightbox="home-images"
-            >
-              <img
-                src="{{product.photo_1.url}}"
-                alt=""
-                class="img-fluid"
-              />
+            <a href="{{ product.photo_1.url }}" data-lightbox="home-images">
+              <img src="{{ product.photo_1.url }}" alt="" class="img-fluid"/>
             </a>
             {% endif %}
           </div>
           <div class="col-md-2">
             {% if product.photo_2 %}           
-            <a
-              href="{{product.photo_2.url}}"
-              data-lightbox="home-images"
-            >
-              <img
-                src="{{product.photo_2.url}}"
-                alt=""
-                class="img-fluid"
-              />
+            <a href="{{ product.photo_2.url }}" data-lightbox="home-images">
+              <img src="{{ product.photo_2.url }}" alt="" class="img-fluid" />
             </a>
             {% endif %}
           </div>
           <div class="col-md-2">
             {% if product.photo_3 %}
             <a
-              href="{{product.photo_3.url}}"
+              href="{{ product.photo_3.url }}"
               data-lightbox="home-images"
             >
               <img
-                src="{{product.photo_3.url}}"
+                src="{{ product.photo_3.url }}"
                 alt=""
                 class="img-fluid"
               />
@@ -129,11 +115,11 @@
           <div class="col-md-2">
             {% if product.photo_4 %}
             <a
-              href="{{product.photo_4.url}}"
+              href="{{ product.photo_4.url }}"
               data-lightbox="home-images"
             >
               <img
-                src="{{product.photo_4.url}}"
+                src="{{ product.photo_4.url }}"
                 alt=""
                 class="img-fluid"
               />
@@ -143,11 +129,11 @@
           <div class="col-md-2">
             {% if product.photo_5 %}
             <a
-              href="{{product.photo_5.url}}"
+              href="{{ product.photo_5.url }}"
               data-lightbox="home-images"
             >
               <img
-                src="{{product.photo_5.url}}"
+                src="{{ product.photo_5.url }}"
                 alt=""
                 class="img-fluid"
               />
@@ -157,11 +143,11 @@
           <div class="col-md-2">
             {% if product.photo_6 %}
             <a
-              href="{{product.photo_6.url}}"
+              href="{{ product.photo_6.url }}"
               data-lightbox="home-images"
             >
               <img
-                src="{{product.photo_6.url}}"
+                src="{{ product.photo_6.url }}"
                 alt=""
                 class="img-fluid"
               />
@@ -326,9 +312,9 @@
 <div class="modal fade" id="takeOrderModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header text-warning">
         <h5 class="modal-title" id="takeOrderModalLabel">Take it to Order</h5>
-        <button type="button" class="close" data-dismiss="modal">
+        <button type="button" class="close text-warning" data-dismiss="modal">
           <span>&times;</span>
         </button>
       </div>
@@ -363,9 +349,9 @@
               <div class="form-group">
                 <label for="onOrderQty" class="col-form-label">Qty:</label>
                 <div class="btn-group btn-group-xs col-md-8" role="group">
-                  <button class="btn btn-default decrement" type="button">-</button>
+                  <button class="btn btn-default decrement text-white" type="button">-</button>
                   <input type="text" name="onOrderQty" class="form-control qty-input" value="0"/>
-                  <button class="btn btn-default increment" type="button">+</button>
+                  <button class="btn btn-default increment text-white" type="button">+</button>
                 </div>pcs.
               </div>
               <a name="amount" >Amount: $<span id="amount">0</span></a>

@@ -75,6 +75,7 @@
         <img src="{{ order.product.photo_main.url }}" class="card-img-top" alt="{{ order.product.title }}">
         <div class="card-body">
             <h5 class="card-title">{{ order.product.title }}</h5>
+            <p class="card-text">Model No: {{ order.product }}</p>
             <p class="card-text">Price: ${{ order.price }}</p>
             <p class="card-text">Quantity: {{ order.onOrderQty }}pcs.</p>
             <p class="card-text">Amount: ${{ order.amount }}</p>           
@@ -116,6 +117,7 @@
                     {% endif %}
                     <p>Total Amount: $<span id="total-amount">{{total_Amount}}</span></p>
                     <input type="hidden" name="total_Amount" value="{{ total_Amount }}" />
+                    <input type="hidden" name="ordered" value="True" />
                     <!-- end checking -->
                     <label class="col-form-label">Please fill in your more info for the shipment:</label>
                     <!--div class="form-group"-->

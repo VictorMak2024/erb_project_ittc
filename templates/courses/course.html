@@ -95,26 +95,6 @@
               </li>
             </ul>
           </div>
-          {% comment %} <div class="col-md-6">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item text-secondary">
-                <i class="fas fa-th-large"></i> Medium:
-                <span class="float-right">{{course.medium}}</span>
-              </li>
-              <li class="list-group-item text-secondary">
-                <i class="fas fa-tasks"></i> Target:
-                <span class="float-right">{{course.target}}</span>
-              </li>
-              <li class="list-group-item text-secondary">
-                <i class="fas fa-tag"></i> Trainer:
-                <span class="float-right">{{course.trainer}}</span>
-              </li>
-              <li class="list-group-item text-secondary">
-                <i class="fas fa-times"></i> Sit:
-                <span class="float-right">{{course.total_sit}} - {{course.onenquiry_sit}}</span>
-              </li>
-            </ul>
-          </div> {% endcomment %}
           <!-- Enquiry -->
           <div class="col-md-3">
             <div class="card mb-3">
@@ -133,27 +113,6 @@
           </div>
         </div>
       </div>
-      <!-- Enquiry -->
-      {% comment %} <div class="col-md-3">
-        <div class="card mb-3">
-          <img
-            class="card-img-top"
-            src="{{course.salesmen.photo.url}}"
-            alt="{{course.salesmen.name | title}}"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Contect: </h5>
-            <h6 class="text-secondary">{{course.salesmen.name | title}}</h6>
-          </div>
-        </div>
-        <button
-          class="btn-primary btn-block btn-lg"
-          data-toggle="modal"
-          data-target="#inquiryModal"
-        >
-          Make An Inquiry
-        </button>
-      </div> {% endcomment %}
     </div>
   </div>
 </section>
@@ -162,9 +121,9 @@
 <div class="modal fade" id="inquiryModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header text-warning">
         <h5 class="modal-title" id="inquiryModalLabel">Make Attendance Request</h5>
-        <button type="button" class="close" data-dismiss="modal">
+        <button type="button" class="close text-warning" data-dismiss="modal">
           <span>&times;</span>
         </button>
       </div>
