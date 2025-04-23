@@ -132,7 +132,7 @@
                 {% endif %}
             
             <!-- Shoppong Cart -->
-             {% if 'shoppingCart' == request.path %}
+             {% if '/accounts/shoppingCart' == request.path %}
              <li class="nav-item active">
                 <a href="{% url 'shoppingCartOrders' %}" class="nav-link" style="color: yellow;"><i class="fa-solid fa-cart-arrow-down"></i></a>
                 
