@@ -193,6 +193,6 @@ def confirmOrder(request):
         )
 
         messages.success(request, "Your order has been confirmed!")
-
+        messages.wranging(request, "Please makesure to pay the Money to Our Bank account for Delivery!")
         return redirect('shoppingCart')
     
