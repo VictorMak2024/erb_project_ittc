@@ -10,6 +10,7 @@ from courses.models import Course
 from products.models import Product
 from .models import ShoppingCart
 from .choices import district_choices
+from django.core.mail import send_mail
 
 # Create your views here.
 def register(request):
@@ -177,6 +178,20 @@ def confirmOrder(request):
             product.onOrderQty += order.onOrderQty  # Increment the product's onOrderQty
             product.save()
         
+                # Retrieve user details
+        user = User.objects.get(id=user_id)
+        user_name = f"{user.first_name} {user.last_name}"
+        user_email = user.email
+        # Send Email
+        send_mail(
+            'Place Order',
+            f'There has been an inquiry for {user_name}. Sign into the admin panel for more info.',
+            #f'There has been an inquiry for '+activity+'. Sign into the admin panel for more info.',
+            'pythonprogramtesting3@gmail.com', # admin email
+            [user_email], #to email
+            fail_silently=False
+        )
+
         messages.success(request, "Your order has been confirmed!")
 
         return redirect('shoppingCart')

@@ -47,7 +47,7 @@ def activity_contact(request):
             'Activity Inquiry',
             f'There has been an inquiry for {activity.name}. Sign into the admin panel for more info.',
             #f'There has been an inquiry for '+activity+'. Sign into the admin panel for more info.',
-            'nwcn0307@gmail.com', # admin email
+            'pythonprogramtesting3@gmail.com', # admin email
             [salesmen_email], #to email
             fail_silently=False
         )
@@ -91,7 +91,8 @@ def course_contact(request):
         send_mail(
             'Course Inquiry',
             f'There has been an inquiry for {course.name}. Sign into the admin panel for more info.',
-            'nwcn0307@gmail.com', # admin email
+            'pythonprogramtesting3@gmail.com',  # from email
+            #'nwcn0307@gmail.com', # admin email
             [salesmen_email], #to email
             fail_silently=False
         )
@@ -125,7 +126,7 @@ def product_contact(request):
         send_mail(
             'Product Inquiry',
             f'There has been an inquiry for {product.no}. Sign into the admin panel for more info.',
-            'nwcn0307@gmail.com',# admin email
+            'pythonprogramtesting3@gmail.com',# admin email
             [salesmen_email], #to email
             fail_silently=False
         )
