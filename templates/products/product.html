@@ -372,29 +372,3 @@
 </div>
 
 {% endblock %}
-
-{% comment %} import logging
-
-logger = logging.getLogger(__name__)
-
-def takeOrder(request):
-    if request.method == 'POST':
-        try:
-            product_id = request.POST['product_id']
-            name = request.POST['name']
-            price = int(request.POST['price'])
-            onOrderQty = int(request.POST['onOrderQty'])
-            user_id = request.POST['user_id']
-            salesmen_id = request.POST['salesmen_id']
-
-            logger.info(f"Price: {price}, Qty: {onOrderQty}")
-
-            # Calculate the amount
-            amount = price * onOrderQty
-            logger.info(f"Amount: {amount}")
-
-            # Rest of the logic...
-        except Exception as e:
-            logger.error(f"Error in takeOrder: {e}")
-            messages.error(request, "An error occurred while processing your order.")
-            return redirect('product', product_id=product_id) {% endcomment %}

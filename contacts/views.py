@@ -140,7 +140,6 @@ def takeOrder(request):
         name = request.POST['name']
         price = int(request.POST['price'])
         onOrderQty = int(request.POST['onOrderQty'])
-        #amount = int(request.POST['amount'])
         user_id = request.POST['user_id']
         salesmen_id = request.POST['salesmen_id']
 
@@ -149,11 +148,11 @@ def takeOrder(request):
         
         product = get_object_or_404(Product, pk=product_id)
         # Check if the user already has this product in their cart
-        if onOrderQty > product.stockQty:
+        if onOrderQty > product.stockQty-product.onOrderQty:
             messages.error(request, "Quantity exceeds available stock.")
             return redirect('product', product_id=product_id)
 
-        existing_order = TakeOrder.objects.filter(product=product, user_id=user_id).first()
+        existing_order = TakeOrder.objects.filter(product=product, user_id=user_id, ordered=False).first()
         if existing_order:
             existing_order.onOrderQty += onOrderQty
             existing_order.amount = existing_order.price * existing_order.onOrderQty  # Update amount

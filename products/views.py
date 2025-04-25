@@ -21,6 +21,8 @@ def products(request, category_title = None):
     if category_title:
         category = get_object_or_404(Category, title=category_title)
         products = Product.objects.filter(title=category).order_by('no')
+        for product in products:
+            product.stockQty = product.stockQty - product.onOrderQty
         paginator = Paginator(products, 3)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)
@@ -29,7 +31,8 @@ def products(request, category_title = None):
     else:
         categories = Category.objects.all()
         products = Product.objects.all()
-
+        for product in products:
+            product.stockQty = product.stockQty - product.onOrderQty
         paginator = Paginator(products, 3)
         page = request.GET.get('page')
         paged_products = paginator.get_page(page)

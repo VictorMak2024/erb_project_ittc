@@ -64,14 +64,20 @@ def dashboard(request):
     course_contacts = Course_Contact.objects.filter(user_id=user_id)
     product_contacts = Product_Contact.objects.filter(user_id=user_id)
     takeOrders = TakeOrder.objects.filter(user_id=user_id)
-    shoppingCarts = ShoppingCart.objects.filter(user_id=user_id)
+    # Retrieve completed and pending shopping carts
+    completed_carts = ShoppingCart.objects.filter(user_id=user_id, is_completed=True)
+    pending_cart = ShoppingCart.objects.filter(user_id=user_id, is_completed=False).first()
+
+#    shoppingCarts = ShoppingCart.objects.filter(user_id=user_id)
 
     context = {
         'activity_contacts': activity_contacts,
         'course_contacts': course_contacts,
         'product_contacts': product_contacts,
         'takeOrders': takeOrders,
-        'shoppingCarts': shoppingCarts,
+        'completed_carts': completed_carts,
+        'pending_cart': pending_cart,
+#        'shoppingCarts': shoppingCarts,
     }
 
     return render(request, 'accounts/dashboard.html', context)
@@ -79,16 +85,20 @@ def dashboard(request):
 @login_required
 def shoppingCartOrders(request):
     # Retrieve the shopping cart for the logged-in user
-    shopping_cart = ShoppingCart.objects.filter(user_id=request.user.id).first()
+    shopping_cart = ShoppingCart.objects.filter(user_id=request.user.id, is_completed=False).first()
 
     if not shopping_cart:
         messages.error(request, "You do not have any items in your shopping cart.")
         return redirect('dashboard')
     
-    shipping_no = 10000 + shopping_cart.id
+    orders = shopping_cart.orders.all()    
 
+    total_Amount = sum(order.price * order.onOrderQty for order in orders)
+    shopping_cart.total_Amount = total_Amount
+    shopping_cart.save()
     # Retrieve all orders in the shopping cart
-    orders = shopping_cart.orders.all()
+
+    shipping_no = 10000 + shopping_cart.id
 
     context = {
         'shopping_cart': shopping_cart,
@@ -102,19 +112,22 @@ def shoppingCart(request):
         messages.error(request, "You need to log in to view your shopping cart.")
         return redirect('login')
 
-    # Retrieve or create a shopping cart for the user
-    shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user)
+    # Retrieve or create a shopping cart for the user with `ordered=False` items
+    shopping_cart, created = ShoppingCart.objects.get_or_create(user_id=request.user, is_completed=False)
 
     # if shopping_cart is None:
     #     messages.error(request, "An error occurred while creating your shopping cart.")
     #     return redirect('dashboard')
-    # Get all TakeOrder entries for the user
+    # Get all TakeOrder entries for the user where ordered is False
     takeOrders = TakeOrder.objects.filter(user_id=request.user.id, ordered=False)
 
     # Calculate the total amount
     total_Amount = 0
     for takeOrder in takeOrders:
-        shopping_cart.orders.add(takeOrder)
+        # Add the order to the shopping cart if not already added
+        if takeOrder not in shopping_cart.orders.all():
+
+            shopping_cart.orders.add(takeOrder)
         takeOrder.amount = takeOrder.price * takeOrder.onOrderQty
         takeOrder.save()
 
@@ -154,10 +167,10 @@ def confirmOrder(request):
         user_id = request.POST['user_id']
         is_paid = request.POST['is_paid']
         description = request.POST['description']
-        ordered = request.POST['ordered']
+        #ordered = request.POST['ordered']
 
         # Retrieve the user's shopping cart
-        shopping_cart = ShoppingCart.objects.filter(user_id=user_id).first()
+        shopping_cart = ShoppingCart.objects.filter(user_id=user_id, is_completed=False).first()
         if not shopping_cart:
             messages.error(request, "Shopping cart not found.")
             return redirect('shoppingCart')
@@ -172,27 +185,31 @@ def confirmOrder(request):
             order.price * order.onOrderQty for order in shopping_cart.orders.all()
         )
         shopping_cart.save()
+        
 
         for order in shopping_cart.orders.all():
             product = order.product
-            product.onOrderQty += order.onOrderQty  # Increment the product's onOrderQty
-            product.save()
+            if product:
+                product.onOrderQty += order.onOrderQty  # Increment the product's onOrderQty
+                product.save()
         
+                # Mark the order as processed
+                order.ordered = True
+                order.save()
                 # Retrieve user details
         user = User.objects.get(id=user_id)
         user_name = f"{user.first_name} {user.last_name}"
         user_email = user.email
         # Send Email
         send_mail(
-            'Place Order',
-            f'There has been an inquiry for {user_name}. Sign into the admin panel for more info.',
-            #f'There has been an inquiry for '+activity+'. Sign into the admin panel for more info.',
+            'Order Confirmation',
+            f'Thank you for your order,{user_name}. Your order has been confirmed.',
             'pythonprogramtesting3@gmail.com', # admin email
             [user_email], #to email
             fail_silently=False
         )
 
         messages.success(request, "Your order has been confirmed!")
-        messages.wranging(request, "Please makesure to pay the Money to Our Bank account for Delivery!")
-        return redirect('shoppingCart')
+        messages.warning(request, "Please makesure to pay the Money to Our Bank account for Delivery!")
+        return redirect('dashboard')
     
