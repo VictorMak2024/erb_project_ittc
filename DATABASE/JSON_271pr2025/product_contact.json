@@ -1,0 +1,28 @@
+[
+{
+    "model": "contacts.product_contact",
+    "pk": 4,
+    "fields": {
+        "product": 8,
+        "name": " ",
+        "email": "ittc@ittc.com.hk",
+        "phone": "98988888",
+        "message": "",
+        "contact_date": "2025-04-23T14:21:49.071Z",
+        "user_id": 1
+    }
+},
+{
+    "model": "contacts.product_contact",
+    "pk": 5,
+    "fields": {
+        "product": 3,
+        "name": "wcng ",
+        "email": "wcng@ittc.com.hk",
+        "phone": "98681249",
+        "message": "",
+        "contact_date": "2025-04-23T14:50:47.649Z",
+        "user_id": 4
+    }
+}
+]

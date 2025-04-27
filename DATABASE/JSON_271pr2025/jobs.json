@@ -1,0 +1,1362 @@
+[
+{
+    "model": "jobspost.jobs",
+    "pk": 1,
+    "fields": {
+        "title": "Junior Software Engineer",
+        "job_type": "full time",
+        "salary": 20000,
+        "post_date": "2025-04-01T09:00:00Z",
+        "location": "tai po",
+        "company": "VTECH Corporate Services Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Assist in the development and maintenance of embedded software applications. Perform basic testing and debugging tasks to ensure software quality. Collaborate with senior engineers to learn and grow technical skills, gaining hands-on experience in real-world projects. Document code and processes for future reference, ensuring clarity and maintainability. Participate in team meetings and contribute ideas for improvement, fostering a collaborative environment. Stay updated with the latest technologies and trends in software development. Support the team in troubleshooting and resolving technical issues. Engage in continuous learning to enhance technical expertise and contribute to the success of the team.",
+        "requirement": "Higher diploma or bachelor's degree in Computer Science, Information Technology, or related fields. Basic knowledge of C/C++ programming and a willingness to learn and adapt to new technologies. Strong communication and teamwork skills to collaborate effectively with team members. Fresh graduates are welcome to apply, as on-the-job training will be provided. A proactive attitude and eagerness to take on challenges. Familiarity with software development lifecycle and debugging tools is a plus. Ability to work independently and as part of a team in a fast-paced environment. Strong problem-solving skills and attention to detail.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 2,
+    "fields": {
+        "title": "Senior Software Engineer",
+        "job_type": "full time",
+        "salary": 35000,
+        "post_date": "2025-04-02T10:00:00Z",
+        "location": "tai po",
+        "company": "VTECH Corporate Services Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Lead the design and development of complex embedded software systems. Mentor junior engineers and provide technical guidance to enhance their skills. Optimize software performance and ensure system reliability through rigorous testing and debugging. Collaborate with cross-functional teams to deliver high-quality solutions that meet project requirements. Stay updated on industry trends and implement best practices to maintain a competitive edge. Conduct code reviews to ensure adherence to coding standards and best practices. Provide technical documentation and support for software solutions. Participate in stakeholder meetings to align project goals with business objectives.",
+        "requirement": "Bachelor’s degree or higher in Computer Science, Computer Engineering, or related disciplines. 5+ years of experience in embedded software development with a proven track record of successful projects. Proficiency in C/C++ and Python programming, with strong debugging and analytical skills. Strong problem-solving and leadership skills to guide teams and address technical challenges. Experience with AI and machine learning is a plus. Familiarity with real-time operating systems and hardware interfaces such as UART, SPI, and I2C. Excellent communication skills to collaborate effectively with cross-functional teams and stakeholders.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 3,
+    "fields": {
+        "title": "Embedded Systems Developer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-03T11:00:00Z",
+        "location": "tai po",
+        "company": "VTECH Corporate Services Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and implement embedded software for IoT devices, ensuring high performance and reliability. Conduct system integration and testing to validate functionality and compatibility. Troubleshoot and resolve software issues to maintain system stability. Work closely with hardware engineers to ensure seamless integration and compatibility between hardware and software components. Provide technical support and documentation to assist in product development and maintenance. Optimize software for resource efficiency, including memory and power consumption. Stay updated with emerging technologies and industry trends to incorporate innovative solutions into projects. Participate in team meetings and contribute to the overall success of the development process.",
+        "requirement": "Bachelor’s degree in Computer Engineering, Electrical Engineering, or related fields. 3+ years of experience in embedded systems development with a strong understanding of microcontrollers and real-time operating systems. Proficiency in C/C++ programming and familiarity with debugging tools and techniques. Strong problem-solving skills and the ability to analyze and resolve complex technical challenges. Familiarity with IoT protocols and technologies such as MQTT, CoAP, or Zigbee is an advantage. Excellent communication skills to collaborate effectively with cross-functional teams. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 4,
+    "fields": {
+        "title": "Firmware Engineer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-04T12:00:00Z",
+        "location": "tai po",
+        "company": "VTECH Corporate Services Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and develop firmware for embedded systems, ensuring compliance with industry standards and performance benchmarks. Perform code optimization and ensure efficient resource utilization to enhance system performance. Conduct firmware testing and validation to identify and resolve issues. Collaborate with hardware and software teams to meet project requirements and ensure seamless integration. Maintain and update existing firmware as needed to address issues and improve functionality. Document firmware development processes, including code, testing procedures, and best practices. Stay updated with the latest advancements in firmware development and incorporate innovative techniques. Participate in team meetings and contribute to the overall success of the development process.",
+        "requirement": "Bachelor’s degree in Computer Science, Electrical Engineering, or related disciplines. 2+ years of experience in firmware development with a strong focus on embedded systems. Proficiency in C/C++ programming and familiarity with hardware interfaces such as UART, SPI, and I2C. Strong debugging and analytical skills to troubleshoot and resolve technical issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems and debugging tools is a plus. A proactive attitude and commitment to delivering high-quality firmware solutions. Willingness to learn and adapt to new technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 5,
+    "fields": {
+        "title": "software engineer",
+        "job_type": "full time",
+        "salary": 25000,
+        "post_date": "2025-04-06T01:31:26Z",
+        "location": "tai po",
+        "company": "VTECH Corporate Services Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/cff21045f74d2412b556b6db559028a7c99176ee/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and develop embedded software applications and firmware for various hardware platforms\r\n    Perform testing and debugging to ensure the reliability and performance of embedded systems\r\n    Work with AI in software development life cycle\r\n    Work independently and as part of a team to deliver solutions\r\n    Stay up-to-date with the latest trends and technologies in the embedded systems industry",
+        "requirement": "Bachelor’s degree or higher diploma in Computer Science, Information Technology, Computer   Engineering or related disciplines\r\n    Experience in embedded application development\r\n    Excel in C/C++, Python programming\r\n    Fast learner, self-motivated, passionate and good team player\r\n    Excellent communication, analytical, and problem-solving skills\r\n    Experience in AI model training & AI assisted development is highly desirable",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 6,
+    "fields": {
+        "title": "software engineer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-06T01:33:04Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/9e19f06f6bb9eb387b5ddcafedd0dd530a236455/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "• Design, develop, and debug embedded software applications and firmware for various hardware platforms.\r\n\r\n• Apply software design principles, such as modularity, encapsulation, and abstraction, to create scalable and maintainable software solutions.\r\n\r\n• Leverage media technology to develop embedded software solutions for multimedia applications, such as audio/video processing and streaming.\r\n\r\n• Perform low-level programming, including device drivers, peripheral interfaces, and system initialization.\r\n\r\n• Conduct hardware-software integration and testing to ensure seamless functionality and compatibility.",
+        "requirement": "Bachelor's degree or higher in Computer Science or the related ones.\r\nBachelor's degree with 3-5 years or Master's degree with 1-3 years of experience in developing embedded software using C/C++.\r\nUnderstanding of software and hardware interfaces, familiar with at least one RTOS. Experience in device driver development is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 7,
+    "fields": {
+        "title": "Embedded Software Development Lead",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-06T01:34:36Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Analyses, designs, tests, codes, secures, debugs, modifies, deploys, integrates and maintains (system) software enhancements, test environment and/or new software to have an impact on the product and solutions direction and customer experience.\r\n\r\n•Uses state-of-the-art technologies and practices to drive superior customer value. Interacts with users/ product owners to define/ adjust requirements and/or necessary modifications.\r\n\r\n•Keeps abreast of technical developments and practices in own field through literature, courses/trainings, technical contacts, and competitive environment, all to ensure the development of great customer digital solutions.",
+        "requirement": "Master or PhD in Software or Electronics engineering\r\n\r\n•Solid Experience (>5 years) in working from new ​product development to life cycle sustaining engineering and quality improvement projects.\r\n\r\n•Ability to collaborate with a wide range of professionals in matrix organization & lead through influence​, both internally and externally with suppliers/partners.\r\n\r\n•Solid experience in Software development (>5 years), from Firmware to Cloud and Mobile App types of use cases for B2C IoT devices such as Connected Baby Video Monitor, Vital Sign Monitors, etc.\r\n\r\n•Programming languages & paradigms, methodologies and techniques. Lean / Agile / SAFe.\r\n\r\n•Very familiar with product development process waterfall type and V-model as PDLM.\r\n\r\n•Fluency in Chinese Mandarin and/or Cantonese written/spoken is a must, next fluency in English written/spoken.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 8,
+    "fields": {
+        "title": "EMBEDDED SOFTWARE ENGINEER ( HONG KONG BASE )",
+        "job_type": "full time",
+        "salary": 25000,
+        "post_date": "2025-04-06T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Responsible for handling software development in 4bit/8bit/16bit/32bit\r\n\r\nMicrocontroller including programming, debugging, performance testing and project follow-up of electrical safety device and consumer products.\r\n\r\nWrite efficient, scalable, and maintainable code using appropriate programming languages and tools\r\n\r\nOptimize embedded software for performance, power consumption, and resource utilization\r\n\r\nParticipate in code reviews, testing, and debugging to ensure the quality and reliability of the software\r\n\r\nStay up-to-date with the latest trends and technologies in the embedded software industry\r\n\r\nProvide technical guidance and mentorship to junior team members",
+        "requirement": "Diploma graduate or above in Electronic or Computer Engineering or related discipline\r\n\r\nAt least 2 years of experience in MCU embedded software programming\r\n\r\nCandidates with less experience or fresh graduates will be considered as Junior Embedded Software Engineer with training provide\r\n\r\nCandidates with more experience will be considered as Senior Embedded Software Engineer\r\n\r\nGood Command of English & Mandarin\r\n\r\nAbility to work collaboratively in a team environment",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 9,
+    "fields": {
+        "title": "Electronic Hardware Engineer",
+        "job_type": "full time",
+        "salary": 25000,
+        "post_date": "2025-04-06T05:14:21Z",
+        "location": "Sha Tin District",
+        "company": "Altai Technologies Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/f2993b2027e3d68adf8c0f0ea19e8af0d540b911/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "•Responsible for testing and evaluating performance of WiFi access points or routers.\r\n\r\n•Project support for the new WiFi products during EVT/DVT and PVT.\r\n\r\n•Conduct indoor/outdoor field testings to verify performance.\r\n\r\n•Carry out data analysis of the measurement results.",
+        "requirement": "•High Cert/High Diploma/Bachelor degree in Electronic Engineering or equivalent.\r\n\r\n•3 to 5 years experience of electronic products development.\r\n\r\n•Fresh graduate is also welcome for those who have passion for hardware development.\r\n\r\n•Hands-on experience with prototyping/testing of wireless electronic hardware is preferred.\r\n\r\n•Hands-on experience with test equipment such as oscilloscope, DVM and RF communication equipment is preferred.\r\n\r\n•       Programming experience for embedded environment such as RPi/Arduino or other SBC is a plus;\r\n\r\n•       Knowledge of WiFi is preferred but on-job training will be provided; \r\n\r\n•       Good command of English, Chinese and PTH",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 10,
+    "fields": {
+        "title": "Electronic Engineer",
+        "job_type": "Part time",
+        "salary": 20000,
+        "post_date": "2025-04-06T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "• Design and develop electronic product circuits, ensuring compliance with industry standards and performance benchmarks. • Work on embedded MCU programming and debugging to enhance product functionality. • Collaborate with cross-functional teams to integrate hardware and software components seamlessly. • Conduct testing, troubleshooting, and optimization to ensure product reliability and efficiency. • Document technical specifications, processes, and best practices for future reference. • Stay updated with emerging technologies and trends to incorporate innovative solutions into projects. • Participate in team meetings and provide technical insights to improve product quality and development processes.",
+        "requirement": "• Proficient in C-programming with a strong foundation in embedded systems development. • Graduate in Computer Engineering / Electronic Engineering with relevant academic knowledge. • Experience in assembly programming, debugging, and developing products such as thermostats, GUI scripting (e.g., LVGL), or app design (e.g., Flutter). • Familiarity with wireless communication protocols like Wi-Fi, BLE, LoRaWAN, or Zigbee. • Knowledge of cloud platforms such as AWS or Thingsboard is a plus. • Experience in embedded Linux product development is highly desirable. • Strong problem-solving skills, attention to detail, and a proactive attitude to address technical challenges effectively.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 11,
+    "fields": {
+        "title": "Programmer / Senior Programmer",
+        "job_type": "part time",
+        "salary": 15000,
+        "post_date": "2025-04-06T06:29:21Z",
+        "location": "Hong Kong SAR",
+        "company": "Pathsight Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/7a746ff9183aea66735e32682a31ea2253932057/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "End-to-end system development from requirement collections, feasibility study, system design, implementation, to system deployment\r\n    Perform quality assurance on project deliverable\r\n    Support and facilitate Project Manager in planning, executing, monitoring and reporting to ensure project success",
+        "requirement": "HD or above in Computer Science or IT related disciplines\r\n    For Analyst Programmer min 2 years of IT experience \r\n    For Senior Analyst Programmer min 4 years of IT experience \r\n    Hands on Experience in the following:  \r\n    JAVA, Spring, Spring boot or,\r\n    .NET \r\n    JavaScript / PHP \r\n    React.js, Node.js\r\n    C/C++\r\n    React native / Flutter\r\n    Swift / Kotlin / Java(Mobile)",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 12,
+    "fields": {
+        "title": "Analyst Programmer / Senior Programmer",
+        "job_type": "part time",
+        "salary": 15000,
+        "post_date": "2025-04-06T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Provide business-process automation and IT solutions to overseas branches\r\n    Focus on system development/maintenance/technical support\r\n    Participate in the technical solutions, programs coding and implementations\r\n    Involve in new core banking system implementations\r\n    Provide applications training to end users",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines \r\n    Skillful technique on developing IT solutions to meet our business needs and enhancing our systems\r\n    A positive, 'can-do' working attitude, and an active self-starter character that will continuously add values to own responsibilities\r\n    Good understanding of system documentation and familiar with SDLC\r\n    2 to 3 years development experience on C# / VB.net, ASP.net, Java, JavaScript, MS SQL, Oracle and any web based applications\r\n    Good hands-on knowledge on Windows, Unix, or Linux platform is a definite advantage\r\n    General banking, Treasury and Trade Finance systems knowledge is a plus but no compulsory\r\n    Proficient in English & Chinese",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 13,
+    "fields": {
+        "title": "Computer Vision Engineer",
+        "job_type": "full time",
+        "salary": 25000,
+        "post_date": "2025-04-06T06:42:09Z",
+        "location": "Tsing Yi, Kwai Tsing District",
+        "company": "ASMPT Technology Hong Kong Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop Computer Vision products and solutions to enable semiconductor world\r\n    On-job training will be provided to master computer vision technology\r\n    Work as a team and cooperate with different R&D teams\r\n    Implement computer vision software and design inspection algorithm\r\n    Opportunity to design computer vision and imaging system\r\n    Algorithm prove-of-concept and capability enhancement",
+        "requirement": "Bachelor Degree or above in Computer Engineering / Computer Science / Electronic Engineering / Information Engineering or relevant disciplines\r\n    Experience in C/C++ programming\r\n    Passion in research and development\r\n    Interested in problem solving\r\n\r\n \r\n\r\nAttractive salary and fringe benefits package will be offered to the right candidates.\r\n\r\nPlease visit our company website for our company background, products and other useful information.\r\nWebsite: https://www.asmpt.com/",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 14,
+    "fields": {
+        "title": "Control Engineer / Senior Control Engineer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-03-04T06:45:55Z",
+        "location": "Tsing Yi, Kwai Tsing District",
+        "company": "ASMPT Technology Hong Kong Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Focus on electro-mechanical system motion and process control\r\n    Develop advanced motion control algorithm to achieve submicron precision motion\r\n    Develop the machine diagnostic and prognostic mechanisms for mechatronic system\r\n    Improve the process performance of semiconductor packaging machinery",
+        "requirement": "Bachelor/ Master/ PhD Degree with specialization in Electrical, Mechanical, Automation, Mechatronics, or relevant disciplines\r\n    Control engineering fundamentals in classical and modern control methodologies\r\n    Enjoy tackling technical challenges of providing creative solutions to complex engineering system\r\n    Candidate possesses one or more of the following competencies is preferred:\r\n        Hands-on experience in time domain and frequency domain instrumentation, e.g. scope, dynamic signal analyzers, modal analysis, laser sensors, accelerometer, etc.; or\r\n        Familiar with system analysis and system modeling, particularly mechanical servo, system dynamics, vibration, thermal process, motor, sensors and drive system; or\r\n        Experience in robust control and adaptive control; or\r\n        Proficient in MATLAB, C/C++ and real-time computer system; or\r\n        Experience in machine learning and data analysis.\r\n    A good hands-on problem solver, with analytical mind and attention to details\r\n    Good command of English is a must\r\n    Good command of Mandarin is preferred\r\n\r\n \r\n\r\nAttractive salary and fringe benefits package will be offered to the right candidates.\r\n\r\nPlease visit our company website for our company background, products and other useful information.\r\nWebsite: https://www.asmpt.com/",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 15,
+    "fields": {
+        "title": "Electrical Engineer (Fresh Graduate / IANG Holder Is Welcome)",
+        "job_type": "Full time",
+        "salary": 20000,
+        "post_date": "2025-04-01T06:49:57Z",
+        "location": "Tsing Yi, Kwai Tsing District",
+        "company": "ASMPT Technology Hong Kong Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/21fe3e3c88e33d7ca48dc88566e4e729e39aa98e/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design and development of electrical power systems for electrical machines, ensuring compliance with safety and industry standards. Collaborate with cross-functional teams to integrate electrical systems into machine designs. Conduct power estimation and load analysis to optimize system performance. Perform testing and troubleshooting of electrical components to ensure reliability and efficiency. Prepare technical documentation, including schematics and specifications, for future reference. Stay updated with the latest advancements in electrical engineering to incorporate innovative solutions. Provide technical support during the production and installation phases, ensuring seamless implementation. Participate in team meetings and contribute to continuous improvement initiatives.",
+        "requirement": "Bachelor's Degree in Electrical Engineering or relevant disciplines. Strong understanding of electrical power system design for industrial machines, including safety considerations. Experience in power estimation and load analysis for machine systems. Familiarity with electrical standards and regulations. Proficiency in using design tools such as AutoCAD or similar software. Excellent problem-solving skills and attention to detail. Strong communication and teamwork skills to collaborate effectively with cross-functional teams. Candidates with extensive experience and in-depth knowledge in electrical system design will be considered for senior positions. Fresh graduates and IANG holders are welcome to apply.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 16,
+    "fields": {
+        "title": "Full Stack Web Developer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-06T15:08:22Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Participate in innovative Cloud-based Applications Development for Hotels, Theme Parks, and Restaurants\r\n    Develop Cloud API for partners and customers to build their own app to integrate to our cloud infrastructure\r\n    Develop E-Commerce Mobile Applications for our Cloud-based Applications\r\n    Performance testing and optimization in APIs\r\n    Work as a team to contribute on tertiary level application support for global implementations\r\n    Work on Agile Scrum Development methodology",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines\r\n    Experience in PHP Framework e.g. CakePHP, Laravel, CodeIgniter, Symfony or Yii is a plus\r\n    Experience in React, Vue.js, Angular or jQuery is a plus\r\n    Experience in MySQL, SQLServer or any RDBMS is a plus\r\n    Experience in RESTful API and/or web services development is a plus\r\n    Experience in Mobile App development (Swift, Flutter) is a plus\r\n    Knowledge in Amazon Web Services, Microsoft Azure, Google Cloud Platform, or other IaaS cloud service providers is a plus\r\n    Self-motivated, good team player and strong sense of responsibility\r\n    Good command of both spoken and written English and Chinese. Mandarin is an advantage\r\n    More experienced candidate can be considered as Senior Full Stack Web Developer",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 17,
+    "fields": {
+        "title": "Assistant IT Engineer",
+        "job_type": "full time",
+        "salary": 25000,
+        "post_date": "2025-04-06T17:11:35Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Conduct requirement study, analysis & design, prepare documentation and co-ordinate with users, technical and operations teams\r\nLead the analyst programmers/programmers by providing guidelines and assistance to enable solution development and implementation, with passion to be hands-on with coding\r\nDevelop and maintain application programs\r\nPrepare test plan, test cases/scripts, test environments, data and perform testing\r\nSupport user acceptance testing and system implementation\r\nPrepare system and operations documents\r\nProvide ongoing user and application support",
+        "requirement": "Degree holder in Computer Science, Information Technology or related disciplines\r\nA minimum of 1-2 years’ experience in IT profession\r\nKnowledgeable and experienced in design, programming and microservices\r\nProficiency in Java, J2EE, AngularJS , JavaScript, XML, JSON, Oracle/MySQL, Unix\r\nKnowledgeable in ReactJS is advantageous\r\nEffective verbal and written communication in English and Chinese\r\nWith passion in technology forefront, such as microservices, DevOps, RPA and Customer Experience\r\nGood analytical, inter-personal and problem solving skills\r\nGood team player, positive attitude, innovative, self-initiating, eager to learn and share with other team members, hardworking, able to work under pressure and work independently\r\nCandidates with less qualification and experience will be considered as Analyst Programmer or Programmer\r\nExperience in BRM 7.3 and 12 is advantageous",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 18,
+    "fields": {
+        "title": "Backend Developer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-07T08:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and maintain backend services and APIs to support various applications. Optimize database queries to ensure high performance and data integrity. Collaborate with frontend developers to integrate user-facing elements seamlessly with backend logic. Troubleshoot and debug backend issues, ensuring system reliability and stability. Stay updated with the latest backend technologies and best practices to implement innovative solutions. Participate in code reviews to maintain code quality and consistency. Contribute to the design and architecture of scalable backend systems. Provide technical support and guidance to junior team members when needed.",
+        "requirement": "Bachelor's degree in Computer Science or related fields. Proficiency in Python, Java, or Node.js for backend development. Experience with relational and NoSQL databases, ensuring efficient data storage and retrieval. Strong problem-solving skills to address complex technical challenges. Knowledge of cloud platforms such as AWS, Azure, or Google Cloud is a plus. Familiarity with version control systems like Git. Ability to work in a collaborative team environment and communicate effectively. A proactive approach to learning and adapting to new technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 19,
+    "fields": {
+        "title": "Frontend Developer",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-04-07T09:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design and implement user-friendly web interfaces that provide an excellent user experience. Collaborate with designers and backend developers to ensure seamless integration of visual elements with backend logic. Optimize web applications for maximum speed, scalability, and responsiveness across various devices and browsers. Ensure cross-browser compatibility and address any inconsistencies. Maintain and improve existing frontend codebase, refactoring and enhancing features as needed. Stay updated with the latest frontend technologies and frameworks to implement innovative solutions. Participate in code reviews to maintain high-quality standards. Provide technical support and troubleshooting for frontend-related issues.",
+        "requirement": "Bachelor's degree in Computer Science or related fields. Proficiency in HTML, CSS, JavaScript, and React.js for frontend development. Experience with responsive design principles to create mobile-friendly applications. Strong attention to detail and a keen eye for design aesthetics. Knowledge of version control systems like Git for collaborative development. Familiarity with frontend build tools and package managers. Ability to work in a fast-paced environment and meet project deadlines. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 20,
+    "fields": {
+        "title": "Data Scientist",
+        "job_type": "full time",
+        "salary": 40000,
+        "post_date": "2025-04-07T10:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Analyze large datasets to extract actionable insights that drive business decisions. Build predictive models and machine learning algorithms to solve complex problems. Collaborate with stakeholders to understand business needs and translate them into data-driven solutions. Visualize data and present findings to non-technical audiences in a clear and concise manner. Stay updated with the latest data science trends and tools to implement innovative techniques. Conduct data preprocessing and cleaning to ensure data quality and accuracy. Develop and maintain data pipelines for efficient data processing. Provide technical guidance and mentorship to junior data scientists.",
+        "requirement": "Master's degree in Data Science, Statistics, or related fields. Proficiency in Python, R, and SQL for data analysis and modeling. Experience with machine learning frameworks such as TensorFlow or PyTorch. Strong analytical and problem-solving skills to address complex challenges. Knowledge of big data tools like Hadoop or Spark is a plus. Familiarity with data visualization tools such as Tableau or Power BI. Ability to work independently and as part of a team in a fast-paced environment. Excellent communication skills to convey technical concepts to non-technical stakeholders.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 21,
+    "fields": {
+        "title": "DevOps Engineer",
+        "job_type": "full time",
+        "salary": 35000,
+        "post_date": "2025-04-07T11:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Implement and manage CI/CD pipelines to streamline development and deployment processes. Monitor and maintain cloud infrastructure to ensure high availability, performance, and security. Automate deployment processes to improve efficiency and reduce manual intervention. Collaborate with development teams to enhance system reliability and scalability. Ensure security and compliance of systems by implementing best practices and conducting regular audits.",
+        "requirement": "Bachelor's degree in Computer Science or related fields. Experience with AWS, Azure, or Google Cloud, including architecture and services. Proficiency in scripting languages like Bash or Python and containerization tools like Docker and Kubernetes. Strong troubleshooting skills to address infrastructure challenges. Familiarity with DevOps tools and methodologies is a plus. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 22,
+    "fields": {
+        "title": "Mobile App Developer",
+        "job_type": "full time",
+        "salary": 32000,
+        "post_date": "2025-04-07T12:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and maintain mobile applications for iOS and Android platforms, ensuring high performance and usability. Collaborate with designers and backend developers to create seamless user experiences. Optimize applications for performance, responsiveness, and compatibility across devices. Debug and resolve application issues to maintain system stability. Stay updated with the latest mobile development trends, frameworks, and tools to implement innovative solutions.",
+        "requirement": "Bachelor's degree in Computer Science or related fields. Proficiency in Swift, Kotlin, or Flutter for mobile application development. Experience with mobile app deployment processes and app store guidelines. Strong problem-solving skills and attention to detail to address technical challenges. Knowledge of mobile UI/UX design principles and familiarity with version control systems like Git is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 23,
+    "fields": {
+        "title": "System Administrator",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-07T13:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Manage and maintain company servers, networks, and IT infrastructure to ensure reliability and performance. Monitor system performance, troubleshoot issues, and implement solutions to minimize downtime. Ensure data security, backup processes, and disaster recovery plans are in place. Install and configure software, hardware, and network devices to support business operations. Provide technical support to employees and address IT-related queries.",
+        "requirement": "Bachelor's degree in Information Technology or related fields. Experience with Windows and Linux servers, networking protocols, and tools. Strong problem-solving skills and attention to detail to address technical challenges. Certification in system administration is a plus. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with system monitoring tools and backup solutions is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 24,
+    "fields": {
+        "title": "UI/UX Designer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-07T14:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design user-friendly interfaces for web and mobile applications, ensuring a seamless user experience. Conduct user research, usability testing, and analyze feedback to improve designs. Create wireframes, prototypes, and mockups to visualize design concepts. Collaborate with developers to ensure accurate implementation of designs. Stay updated with the latest design trends, tools, and technologies to deliver innovative solutions.",
+        "requirement": "Bachelor's degree in Design, Human-Computer Interaction, or related fields with a strong understanding of user-centered design principles. Proficiency in design tools like Figma, Sketch, or Adobe XD. Strong portfolio showcasing previous design work and problem-solving skills. Excellent communication and collaboration skills to work effectively with cross-functional teams. Knowledge of responsive design and accessibility standards is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 25,
+    "fields": {
+        "title": "Quality Assurance Engineer",
+        "job_type": "full time",
+        "salary": 29000,
+        "post_date": "2025-04-07T15:00:00Z",
+        "location": "tsuen wan",
+        "company": "Availink hong kong ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and execute comprehensive test plans and test cases to ensure software quality and reliability. Identify, document, and report software defects, collaborating with developers to resolve them effectively. Perform regression testing to ensure new features do not impact existing functionality. Conduct manual and automated testing to improve efficiency and coverage. Document testing procedures, results, and best practices for future reference.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields with a strong foundation in software testing. Experience with manual and automated testing tools like Selenium or JUnit. Strong attention to detail and analytical skills to identify and resolve issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems like Git is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 26,
+    "fields": {
+        "title": "Software Engineer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-08T09:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain software applications to meet business requirements and user needs. Collaborate with cross-functional teams, including designers and product managers, to deliver high-quality solutions. Ensure software quality through rigorous testing, debugging, and code reviews. Document software processes, updates, and best practices for future reference. Stay updated with the latest technologies and methodologies to implement innovative solutions. Optimize application performance and scalability to enhance user experience. Participate in Agile development processes, including sprint planning and daily stand-ups. Provide technical support and troubleshooting for software-related issues.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields with a strong foundation in programming. Proficiency in Java, Python, or C++ for software development. Experience with Agile methodologies and version control systems like Git. Strong problem-solving and analytical skills to address complex technical challenges. Excellent communication and teamwork skills to collaborate effectively with diverse teams. Familiarity with software development lifecycle and best practices. A proactive attitude and eagerness to learn and adapt to new technologies. Knowledge of cloud platforms and APIs is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 27,
+    "fields": {
+        "title": "Data Analyst",
+        "job_type": "part time",
+        "salary": 20000,
+        "post_date": "2025-04-08T10:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Analyze and interpret complex datasets\r\n    Create data visualizations and reports\r\n    Collaborate with teams to identify data needs\r\n    Ensure data accuracy and integrity\r\n    Provide insights to support decision-making",
+        "requirement": "Bachelor's degree in Data Science, Statistics, or related fields\r\n    Proficiency in SQL, Python, or R\r\n    Strong analytical and problem-solving skills\r\n    Experience with data visualization tools\r\n    Attention to detail",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 28,
+    "fields": {
+        "title": "Project Manager",
+        "job_type": "full time",
+        "salary": 45000,
+        "post_date": "2025-04-08T11:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Plan and oversee projects from initiation to completion, ensuring alignment with business objectives. Manage project timelines, budgets, and resources to deliver successful outcomes. Coordinate with stakeholders, teams, and vendors to ensure effective communication and collaboration. Identify and mitigate project risks, implementing contingency plans as needed. Ensure project deliverables meet quality standards and adhere to organizational goals. Provide regular updates to stakeholders and conduct post-project evaluations to identify areas for improvement.",
+        "requirement": "Bachelor's degree in Business, Engineering, or related fields with a strong foundation in project management principles. Proven experience in managing complex projects across various industries. Strong leadership, organizational, and problem-solving skills to drive project success. Proficiency in project management tools such as MS Project or Jira. Excellent communication and interpersonal skills to collaborate with diverse teams and stakeholders. Certification in project management (e.g., PMP, PRINCE2) is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 29,
+    "fields": {
+        "title": "UI/UX Designer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-08T12:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design user-friendly interfaces for web and mobile applications, ensuring a seamless user experience. Conduct user research, usability testing, and analyze feedback to improve designs. Create wireframes, prototypes, and mockups to visualize design concepts. Collaborate with developers to ensure accurate implementation of designs. Stay updated with the latest design trends, tools, and technologies to deliver innovative solutions. Document design processes and maintain a consistent design language across projects.",
+        "requirement": "Bachelor's degree in Design, Human-Computer Interaction, or related fields with a strong understanding of user-centered design principles. Proficiency in design tools like Figma, Sketch, or Adobe XD. Strong portfolio showcasing previous design work and problem-solving skills. Excellent communication and collaboration skills to work effectively with cross-functional teams. Knowledge of responsive design and accessibility standards is a plus. A proactive attitude and eagerness to stay updated with emerging design trends.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 30,
+    "fields": {
+        "title": "DevOps Engineer",
+        "job_type": "full time",
+        "salary": 35000,
+        "post_date": "2025-04-08T13:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Implement and manage CI/CD pipelines to streamline development and deployment processes. Monitor and maintain cloud infrastructure to ensure high availability, performance, and security. Automate deployment processes to improve efficiency and reduce manual intervention. Collaborate with development teams to enhance system reliability and scalability. Troubleshoot and resolve infrastructure-related issues promptly. Document DevOps processes, tools, and best practices for future reference. Stay updated with the latest DevOps tools and methodologies to implement innovative solutions.",
+        "requirement": "Bachelor's degree in Computer Science, Information Technology, or related fields with a strong foundation in DevOps principles. Experience with cloud platforms like AWS, Azure, or Google Cloud. Proficiency in scripting languages like Bash or Python and containerization tools like Docker and Kubernetes. Strong troubleshooting and problem-solving skills to address infrastructure challenges. Excellent communication and collaboration skills to work effectively with cross-functional teams. Familiarity with version control systems and CI/CD tools is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 31,
+    "fields": {
+        "title": "Mobile App Developer",
+        "job_type": "full time",
+        "salary": 32000,
+        "post_date": "2025-04-08T14:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain mobile applications for iOS and Android platforms, ensuring high performance and usability. Collaborate with designers and backend developers to create seamless user experiences. Optimize applications for performance, responsiveness, and compatibility across devices. Debug and resolve application issues to maintain system stability. Stay updated with the latest mobile development trends, frameworks, and tools. Document development processes and best practices for future reference. Participate in code reviews to ensure high-quality standards.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields with a strong foundation in mobile app development. Proficiency in Swift, Kotlin, or Flutter for mobile application development. Experience with mobile app deployment processes and app store guidelines. Strong problem-solving skills and attention to detail to address technical challenges. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems like Git is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 32,
+    "fields": {
+        "title": "Quality Assurance Engineer",
+        "job_type": "full time",
+        "salary": 29000,
+        "post_date": "2025-04-08T15:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and execute comprehensive test plans and test cases to ensure software quality and reliability. Identify, document, and report software defects, collaborating with developers to resolve them effectively. Perform regression testing to ensure new features do not impact existing functionality. Conduct manual and automated testing to improve efficiency and coverage. Document testing procedures, results, and best practices for future reference. Stay updated with the latest testing tools and methodologies. Participate in team meetings and contribute to improving the overall quality assurance process.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields with a strong foundation in software testing. Experience with manual and automated testing tools like Selenium or JUnit. Strong attention to detail and analytical skills to identify and resolve issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems like Git is a plus. Knowledge of software development lifecycle and testing methodologies is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 33,
+    "fields": {
+        "title": "System Administrator",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-08T16:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Manage and maintain company servers, networks, and IT infrastructure to ensure reliability and performance. Monitor system performance, troubleshoot issues, and implement solutions to minimize downtime. Ensure data security, backup processes, and disaster recovery plans are in place. Install and configure software, hardware, and network devices to support business operations. Document system configurations, processes, and best practices for future reference. Stay updated with the latest IT trends and tools to implement innovative solutions. Provide technical support to employees and address IT-related queries.",
+        "requirement": "Bachelor's degree in Information Technology, Computer Science, or related fields with a strong foundation in system administration. Experience with Windows and Linux servers, networking protocols, and tools. Strong problem-solving skills and attention to detail to address technical challenges. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with system monitoring tools and backup solutions is a plus. Certification in system administration is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 34,
+    "fields": {
+        "title": "Network Engineer",
+        "job_type": "full time",
+        "salary": 31000,
+        "post_date": "2025-04-08T17:00:00Z",
+        "location": "Hong Kong SAR",
+        "company": "philips",
+        "logo_url": "https://image-service-cdn.seek.com.au/8787e8c9b8609da4e9c62344b537eeebab13df12/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and implement network solutions to meet business requirements, ensuring scalability and reliability. Monitor and maintain network performance, identifying and resolving issues proactively to minimize downtime. Troubleshoot and resolve complex network issues, collaborating with cross-functional teams when necessary. Ensure network security and compliance with organizational policies and industry standards. Collaborate with IT teams to support infrastructure needs and optimize network performance. Document network configurations, processes, and best practices for future reference. Stay updated with the latest networking technologies and trends to implement innovative solutions.",
+        "requirement": "Bachelor's degree in Computer Science, Information Technology, or related fields with a strong foundation in networking. Proven experience with network protocols, tools, and technologies. Proficiency in configuring and managing routers, switches, and firewalls. Knowledge of VPNs, network security measures, and compliance standards. Strong analytical and problem-solving skills to address complex network challenges. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Certification in networking (e.g., CCNA, CCNP) is a plus.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 36,
+    "fields": {
+        "title": "Senior Full Stack Developer",
+        "job_type": "full time",
+        "salary": 40000,
+        "post_date": "2025-04-09T10:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Lead the development of Cloud-based Applications for Hotels, Theme Parks, and Restaurants, ensuring scalability and reliability. Design and implement scalable Cloud APIs to support seamless integration with partner systems. Oversee the development of E-Commerce Mobile Applications, optimizing performance and usability. Mentor junior developers, providing technical guidance and fostering skill development. Conduct code reviews to maintain code quality and consistency. Stay updated with the latest technologies and best practices to implement innovative solutions. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields with extensive experience in full stack development. Proficiency in PHP Frameworks like Laravel or Symfony and frontend frameworks like React, Vue.js, or Angular. Strong knowledge of MySQL or other RDBMS and experience in RESTful API development. Excellent problem-solving and leadership skills to guide teams and address technical challenges. Familiarity with Agile methodologies and version control systems like Git. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 37,
+    "fields": {
+        "title": "Cloud Application Developer",
+        "job_type": "full time",
+        "salary": 32000,
+        "post_date": "2025-04-09T11:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Develop and maintain Cloud-based Applications for the hospitality industry, ensuring scalability and reliability. Build and enhance Cloud APIs for seamless integration with partner systems. Collaborate on Mobile Application development to deliver user-friendly solutions. Perform testing, debugging, and optimization to ensure application reliability and performance. Contribute to Agile Scrum Development processes, including sprint planning and daily stand-ups. Stay updated with the latest technologies and trends to implement innovative solutions and improve application quality.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines with a strong foundation in software development. Experience with PHP Frameworks like CakePHP or Yii is a plus. Familiarity with frontend frameworks like React or Vue.js and knowledge of MySQL or other RDBMS. Strong analytical and problem-solving skills to address technical challenges. Good communication skills in English and Chinese to collaborate effectively with cross-functional teams. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 38,
+    "fields": {
+        "title": "API Developer",
+        "job_type": "full time",
+        "salary": 31000,
+        "post_date": "2025-04-09T12:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Design and develop Cloud APIs for integration with partner applications, ensuring high performance and scalability. Optimize API performance and reliability to handle high traffic. Collaborate with cross-functional teams to ensure seamless integration with backend and frontend systems. Conduct thorough testing and debugging of APIs to identify and resolve issues. Document API specifications, processes, and updates for future reference. Stay updated with the latest API development trends and best practices to implement innovative solutions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines with a strong foundation in API development. Experience in RESTful API development and familiarity with PHP Frameworks and frontend frameworks. Knowledge of MySQL or other RDBMS and database optimization techniques. Strong problem-solving and debugging skills to address technical challenges effectively. Good communication skills in English and Chinese to collaborate with diverse teams. A proactive attitude and eagerness to learn and adapt to new technologies and frameworks.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 39,
+    "fields": {
+        "title": "Mobile App Developer",
+        "job_type": "full time",
+        "salary": 33000,
+        "post_date": "2025-04-09T13:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Develop and maintain E-Commerce Mobile Applications for iOS and Android platforms, ensuring high performance and usability. Collaborate with backend developers to integrate APIs and deliver seamless user experiences. Optimize mobile applications for performance, responsiveness, and compatibility across devices. Debug and resolve application issues to maintain system stability. Stay updated with the latest mobile development trends, frameworks, and tools. Document development processes and best practices for future reference. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines with a strong foundation in mobile app development. Experience in Mobile App development using Swift or Flutter and familiarity with RESTful APIs and cloud services. Strong problem-solving skills and attention to detail to address technical challenges. Good communication skills in English and Chinese to collaborate effectively with cross-functional teams. A proactive attitude and eagerness to learn and adapt to new mobile development technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 40,
+    "fields": {
+        "title": "Junior IT Support Engineer",
+        "job_type": "full time",
+        "salary": 22000,
+        "post_date": "2025-04-11T09:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Provide technical support to end-users by troubleshooting hardware and software issues promptly. Assist in setting up and maintaining IT equipment, including computers, printers, and network devices. Document technical procedures, solutions, and best practices for future reference. Collaborate with the IT team to improve support processes and enhance system reliability. Conduct basic training sessions for end-users to improve their understanding of IT systems. Stay updated with the latest IT trends and tools to provide innovative solutions.",
+        "requirement": "Diploma or above in Information Technology or related fields with a strong foundation in IT systems and networks. Basic knowledge of hardware troubleshooting, software installation, and system maintenance. Strong problem-solving and communication skills to address user concerns effectively. Willingness to learn and adapt to new technologies and tools. Fresh graduates are welcome to apply and will receive on-the-job training. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 41,
+    "fields": {
+        "title": "IT Project Coordinator",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-12T10:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Coordinate IT projects and ensure timely delivery by managing schedules, resources, and deliverables. Communicate with stakeholders to gather requirements, provide updates, and address concerns. Monitor project progress, identify potential risks, and implement mitigation strategies to ensure project success. Prepare comprehensive project documentation, including plans, reports, and post-project evaluations. Support the project team in achieving goals by facilitating collaboration and resolving conflicts. Conduct regular meetings to track progress and ensure alignment with objectives. Assist in budget management and resource allocation to optimize project efficiency. Stay updated with project management methodologies and tools to enhance project execution.",
+        "requirement": "Bachelor's degree in IT or related disciplines with a strong understanding of project management principles. Proven ability to manage multiple tasks and prioritize effectively in a fast-paced environment. Strong organizational and multitasking skills to handle complex projects. Knowledge of project management tools such as Jira, Trello, or MS Project is a plus. Excellent communication and interpersonal skills to collaborate with diverse teams and stakeholders. Experience in IT project coordination, including planning, execution, and monitoring, is preferred. A proactive attitude and problem-solving mindset to address challenges effectively. Certification in project management (e.g., PMP, PRINCE2) is advantageous.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 42,
+    "fields": {
+        "title": "Network Support Engineer",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-04-13T11:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Monitor and maintain network infrastructure to ensure optimal performance and reliability. Troubleshoot network issues and outages, providing timely resolutions to minimize downtime. Configure and install network devices, including routers, switches, and firewalls, to support business operations. Ensure network security and compliance with organizational policies and industry standards. Provide technical support for network-related queries, assisting end-users and IT teams. Conduct regular network performance assessments and implement improvements to enhance efficiency. Document network configurations, processes, and troubleshooting steps for future reference. Stay updated with the latest networking technologies and trends to implement innovative solutions.",
+        "requirement": "Degree in Computer Science or related fields with a strong foundation in networking principles. Knowledge of networking protocols such as TCP/IP, DNS, and DHCP, as well as tools for monitoring and troubleshooting. Experience with configuring and managing routers, switches, and firewalls from vendors like Cisco or Juniper. Strong analytical and problem-solving skills to address complex network challenges effectively. Certification in networking (e.g., CCNA, CCNP) is a plus. Excellent communication skills to collaborate with cross-functional teams and provide user support. A proactive attitude and eagerness to learn and adapt to new networking technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 43,
+    "fields": {
+        "title": "System Analyst",
+        "job_type": "full time",
+        "salary": 32000,
+        "post_date": "2025-04-14T12:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Analyze system requirements and design solutions that align with business objectives and user needs. Collaborate with developers, stakeholders, and project managers to ensure seamless system integration and functionality. Ensure system functionality and performance by conducting thorough testing and validation. Prepare technical documentation, including system specifications, user manuals, and reports, for future reference. Provide support for system implementation and maintenance, addressing issues and optimizing performance. Identify opportunities for system improvements and recommend innovative solutions. Conduct training sessions for end-users to enhance their understanding of system functionalities. Stay updated with the latest technologies and methodologies to enhance system analysis practices.",
+        "requirement": "Bachelor's degree in Computer Science or related fields with a strong understanding of system analysis and design principles. Experience in system analysis, including requirements gathering, process modeling, and solution design. Proficiency in programming languages such as Java, Python, or C#, and familiarity with database management systems. Strong analytical and communication skills to collaborate with diverse teams and stakeholders. Knowledge of the Software Development Life Cycle (SDLC) and Agile methodologies is preferred. A proactive attitude and problem-solving mindset to address challenges effectively. Certification in system analysis or related fields is advantageous.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 44,
+    "fields": {
+        "title": "Database Administrator",
+        "job_type": "full time",
+        "salary": 35000,
+        "post_date": "2025-04-15T13:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Manage and maintain company databases to ensure data availability, security, and integrity. Optimize database performance by analyzing and fine-tuning queries, indexes, and configurations. Troubleshoot database issues, providing timely resolutions to minimize disruptions. Ensure data security and compliance with organizational policies and industry standards. Provide support for database-related queries, assisting developers and end-users. Conduct regular database maintenance, including backups, updates, and performance monitoring. Document database structures, processes, and best practices for future reference. Stay updated with the latest database technologies and trends to implement innovative solutions.",
+        "requirement": "Degree in IT or related disciplines with a strong understanding of database management principles. Experience with database management systems such as MySQL, Oracle, or SQL Server. Proficiency in SQL and database optimization techniques to enhance performance. Strong problem-solving skills to address complex database challenges effectively. Certification in database administration (e.g., Oracle DBA, Microsoft SQL Server) is a plus. Excellent communication skills to collaborate with cross-functional teams and provide user support. A proactive attitude and eagerness to learn and adapt to new database technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 45,
+    "fields": {
+        "title": "Cloud Engineer",
+        "job_type": "full time",
+        "salary": 38000,
+        "post_date": "2025-04-16T14:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design and implement cloud solutions that meet business requirements and ensure scalability. Monitor and maintain cloud infrastructure to ensure reliability, performance, and cost-efficiency. Optimize cloud performance and costs by implementing best practices and resource management strategies. Ensure cloud security and compliance with organizational policies and industry standards. Provide support for cloud-related issues, assisting development and IT teams. Document cloud architecture, configurations, and processes for future reference. Stay updated with the latest cloud technologies and trends to implement innovative solutions. Collaborate with cross-functional teams to integrate cloud services seamlessly into business operations.",
+        "requirement": "Bachelor's degree in Computer Science or related fields with a strong understanding of cloud computing principles. Experience with cloud platforms such as AWS, Azure, or Google Cloud, including architecture and services. Knowledge of cloud security, compliance, and cost optimization strategies. Strong analytical and problem-solving skills to address complex cloud-related challenges effectively. Certification in cloud computing (e.g., AWS Certified Solutions Architect, Microsoft Azure Administrator) is a plus. Excellent communication skills to collaborate with diverse teams and stakeholders. A proactive attitude and eagerness to learn and adapt to new cloud technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 46,
+    "fields": {
+        "title": "Cybersecurity Analyst",
+        "job_type": "full time",
+        "salary": 36000,
+        "post_date": "2025-04-17T15:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Monitor and respond to security incidents, ensuring timely resolution to minimize risks. Conduct vulnerability assessments and penetration testing to identify and address potential security threats. Implement security measures, policies, and best practices to safeguard organizational assets. Provide training and awareness programs on cybersecurity best practices to employees. Stay updated with the latest security trends, tools, and technologies to enhance the organization's security posture. Collaborate with IT teams to ensure compliance with security standards and regulations. Document security incidents, processes, and solutions for future reference. Participate in security audits and recommend improvements to strengthen defenses.",
+        "requirement": "Degree in Cybersecurity or related fields with a strong understanding of security principles. Knowledge of security tools, protocols, and frameworks. Strong analytical and problem-solving skills to address complex security challenges effectively. Certification in cybersecurity (e.g., CISSP, CEH) is a plus. Proficient in English and Chinese for effective communication. Familiarity with incident response processes and vulnerability management. Ability to work independently and as part of a team in a fast-paced environment. Experience in conducting security assessments and implementing security measures is preferred. A proactive attitude and eagerness to stay updated with emerging threats and technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 47,
+    "fields": {
+        "title": "IT Trainer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-18T16:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and deliver comprehensive IT training programs to enhance employee skills and knowledge. Create engaging training materials, including presentations, manuals, and online resources, tailored to various learning styles. Assess training needs through surveys and feedback to design effective programs. Evaluate training effectiveness and make improvements based on participant feedback. Provide technical support during training sessions to ensure smooth delivery. Stay updated with the latest IT trends, tools, and methodologies to incorporate into training programs. Collaborate with management to align training objectives with organizational goals. Conduct workshops and seminars to promote continuous learning and professional development.",
+        "requirement": "Bachelor's degree in IT, Computer Science, or related fields with a strong foundation in IT systems and tools. Proven experience in developing and delivering IT training programs for diverse audiences. Strong communication and presentation skills to effectively convey technical concepts. Knowledge of instructional design principles and e-learning platforms is a plus. Certification in IT training or related fields is advantageous. Ability to assess training needs and adapt programs to meet organizational requirements. Proficiency in English and Chinese for effective communication. A proactive attitude and eagerness to stay updated with emerging IT trends and technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 48,
+    "fields": {
+        "title": "IT Operations Manager",
+        "job_type": "full time",
+        "salary": 45000,
+        "post_date": "2025-04-19T17:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Oversee IT operations and infrastructure to ensure optimal performance and reliability. Manage IT teams, resources, and budgets to meet organizational goals. Develop and implement IT policies, procedures, and best practices to enhance efficiency and security. Monitor system performance and address issues proactively to minimize downtime. Collaborate with stakeholders to align IT strategies with business objectives. Ensure compliance with industry standards and regulations. Lead IT projects, including system upgrades and migrations, to support business growth. Provide technical guidance and mentorship to team members, fostering a culture of continuous improvement and innovation.",
+        "requirement": "Bachelor's degree in IT, Computer Science, or related fields with extensive experience in IT operations management. Strong leadership and organizational skills to manage teams and resources effectively. In-depth knowledge of IT systems, infrastructure, and security best practices. Proven ability to develop and implement IT policies and procedures. Certification in IT management (e.g., ITIL, PMP) is a plus. Excellent problem-solving and decision-making skills to address complex challenges. Proficiency in English and Chinese for effective communication. A proactive attitude and eagerness to stay updated with emerging IT trends and technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 49,
+    "fields": {
+        "title": "Technical Support Specialist",
+        "job_type": "full time",
+        "salary": 26000,
+        "post_date": "2025-04-20T18:00:00Z",
+        "location": "Tai Kok Tsui, Yau Tsim Mong District",
+        "company": "Lenovo PCCW Solutions",
+        "logo_url": "https://image-service-cdn.seek.com.au/bc1b8c0075a50ca3867a98652899f50dc3bb5293/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Provide technical support to users by troubleshooting and resolving hardware and software issues. Install, configure, and maintain IT equipment, including computers, printers, and network devices. Document technical solutions, procedures, and best practices for future reference. Collaborate with the IT team to improve support services and enhance system reliability. Conduct basic training sessions for end-users to improve their understanding of IT systems. Monitor IT systems to identify potential issues and resolve them proactively. Stay updated with the latest IT trends and tools to provide innovative solutions. Assist in system upgrades and maintenance to ensure smooth operations.",
+        "requirement": "Diploma or above in IT, Computer Science, or related fields with a strong foundation in IT systems and tools. Proven experience in providing technical support and troubleshooting IT issues. Strong problem-solving and communication skills to address user concerns effectively. Familiarity with hardware troubleshooting, software installation, and system maintenance. Proficiency in English and Chinese for effective communication. Willingness to learn and adapt to new technologies and tools. Familiarity with IT support tools and ticketing systems is a plus. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 50,
+    "fields": {
+        "title": "Embedded Systems Engineer",
+        "job_type": "full time",
+        "salary": 26000,
+        "post_date": "2025-04-09T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and test embedded systems for IoT devices, ensuring high performance and reliability. Collaborate closely with hardware engineers to guarantee seamless integration and compatibility between hardware and software components. Optimize software for resource efficiency, ensuring that the embedded systems meet performance benchmarks. Document technical specifications, processes, and best practices to ensure clarity and maintainability. Stay updated with emerging technologies and industry trends to incorporate innovative solutions into projects. Participate in team meetings, provide technical insights, and contribute to the overall success of the development process. Troubleshoot and resolve technical issues during the development and testing phases.",
+        "requirement": "Bachelor's degree in Computer Engineering or related fields. Proven experience with embedded C/C++ programming and a strong understanding of embedded systems development. Knowledge of IoT protocols such as MQTT, CoAP, or Zigbee is a plus. Strong problem-solving skills and the ability to analyze and resolve complex technical challenges. Excellent communication skills in English and Mandarin to collaborate effectively with cross-functional teams. Familiarity with debugging tools and techniques for embedded systems. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 51,
+    "fields": {
+        "title": "Firmware Developer",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-04-12T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design and implement firmware for consumer electronics, ensuring optimal performance and reliability. Conduct thorough debugging and performance testing to identify and resolve issues in a timely manner. Collaborate with cross-functional teams, including hardware and software engineers, to ensure seamless integration of firmware with hardware components. Maintain and update existing firmware to enhance functionality and address any identified issues. Provide technical support during production stages, assisting in troubleshooting and resolving firmware-related challenges. Document firmware development processes, including code, testing procedures, and best practices, to ensure maintainability and knowledge sharing. Stay updated with the latest advancements in firmware development and incorporate innovative techniques into projects.",
+        "requirement": "Diploma or above in Electronic Engineering or related fields. A minimum of 3 years of experience in firmware development, with a strong focus on embedded systems. Proficiency in C/C++ programming and familiarity with hardware interfaces such as UART, SPI, and I2C. Strong analytical skills and the ability to troubleshoot and resolve complex technical issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems and debugging tools is a plus. A proactive attitude and a commitment to delivering high-quality firmware solutions.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 52,
+    "fields": {
+        "title": "IoT Software Engineer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-04-15T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop IoT applications and solutions for various industries, ensuring high performance and reliability. Integrate IoT devices with cloud platforms to enable seamless data exchange and remote management. Optimize software for low-power devices to enhance efficiency and battery life. Conduct system testing, debugging, and troubleshooting to ensure functionality and reliability. Document software architecture, design, and development processes for future reference. Collaborate with cross-functional teams to deliver innovative IoT solutions and stay updated with the latest IoT trends and technologies.",
+        "requirement": "Bachelor's degree in Computer Science, Software Engineering, or related fields. Proven experience with IoT development, including device integration and cloud connectivity. Proficiency in Python or JavaScript for IoT application development. Knowledge of cloud services such as AWS IoT or Azure IoT Hub is a plus. Strong teamwork and communication skills to collaborate effectively with diverse teams. Familiarity with IoT protocols like MQTT or CoAP is advantageous. A proactive attitude and eagerness to learn and adapt to emerging IoT technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 53,
+    "fields": {
+        "title": "Embedded Firmware Engineer",
+        "job_type": "full time",
+        "salary": 29000,
+        "post_date": "2025-04-18T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and maintain firmware for safety devices, ensuring compliance with industry standards and performance benchmarks. Conduct thorough performance testing, debugging, and troubleshooting to identify and resolve issues. Collaborate with hardware teams to ensure seamless integration of firmware with hardware components. Optimize firmware for resource efficiency, including memory and power consumption. Provide detailed technical documentation, including code, testing procedures, and best practices. Stay updated with the latest advancements in firmware development and safety standards to implement innovative solutions and improve product reliability.",
+        "requirement": "Diploma or above in Computer Engineering, Electronic Engineering, or related fields. A minimum of 2 years of experience in embedded firmware development, with a focus on safety devices. Proficiency in C programming and familiarity with hardware interfaces such as UART, SPI, and I2C. Strong analytical and problem-solving skills to address complex technical challenges. Knowledge of safety standards and compliance requirements is a plus. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. A proactive attitude and eagerness to learn and adapt to new technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 54,
+    "fields": {
+        "title": "Junior Embedded Engineer",
+        "job_type": "full time",
+        "salary": 24000,
+        "post_date": "2025-04-21T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Assist in developing embedded software for consumer products, ensuring functionality and reliability. Perform debugging, testing, and troubleshooting to identify and resolve software issues. Collaborate with senior engineers to gain hands-on experience and enhance technical skills. Document code, processes, and best practices for future reference and maintainability. Participate in team meetings, contribute ideas for improvement, and stay updated with the latest trends in embedded systems. Support the team in integrating software with hardware components and optimizing performance for resource efficiency.",
+        "requirement": "Diploma or above in Electronic Engineering, Computer Engineering, or related fields. Basic knowledge of C programming and a willingness to learn and adapt to new technologies. Strong communication and teamwork skills to collaborate effectively with team members. Fresh graduates are welcome to apply, as on-the-job training will be provided. A proactive attitude and eagerness to take on challenges. Familiarity with debugging tools and embedded systems development is a plus. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 55,
+    "fields": {
+        "title": "Senior Embedded Engineer",
+        "job_type": "full time",
+        "salary": 35000,
+        "post_date": "2025-04-24T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Lead the development of embedded systems, ensuring high performance and reliability. Mentor junior engineers, providing technical guidance and fostering skill development. Optimize software for performance, scalability, and maintainability. Collaborate with cross-functional teams to ensure seamless integration of hardware and software components. Stay updated with industry trends and emerging technologies to implement innovative solutions. Conduct code reviews, troubleshoot issues, and ensure adherence to best practices. Document processes and contribute to the overall success of the development lifecycle.",
+        "requirement": "Bachelor's degree in Computer Engineering or related fields. 5+ years of experience in embedded systems development with a strong focus on C/C++ programming. Proven leadership and problem-solving skills to guide teams and address technical challenges. Knowledge of real-time operating systems (RTOS) and debugging tools is a plus. Strong communication skills to collaborate effectively with cross-functional teams. A proactive attitude and eagerness to learn and adapt to new technologies. Familiarity with industry standards and best practices is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 56,
+    "fields": {
+        "title": "Embedded Software Tester",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-04-27T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Develop and execute comprehensive test plans for embedded software to ensure quality and reliability. Identify, document, and report software defects, collaborating with developers to resolve issues. Perform regression testing to verify that fixes do not introduce new problems. Conduct manual and automated testing to improve efficiency and coverage. Stay updated with the latest testing tools and methodologies. Document testing procedures, results, and best practices for future reference. Contribute to improving the overall quality assurance process.",
+        "requirement": "Diploma or above in Computer Science or related fields. Experience with software testing, including manual and automated testing techniques. Knowledge of testing tools such as Selenium or JUnit is a plus. Strong attention to detail and analytical skills to identify and resolve issues effectively. Good communication skills to collaborate with developers and stakeholders. Familiarity with version control systems like Git is preferred. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 57,
+    "fields": {
+        "title": "Embedded Hardware Engineer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-04-30T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Design and test hardware for embedded systems, ensuring performance, reliability, and cost-effectiveness. Collaborate with software teams to ensure seamless integration of hardware and software components. Optimize hardware designs for manufacturability and scalability. Document hardware designs, processes, and best practices for future reference. Provide technical support during production and address hardware-related challenges. Stay updated with the latest hardware design tools and technologies. Participate in team meetings and contribute to the overall success of the development process.",
+        "requirement": "Bachelor's degree in Electronic Engineering or related fields. Proven experience in hardware design and testing, with a strong understanding of embedded systems. Knowledge of PCB layout tools and hardware debugging techniques. Strong analytical and problem-solving skills to address complex hardware challenges. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with industry standards and compliance requirements is a plus. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 58,
+    "fields": {
+        "title": "Embedded Systems Architect",
+        "job_type": "full time",
+        "salary": 40000,
+        "post_date": "2025-05-03T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Define architecture for embedded systems, ensuring scalability, maintainability, and performance. Lead design and development efforts, collaborating with cross-functional teams to meet project requirements. Stay updated with industry advancements and emerging technologies to implement innovative solutions. Conduct code reviews and provide technical guidance to development teams. Document system architecture, processes, and best practices for future reference. Participate in stakeholder meetings to align system design with business objectives. Troubleshoot and resolve complex technical challenges during the development lifecycle.",
+        "requirement": "Master's degree in Computer Engineering or related fields. 7+ years of experience in embedded systems development with a strong focus on system architecture. Proficiency in C/C++ programming and familiarity with real-time operating systems. Excellent leadership and problem-solving skills to guide teams and address technical challenges. Strong communication skills to collaborate effectively with stakeholders and cross-functional teams. Familiarity with industry standards and best practices is preferred. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 59,
+    "fields": {
+        "title": "Embedded Software Consultant",
+        "job_type": "full time",
+        "salary": 45000,
+        "post_date": "2025-05-06T05:08:12Z",
+        "location": "Kwun Tong District",
+        "company": "Shine Success Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/8fe0452b8c566ce569e5c4f1b295b44e1c5d9c75/f3c5292cec0e05e4272d9bf9146f390d366481d0",
+        "responsibilities": "Provide expert guidance on embedded software projects, ensuring high-quality deliverables. Review and optimize existing codebases to improve performance and maintainability. Conduct training sessions for development teams to enhance their skills and knowledge. Collaborate with clients to define project goals, requirements, and timelines. Stay updated with the latest technologies and industry standards to implement innovative solutions. Document processes, best practices, and recommendations for future reference. Participate in stakeholder meetings to align project objectives with business needs.",
+        "requirement": "Bachelor's degree in Computer Science or related fields. 10+ years of experience in embedded software development with a strong focus on C/C++ programming. Proven problem-solving and analytical skills to address complex technical challenges. Excellent communication and presentation skills to collaborate with clients and stakeholders. Familiarity with industry standards and best practices is preferred. A proactive attitude and eagerness to learn and adapt to new technologies. Strong leadership skills to guide teams and ensure project success.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 69,
+    "fields": {
+        "title": "Technical Support Engineer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-07-15T05:14:21Z",
+        "location": "Sha Tin District",
+        "company": "Altai Technologies Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/f2993b2027e3d68adf8c0f0ea19e8af0d540b911/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Provide technical support for WiFi products, ensuring customer satisfaction by resolving hardware and software issues promptly. Assist customers with product setup, configuration, and troubleshooting to ensure optimal performance. Document technical solutions and best practices for future reference. Collaborate with cross-functional teams to address complex technical challenges and improve product reliability. Conduct training sessions for customers and internal teams to enhance product knowledge. Stay updated with the latest WiFi technologies and trends to provide innovative solutions. Participate in product testing and validation to ensure quality and reliability.",
+        "requirement": "Diploma or above in IT or related fields with a strong foundation in technical support. Proven experience in troubleshooting hardware and software issues, particularly in WiFi systems. Strong communication and interpersonal skills to assist customers effectively. Familiarity with networking protocols and tools is a plus. Ability to work independently and as part of a team in a fast-paced environment. Proficiency in English and Chinese for effective communication. A proactive attitude and eagerness to learn and adapt to new technologies. Certification in networking or technical support is advantageous.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 70,
+    "fields": {
+        "title": "Hardware Engineer",
+        "job_type": "Part time",
+        "salary": 21000,
+        "post_date": "2025-04-16T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and test hardware circuits for electronic products, ensuring compliance with industry standards and performance requirements. Collaborate with software teams to integrate hardware and software components seamlessly. Conduct debugging and troubleshooting to identify and resolve hardware issues. Optimize hardware designs for cost-effectiveness and manufacturability. Document hardware specifications, processes, and best practices for future reference. Stay updated with the latest hardware design tools and technologies to implement innovative solutions. Participate in product development meetings and provide technical insights to enhance product quality.",
+        "requirement": "Bachelor's degree in Electronic Engineering or related fields with a strong foundation in hardware design. Proven experience in PCB design and familiarity with hardware debugging tools. Strong analytical and problem-solving skills to address complex hardware challenges. Proficiency in using CAD tools such as Altium Designer or similar software. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Knowledge of manufacturing processes and design for manufacturability is a plus. A proactive attitude and eagerness to learn and adapt to new technologies. Certification in hardware design or related fields is advantageous.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 71,
+    "fields": {
+        "title": "Firmware Developer",
+        "job_type": "Part time",
+        "salary": 22000,
+        "post_date": "2025-04-26T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop firmware for IoT devices, ensuring optimal performance and reliability. Optimize firmware for resource efficiency, including memory and power consumption. Conduct thorough debugging and testing to identify and resolve issues. Collaborate with hardware teams to ensure seamless integration of firmware with hardware components. Document firmware development processes, including code, testing procedures, and best practices. Stay updated with the latest advancements in firmware development and incorporate innovative techniques. Participate in team meetings and contribute to the overall success of the development process.",
+        "requirement": "Proficiency in C/C++ programming with a strong focus on embedded systems development. Experience with IoT protocols such as MQTT, CoAP, or Zigbee is a plus. Strong analytical and problem-solving skills to troubleshoot and resolve technical issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with version control systems and debugging tools is a plus. A proactive attitude and commitment to delivering high-quality firmware solutions. Willingness to learn and adapt to new technologies and tools. Diploma or above in Computer Engineering or a related field.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 72,
+    "fields": {
+        "title": "Embedded Systems Engineer",
+        "job_type": "Part time",
+        "salary": 23000,
+        "post_date": "2025-05-06T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and test embedded systems for consumer products, ensuring high performance and reliability. Collaborate closely with hardware engineers to guarantee seamless integration and compatibility between hardware and software components. Optimize software for resource efficiency, ensuring that the embedded systems meet performance benchmarks. Document technical specifications, processes, and best practices to ensure clarity and maintainability. Stay updated with emerging technologies and industry trends to incorporate innovative solutions into projects. Participate in team meetings, provide technical insights, and contribute to the overall success of the development process. Troubleshoot and resolve technical issues during the development and testing phases.",
+        "requirement": "Bachelor's degree in Computer Engineering or related fields. Proven experience with embedded C/C++ programming and a strong understanding of embedded systems development. Knowledge of real-time operating systems and debugging tools is a plus. Strong problem-solving skills and the ability to analyze and resolve complex technical challenges. Excellent communication skills in English and Mandarin to collaborate effectively with cross-functional teams. Familiarity with debugging tools and techniques for embedded systems. A proactive attitude and eagerness to learn and adapt to new technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 73,
+    "fields": {
+        "title": "Software Engineer",
+        "job_type": "Part time",
+        "salary": 24000,
+        "post_date": "2025-05-16T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop software for embedded systems, ensuring high performance and reliability. Perform code reviews to maintain code quality and consistency. Conduct thorough testing and debugging to identify and resolve software issues. Collaborate with cross-functional teams to ensure seamless integration of software with hardware components. Document software development processes, including code, testing procedures, and best practices. Stay updated with the latest advancements in software development and incorporate innovative techniques. Participate in Agile development processes, including sprint planning and daily stand-ups. Provide technical support during production stages and address software-related challenges.",
+        "requirement": "Proficiency in Python or Java programming with a strong focus on embedded systems development. Experience with Agile methodologies and familiarity with version control systems like Git. Strong analytical and problem-solving skills to address complex software challenges. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Familiarity with software testing tools and debugging techniques is a plus. A proactive attitude and commitment to delivering high-quality software solutions. Willingness to learn and adapt to new technologies and tools. Diploma or above in Computer Science or a related field.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 78,
+    "fields": {
+        "title": "Electronic Product Designer",
+        "job_type": "Part time",
+        "salary": 29000,
+        "post_date": "2025-07-05T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design innovative electronic products that meet customer requirements and industry standards. Collaborate with cross-functional teams, including hardware and software engineers, to ensure seamless integration. Create detailed product specifications, schematics, and documentation for manufacturing. Conduct research on emerging technologies to incorporate into product designs. Perform testing and validation to ensure product reliability and performance. Optimize designs for cost-effectiveness and manufacturability. Provide technical support during the production process and address any design-related issues. Stay updated with the latest trends in electronic product design to maintain competitive advantage.",
+        "requirement": "Bachelor's degree in Electronic Engineering or a related field. Proven experience in electronic product design, including creating schematics and technical documentation. Proficiency in CAD tools such as Altium Designer or AutoCAD. Strong problem-solving skills and attention to detail. Excellent communication and teamwork skills to collaborate with cross-functional teams. Knowledge of manufacturing processes and design for manufacturability is a plus. Familiarity with industry standards and compliance requirements. A proactive attitude and eagerness to learn and adapt to new technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 79,
+    "fields": {
+        "title": "Embedded Firmware Engineer",
+        "job_type": "Part time",
+        "salary": 30000,
+        "post_date": "2025-07-15T05:23:14Z",
+        "location": "Kwun Tong District",
+        "company": "Avantec Manufacturing Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/0f566953196561f902d93e808d7dc27335768894/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain firmware for electronic devices, ensuring optimal performance and reliability. Collaborate with hardware engineers to ensure seamless integration of firmware with hardware components. Conduct thorough debugging and testing to identify and resolve issues. Optimize firmware for resource efficiency, including memory and power consumption. Document firmware development processes, including code, testing procedures, and best practices. Provide technical support during production and address firmware-related challenges. Stay updated with the latest advancements in firmware development and incorporate innovative techniques. Participate in team meetings and contribute to the overall success of the development process.",
+        "requirement": "Diploma or above in Computer Engineering or a related field. Proven experience in embedded firmware development, with a strong focus on C programming. Familiarity with hardware interfaces such as UART, SPI, and I2C. Strong analytical and problem-solving skills to troubleshoot and resolve technical issues. Excellent communication and teamwork skills to collaborate effectively with cross-functional teams. Knowledge of version control systems and debugging tools is a plus. A proactive attitude and commitment to delivering high-quality firmware solutions. Willingness to learn and adapt to new technologies and tools.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 80,
+    "fields": {
+        "title": "Junior Web Developer",
+        "job_type": "part time",
+        "salary": 14000,
+        "post_date": "2025-04-16T06:29:21Z",
+        "location": "Hong Kong SAR",
+        "company": "Pathsight Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/7a746ff9183aea66735e32682a31ea2253932057/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain responsive web applications that meet user requirements. Collaborate with designers and backend developers to ensure seamless integration of visual elements and functionality. Optimize web applications for performance, usability, and cross-browser compatibility. Debug and resolve application issues to maintain system stability. Stay updated with the latest web development trends, frameworks, and tools to implement innovative solutions. Document development processes and best practices for future reference. Participate in code reviews to ensure high-quality standards. Assist in creating user-friendly interfaces that enhance user experience.",
+        "requirement": "Diploma or above in Computer Science or related fields. Basic knowledge of HTML, CSS, and JavaScript, with a strong understanding of responsive design principles. Willingness to learn and adapt to new web development technologies and tools. Strong communication and teamwork skills to collaborate effectively with cross-functional teams. Attention to detail and a proactive attitude to address challenges. Familiarity with version control systems like Git is a plus. Fresh graduates are welcome to apply and will receive on-the-job training. Ability to work independently and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 81,
+    "fields": {
+        "title": "Mobile App Tester",
+        "job_type": "part time",
+        "salary": 15000,
+        "post_date": "2025-04-26T06:29:21Z",
+        "location": "Hong Kong SAR",
+        "company": "Pathsight Limited",
+        "logo_url": "https://image-service-cdn.seek.com.au/7a746ff9183aea66735e32682a31ea2253932057/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Test mobile applications for functionality, usability, and performance across various devices and platforms. Identify, document, and report bugs and issues to the development team. Collaborate with developers to resolve issues and ensure application quality. Perform regression testing to verify that fixes do not introduce new issues. Create and execute test cases to validate application features. Stay updated with the latest testing tools and methodologies. Document testing procedures, results, and best practices for future reference. Provide feedback to improve the overall user experience of mobile applications.",
+        "requirement": "Diploma or above in IT or related fields. Experience in mobile app testing is a plus, but not mandatory. Strong attention to detail and analytical skills to identify and resolve issues. Good communication skills to collaborate effectively with developers and stakeholders. Knowledge of testing tools and methodologies is preferred. Willingness to learn and adapt to new testing tools and practices. Ability to work independently and as part of a team in a fast-paced environment. Fresh graduates are welcome to apply and will receive training.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 92,
+    "fields": {
+        "title": "IT Support Specialist",
+        "job_type": "part time",
+        "salary": 13000,
+        "post_date": "2025-05-06T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Provide technical support to end-users by addressing hardware and software issues promptly and effectively. Assist in system upgrades, maintenance, and troubleshooting to ensure smooth IT operations. Document technical solutions, procedures, and best practices for future reference. Collaborate with the IT team to improve support services and enhance system reliability. Conduct basic training sessions for end-users to improve their understanding of IT systems. Monitor IT systems to identify potential issues and resolve them proactively. Stay updated with the latest IT trends and tools to provide innovative solutions.",
+        "requirement": "Diploma or above in IT or related fields with a strong foundation in IT systems and networks. Basic knowledge of hardware troubleshooting, software installation, and system maintenance. Strong problem-solving and communication skills to address user concerns effectively. Willingness to learn and adapt to new technologies and tools. Proficiency in English and Chinese for effective communication. Familiarity with IT support tools and ticketing systems is a plus. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 93,
+    "fields": {
+        "title": "Database Developer",
+        "job_type": "part time",
+        "salary": 17000,
+        "post_date": "2025-05-16T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and develop efficient database solutions to meet business requirements. Optimize database performance by analyzing and fine-tuning queries and indexes. Ensure data security, integrity, and compliance with organizational policies. Collaborate with developers to integrate databases seamlessly into applications. Document database structures, processes, and best practices for future reference. Conduct regular database maintenance and backups to ensure data availability. Stay updated with the latest database technologies and trends to implement innovative solutions.",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines with a strong understanding of database design principles. Proficiency in MS SQL, Oracle, and other database management systems. Strong analytical and problem-solving skills to address complex database challenges. Knowledge of database optimization techniques and performance tuning. Proficiency in English and Chinese for effective communication. Familiarity with database security best practices and compliance standards. Ability to work independently and as part of a team in a dynamic environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 94,
+    "fields": {
+        "title": "Web Developer",
+        "job_type": "part time",
+        "salary": 15000,
+        "post_date": "2025-05-26T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain responsive web applications that meet user requirements. Collaborate with designers and backend developers to ensure seamless integration of visual elements and functionality. Optimize web applications for performance, usability, and cross-browser compatibility. Debug and resolve application issues to maintain system stability. Stay updated with the latest web development trends, frameworks, and tools to implement innovative solutions. Document development processes and best practices for future reference. Participate in code reviews to ensure high-quality standards.",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines with a strong foundation in web development. Proficiency in JavaScript, HTML, CSS, and familiarity with web frameworks like React or Angular. Strong problem-solving skills and attention to detail to address technical challenges. Proficiency in English and Chinese for effective communication. Familiarity with version control systems like Git is a plus. Ability to work independently and as part of a team in a fast-paced environment. Knowledge of web accessibility standards and best practices is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 95,
+    "fields": {
+        "title": "Mobile App Developer",
+        "job_type": "part time",
+        "salary": 16000,
+        "post_date": "2025-06-05T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and maintain mobile applications for iOS and Android platforms. Collaborate with designers and backend developers to create seamless user experiences. Optimize applications for performance, usability, and compatibility across devices. Debug and resolve application issues to ensure system stability. Stay updated with the latest mobile development trends, frameworks, and tools. Document development processes and best practices for future reference. Participate in code reviews to ensure high-quality standards.",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines with a strong foundation in mobile app development. Proficiency in Swift, Kotlin, or Flutter for mobile application development. Experience with mobile app deployment processes and app store guidelines. Strong problem-solving skills and attention to detail to address technical challenges. Proficiency in English and Chinese for effective communication. Familiarity with version control systems like Git is a plus. Ability to work independently and as part of a team in a fast-paced environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 96,
+    "fields": {
+        "title": "System Administrator",
+        "job_type": "part time",
+        "salary": 18000,
+        "post_date": "2025-06-15T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Manage and maintain company servers, networks, and IT infrastructure. Monitor system performance and troubleshoot issues to ensure reliability. Ensure data security, backup processes, and disaster recovery plans are in place. Install and configure software, hardware, and network devices. Provide technical support to employees and resolve IT-related queries. Document system configurations, processes, and best practices for future reference. Stay updated with the latest IT trends and tools to implement innovative solutions.",
+        "requirement": "Bachelor Degree in Information Technology or related fields with a strong foundation in system administration. Experience with Windows and Linux servers, networking protocols, and tools. Strong problem-solving skills and attention to detail to address technical challenges. Proficiency in English and Chinese for effective communication. Familiarity with system monitoring tools and backup solutions is a plus. Ability to work independently and as part of a team in a dynamic environment. Certification in system administration is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 97,
+    "fields": {
+        "title": "Quality Assurance Tester",
+        "job_type": "part time",
+        "salary": 14000,
+        "post_date": "2025-06-25T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Develop and execute comprehensive test plans and test cases to ensure software quality. Identify, document, and report software defects and collaborate with developers to resolve them. Perform regression testing to ensure new features do not impact existing functionality. Automate testing processes where possible to improve efficiency. Document testing procedures, results, and best practices for future reference. Stay updated with the latest testing tools and methodologies to implement innovative solutions. Participate in team meetings and contribute to improving the overall quality assurance process.",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines with a strong foundation in software testing. Experience with manual and automated testing tools like Selenium or JUnit. Strong attention to detail and analytical skills to identify and resolve issues. Proficiency in English and Chinese for effective communication. Familiarity with version control systems like Git is a plus. Ability to work independently and as part of a team in a fast-paced environment. Knowledge of software development lifecycle and testing methodologies is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 98,
+    "fields": {
+        "title": "Network Engineer",
+        "job_type": "part time",
+        "salary": 17000,
+        "post_date": "2025-07-05T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Design and implement network solutions to meet business requirements, ensuring scalability and reliability. Monitor and maintain network performance, identifying and resolving issues proactively to minimize downtime. Troubleshoot and resolve complex network issues, collaborating with cross-functional teams when necessary. Ensure network security and compliance with organizational policies and industry standards. Collaborate with IT teams to support infrastructure needs and optimize network performance. Document network configurations, processes, and best practices for future reference. Stay updated with the latest networking technologies and trends to implement innovative solutions. Provide technical support and training to team members as needed.",
+        "requirement": "Bachelor Degree in Computer Science or related disciplines with a strong foundation in networking. Proven experience with network protocols, tools, and technologies. Proficiency in configuring and managing routers, switches, and firewalls. Knowledge of VPNs, network security measures, and compliance standards. Strong analytical and problem-solving skills to address complex network challenges. Proficient in English and Chinese for effective communication. Familiarity with network monitoring tools and troubleshooting techniques. Certification in networking (e.g., CCNA, CCNP) is a plus. Ability to work independently and as part of a team in a dynamic environment.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 99,
+    "fields": {
+        "title": "Cybersecurity Analyst",
+        "job_type": "part time",
+        "salary": 19000,
+        "post_date": "2025-07-15T06:36:02Z",
+        "location": "Central, Central and Western District",
+        "company": "Bangkok Bank Public Co Ltd",
+        "logo_url": "https://image-service-cdn.seek.com.au/918e299cc040deef85d051b493b097670ba75934/ee4dce1061f3f616224767ad58cb2fc751b8d2dc",
+        "responsibilities": "Monitor and respond to security incidents, ensuring timely resolution to minimize risks. Conduct vulnerability assessments and penetration testing to identify and address potential security threats. Implement security measures, policies, and best practices to safeguard organizational assets. Provide training and awareness programs on cybersecurity best practices to employees. Stay updated with the latest security trends, tools, and technologies to enhance the organization's security posture. Collaborate with IT teams to ensure compliance with security standards and regulations. Document security incidents, processes, and solutions for future reference. Participate in security audits and recommend improvements to strengthen defenses.",
+        "requirement": "Bachelor Degree in Cybersecurity or related fields with a strong understanding of security principles. Knowledge of security tools, protocols, and frameworks. Strong analytical and problem-solving skills to address complex security challenges. Certification in cybersecurity (e.g., CISSP, CEH) is a plus. Proficient in English and Chinese for effective communication. Familiarity with incident response processes and vulnerability management. Ability to work independently and as part of a team in a fast-paced environment. Experience in conducting security assessments and implementing security measures is preferred. A proactive attitude and eagerness to stay updated with emerging threats and technologies.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 101,
+    "fields": {
+        "title": "Junior Backend Developer",
+        "job_type": "full time",
+        "salary": 29000,
+        "post_date": "2025-04-19T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in developing backend services for Cloud-based Applications, ensuring scalability and reliability. Optimize database queries and ensure data integrity for seamless application performance. Collaborate with frontend developers to integrate APIs and deliver cohesive user experiences. Conduct debugging and troubleshooting of backend issues to maintain system stability. Participate in code reviews and contribute to improving code quality. Work in an Agile Scrum Development environment, attending daily stand-ups and sprint planning meetings. Stay updated with the latest backend technologies and best practices to implement innovative solutions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of PHP Frameworks like Laravel or Symfony is a plus. Familiarity with MySQL or other RDBMS, with a focus on query optimization and database design. Strong problem-solving skills and the ability to debug complex backend issues. Good command of both spoken and written English and Chinese. Willingness to learn and adapt to new technologies and frameworks. Experience with version control systems like Git is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 102,
+    "fields": {
+        "title": "Junior Frontend Developer",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-04-29T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in designing and implementing user-friendly web interfaces that enhance user experience. Collaborate with backend developers to integrate APIs and ensure seamless functionality. Optimize web applications for performance, usability, and responsiveness across various devices and browsers. Conduct cross-browser compatibility testing and address any inconsistencies. Participate in code reviews to maintain high-quality standards. Stay updated with the latest frontend technologies and frameworks to implement innovative solutions. Work in an Agile Scrum Development environment, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of React, Vue.js, or Angular is a plus. Familiarity with HTML, CSS, and JavaScript, with a strong understanding of responsive design principles. Strong attention to detail and a keen eye for design aesthetics. Good command of both spoken and written English and Chinese. Willingness to learn and adapt to new frontend technologies and tools. Experience with version control systems like Git is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 103,
+    "fields": {
+        "title": "Junior Mobile App Developer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-05-09T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in developing mobile applications for E-Commerce platforms, ensuring high performance and usability. Collaborate with designers and backend developers to create seamless user experiences. Optimize mobile applications for performance, responsiveness, and compatibility across devices. Debug and resolve application issues to maintain system stability. Participate in code reviews and contribute to improving code quality. Stay updated with the latest mobile development trends and technologies. Work in an Agile Scrum Development environment, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of Swift, Kotlin, or Flutter is a plus. Familiarity with RESTful APIs and mobile app deployment processes. Strong problem-solving skills and the ability to debug complex mobile application issues. Good command of both spoken and written English and Chinese. Willingness to learn and adapt to new mobile development technologies and tools. Experience with version control systems like Git is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 104,
+    "fields": {
+        "title": "Junior Cloud Engineer",
+        "job_type": "full time",
+        "salary": 31000,
+        "post_date": "2025-05-19T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in designing and implementing cloud solutions that meet business requirements. Monitor and maintain cloud infrastructure to ensure reliability and performance. Optimize cloud performance and costs by implementing best practices. Collaborate with the development team to ensure seamless integration of cloud services. Stay updated with the latest cloud technologies and trends to implement innovative solutions. Work in an Agile Scrum Development environment, contributing to sprint goals and team discussions. Document cloud architecture and processes for future reference.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of cloud platforms like AWS or Azure is a plus. Familiarity with cloud architecture, services, and deployment processes. Strong analytical and problem-solving skills to address complex cloud-related challenges. Good command of both spoken and written English and Chinese. Willingness to learn and adapt to new cloud technologies and tools. Experience with version control systems like Git is preferred.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 105,
+    "fields": {
+        "title": "Junior API Developer",
+        "job_type": "full time",
+        "salary": 28000,
+        "post_date": "2025-05-29T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in designing and developing Cloud APIs to support various applications and ensure seamless integration with partner systems. Optimize API performance and scalability to handle high traffic and ensure reliability. Collaborate with cross-functional teams, including frontend and backend developers, to deliver cohesive solutions. Conduct thorough testing and debugging of APIs to identify and resolve issues promptly. Document API specifications, processes, and updates for future reference. Stay updated with the latest API development trends and best practices. Participate in Agile Scrum Development processes, including sprint planning and daily stand-ups.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of RESTful API development and familiarity with PHP Frameworks like Laravel or Symfony is a plus. Strong problem-solving and debugging skills to address technical challenges effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new technologies and frameworks. Familiarity with version control systems like Git and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 106,
+    "fields": {
+        "title": "Junior DevOps Engineer",
+        "job_type": "full time",
+        "salary": 32000,
+        "post_date": "2025-06-08T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in implementing and managing CI/CD pipelines to streamline development and deployment processes. Monitor and maintain cloud infrastructure to ensure high availability, performance, and security. Automate deployment processes to improve efficiency and reduce manual intervention. Collaborate with development teams to enhance system reliability and scalability. Troubleshoot and resolve infrastructure-related issues promptly. Document DevOps processes, tools, and best practices for future reference. Stay updated with the latest DevOps tools and methodologies. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of scripting languages like Bash or Python and familiarity with containerization tools like Docker and Kubernetes is a plus. Strong troubleshooting skills to address infrastructure and deployment challenges effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new DevOps tools and practices. Familiarity with cloud platforms like AWS or Azure and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 107,
+    "fields": {
+        "title": "Junior Quality Assurance Engineer",
+        "job_type": "full time",
+        "salary": 27000,
+        "post_date": "2025-06-18T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in developing and executing comprehensive test plans and test cases to ensure software quality and reliability. Identify, document, and report software defects, collaborating with developers to resolve them effectively. Perform regression testing to ensure new features do not impact existing functionality. Conduct manual and automated testing to improve efficiency and coverage. Document testing procedures, results, and best practices for future reference. Stay updated with the latest testing tools and methodologies. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of manual and automated testing and familiarity with testing tools like Selenium or JUnit is a plus. Strong attention to detail and analytical skills to identify and resolve issues effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new testing tools and practices. Familiarity with version control systems like Git and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 108,
+    "fields": {
+        "title": "Junior System Administrator",
+        "job_type": "full time",
+        "salary": 29000,
+        "post_date": "2025-06-28T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in managing and maintaining company servers, networks, and IT infrastructure to ensure reliability and performance. Monitor system performance, troubleshoot issues, and implement solutions to minimize downtime. Ensure data security, backup processes, and disaster recovery plans are in place. Install and configure software, hardware, and network devices to support business operations. Document system configurations, processes, and best practices for future reference. Stay updated with the latest IT trends and tools to implement innovative solutions. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Information Technology or related disciplines. Knowledge of Windows and Linux servers and familiarity with networking protocols and tools is a plus. Strong problem-solving skills to address technical challenges effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new IT tools and practices. Familiarity with system monitoring tools and backup solutions and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 109,
+    "fields": {
+        "title": "Junior Database Developer",
+        "job_type": "full time",
+        "salary": 30000,
+        "post_date": "2025-07-08T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in designing and developing efficient database solutions to meet business requirements. Optimize database performance by analyzing and fine-tuning queries, indexes, and configurations. Ensure data security, integrity, and compliance with organizational policies. Collaborate with developers to integrate databases seamlessly into applications. Document database structures, processes, and best practices for future reference. Conduct regular database maintenance and backups to ensure data availability. Stay updated with the latest database technologies and trends to implement innovative solutions. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Computer Science or related disciplines. Knowledge of MySQL or other RDBMS and familiarity with database optimization techniques is a plus. Strong analytical and problem-solving skills to address complex database challenges effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new database technologies and tools. Familiarity with version control systems like Git and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+},
+{
+    "model": "jobspost.jobs",
+    "pk": 110,
+    "fields": {
+        "title": "Junior Cybersecurity Analyst",
+        "job_type": "full time",
+        "salary": 31000,
+        "post_date": "2025-07-18T09:00:00Z",
+        "location": "Kwun Tong, Kwun Tong District",
+        "company": "Shiji Information Technology (Hong Kong) Limited",
+        "logo_url": "",
+        "responsibilities": "Assist in monitoring and responding to security incidents, ensuring timely resolution to minimize risks. Conduct vulnerability assessments and penetration testing to identify and address potential security threats. Implement security measures, policies, and best practices to safeguard organizational assets. Provide training and awareness programs on cybersecurity best practices to employees. Stay updated with the latest security trends, tools, and technologies to enhance the organization's security posture. Collaborate with IT teams to ensure compliance with security standards and regulations. Document security incidents, processes, and solutions for future reference. Participate in Agile Scrum Development processes, contributing to sprint goals and team discussions.",
+        "requirement": "Bachelor Degree holder in Cybersecurity or related disciplines. Knowledge of security tools, protocols, and frameworks and familiarity with incident response processes is a plus. Strong analytical and problem-solving skills to address complex security challenges effectively. Good command of both spoken and written English and Chinese for effective communication. Willingness to learn and adapt to new security tools and practices. Familiarity with version control systems like Git and experience in Agile development environments is preferred. Ability to work collaboratively in a team and meet project deadlines.",
+        "email": "atkincheung@yahoo.com.hk"
+    }
+}
+]

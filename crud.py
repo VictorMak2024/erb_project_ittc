@@ -9,16 +9,10 @@ from django.db import transaction
 import tkinter as tk
 from tkinter import filedialog
 
-# Models to work with
-from activities.models import Activity
-from courses.models import Course
-from products.models import Product, Category
-from salesmens.models import Salesmen
-from contacts.models import Activity_Contact, Course_Contact, Product_Contact
 
 # =============== EXPORT DATA FUNCTIONS ===============
 
-def export_data(app_label, model_name, output_file=None):
+def export_data(app_label=None, model_name=None, output_file=None):
     """
     Export data from a specific model to a JSON file
     
@@ -30,8 +24,15 @@ def export_data(app_label, model_name, output_file=None):
     Returns:
         str: Path to the exported file
     """
+    if app_label is None or model_name is None:
+        raise ValueError("Both 'app_label' and 'model_name' must be provided.")
+# Prompt the user for app_label and model_name if not provided
+        app_label = input("Enter the app label (e.g., 'products'): ").strip()
+        model_name = input("Enter the model name (e.g., 'Product'): ").strip()
+
     if output_file is None:
-        output_file = f"{app_label}.json"
+#        output_file = f"DATABASE/JSON/{app_label}.json"
+        output_file = f"DATABASE/JSON/{model_name.lower()}.json"
     
     try:
         # Use dumpdata command to export data
@@ -51,7 +52,7 @@ def export_data(app_label, model_name, output_file=None):
 
 def export_all_data():
     """Export data from all models in all apps (excluding admin, auth, contenttypes, and sessions) to JSON files in a folder called 'Json'"""
-    output_dir = "Json"
+    output_dir = "DATABASE/JSON"
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     
@@ -78,10 +79,13 @@ def import_data(input_file=None):
     Returns:
         bool: True if successful, False otherwise
     """
+    input_dir = "DATABASE/JSON" # Default folder for JSON files
     if input_file is None:
         root = tk.Tk()
         root.withdraw()  # Hide the root window
+
         input_file = filedialog.askopenfilename(
+            initialdir=input_dir,
             title="Select a JSON file to import",
             filetypes=[("JSON files", "*.json")]
         )
@@ -100,7 +104,7 @@ def import_data(input_file=None):
 
 def import_all_data():
     """Import data from all JSON files in the 'Json' folder into the database"""
-    input_dir = "Json"
+    input_dir = "DATABASE/JSON"
     if not os.path.exists(input_dir):
         print(f"Folder '{input_dir}' does not exist")
         return False
@@ -156,24 +160,24 @@ def display_menu():
     print("5. Exit")
     print("============================")
 
-def main():
-    """Main function to handle user input and execute commands"""
-    while True:
-        display_menu()
-        choice = input("Enter your choice (1-5): ").strip()
-        if choice == "1":
-            export_all_data()
-        elif choice == "2":
-            import_all_data()
-        elif choice == "3":
-            import_data()
-        elif choice == "4":
-            clear_database()
-        elif choice == "5":
-            print("Exiting...")
-            break
-        else:
-            print("Invalid choice. Please try again.")
+# def main():
+#     """Main function to handle user input and execute commands"""
+#     while True:
+#         display_menu()
+#         choice = input("Enter your choice (1-5): ").strip()
+#         if choice == "1":
+#             export_all_data()
+#         elif choice == "2":
+#             import_all_data()
+#         elif choice == "3":
+#             import_data()
+#         elif choice == "4":
+#             clear_database()
+#         elif choice == "5":
+#             print("Exiting...")
+#             break
+#         else:
+#             print("Invalid choice. Please try again.")
 
-if __name__ == "__main__" or __name__ == "crud":
-    main()
+#if __name__ == "__main__" or __name__ == "crud":
+#    main()

@@ -1,0 +1,50 @@
+[
+{
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+        "salesmen": 2,
+        "hotitem": false,
+        "title": "Certified Ethical Hacker (C|EH) & Practical",
+        "name": "10016347-01",
+        "description": "The Certified Ethical Hacker (C|EH) credential is the most trusted ethical hacking certification and accomplishment recommended by employers globally. It is the most desired information security certification and represents one of the fastest-growing cyber credentials required by critical infrastructure and essential service providers. C|EH is recognised as a standard within the information security community. C|EH v13 provides comprehensive training, hands on learning labs, practice cyber ranges for engagement, certification assessments, cyber competitions, and opportunities for continuous learning into one comprehensive program. The  original core mission of C|EH remain valid and relevant today: “To beat a hacker, you need to think like a hacker.”\r\n\r\nCertified Ethical Hacker (C|EH v13)\r\n\r\nC|EH v13 is a specialized and one-of-a-kind training program to teach you everything you need to know about ethical hacking with hands-on training, labs, assessment, a mock engagement (practice), and global hacking competition. Stay on top of the game with the most in-demand skills required to succeed in the field of cybersecurity.\r\n\r\nC|EH v13 provides comprehensive training, hands on learning labs, practice cyber ranges for engagement, certification assessments, cyber competitions, and opportunities for continuous learning into one comprehensive program curated through our new learning framework: 1. Learn 2. Certify 3. Engage 4. Compete. The new learning framework covers not only a comprehensive training program to prepare you for the certification exam but also the industry’s most robust, in-depth, hands-on lab and practice range experience.\r\n\r\nC|EH v13 also equips aspiring cybersecurity professionals with the tactics, techniques, and procedures (TTPs) to build ethical hackers who can uncover weaknesses in nearly any type of target system before cybercriminals do.",
+        "photo": "photos/2025/04/06/1316011368.jpg",
+        "date_start": "2025-04-07",
+        "date_end": "2025-04-07",
+        "time_start": "09:00:00",
+        "time_end": "18:00:00",
+        "location": "HKPC Building 78 Tat Chee Avenue Kowloon",
+        "medium": "Cantonese",
+        "target": "Certified Ethical Hacker (C|EH) will be conducted",
+        "trainer": "EC-Council authorised",
+        "price": 21600,
+        "total_sit": 20,
+        "onenquiry_sit": 0,
+        "phaseOut": false
+    }
+},
+{
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+        "salesmen": 3,
+        "hotitem": false,
+        "title": "Next-Level Presentations with AI: Master Design, Content, and Audience Engagement",
+        "name": "10017225-01",
+        "description": "1. AI vs Gen AI: Understanding the Foundations\r\n\r\n        Understanding the distinction between AI and Generative AI\r\n        Providing an overview of the most popular AI tools and their features\r\n\r\n2. Mastering Ideation: 5 Must-Know AI Prompting Techniques\r\n\r\n        Unlocking the power of AI to brainstorm and generate ideas\r\n        Learning how to outline and structure compelling presentation content using AI prompting techniques\r\n        Mastering five essential AI prompting techniques to enhance creativity and ideation\r\n        Applying these techniques in a step-by-step manner to develop well-organised and impactful presentations\r\n        Hands-on exercise\r\n\r\n3. Design Like a Pro: Leveraging AI Tools for Stunning PowerPoint Layouts\r\n\r\n        Discovering essential AI tools for PowerPoint generation to streamline the creation process\r\n        Creating impactful decks in minutes using AI tools to generate professional presentations effortlessly\r\n        Modifying PowerPoint slide text and layout to enhance clarity and visual appeal\r\n        Adding and modifying multimedia elements such as images to enrich presentations\r\n        Utilising platforms like Gamma and Canva to maximise the effectiveness of your presentation design\r\n        Hands-on exercise\r\n\r\n4. Storytelling with AI: From Narrative Generation to Presentation Mastery\r\n\r\n        Use AI to generate compelling narratives and stories from scratch​\r\n        Create scripts that captivate and inspire your audience​\r\n        Utilising AI-powered data visualisation tools to create impactful charts and visuals​\r\n        Refining your presentation skills with AI feedback on voice modulation, pacing, and body language​\r\n        Hands-on exercise",
+        "photo": "photos/2025/04/07/AI-banner_2.png",
+        "date_start": "2025-04-07",
+        "date_end": "2025-04-07",
+        "time_start": "14:00:00",
+        "time_end": "17:30:00",
+        "location": "HKPC Building 78 Tat Chee Avenue Kowloon",
+        "medium": "Cantonese",
+        "target": "Anyone who wants to enhance their presentation ski",
+        "trainer": "Kit WONG",
+        "price": 1500,
+        "total_sit": 24,
+        "onenquiry_sit": 0,
+        "phaseOut": false
+    }
+}
+]

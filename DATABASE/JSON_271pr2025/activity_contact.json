@@ -1,0 +1,30 @@
+[
+{
+    "model": "contacts.activity_contact",
+    "pk": 3,
+    "fields": {
+        "activity": 1,
+        "name": " ",
+        "email": "ittc@ittc.com.hk",
+        "phone": "",
+        "message": "",
+        "contact_date": "2025-04-23T14:20:30.782Z",
+        "user_id": 1,
+        "is_paid": false
+    }
+},
+{
+    "model": "contacts.activity_contact",
+    "pk": 8,
+    "fields": {
+        "activity": 1,
+        "name": "wcng ",
+        "email": "wcng@hotmailcom",
+        "phone": "98681249",
+        "message": "test",
+        "contact_date": "2025-04-24T02:24:39.738Z",
+        "user_id": 4,
+        "is_paid": false
+    }
+}
+]

@@ -6,7 +6,43 @@ from courses.models import Course
 from products.models import Product
 from accounts.models import ShoppingCart
 from django.core.mail import send_mail
+from crud import export_all_data, import_all_data, clear_database, import_data, export_data
 
+def export_data_view(request):
+    app_label = request.GET.get('app_label')  # Get app_label from the request
+    model_name = request.GET.get('model_name')  # Get model_name from the request
+
+    if not app_label or not model_name:
+        messages.error(request, "Both 'app_label' and 'model_name' are required.")
+        return redirect('/admin/')
+
+    output_file = f"DATABASE/JSON/{model_name.lower()}.json"
+    try:
+        export_data(app_label, model_name, output_file)
+        messages.success(request, f"Data exported successfully to {output_file}!")
+    except Exception as e:
+        messages.error(request, f"Error exporting data: {str(e)}")
+    return redirect('/admin/')
+    
+def import_data_view(request):
+        import_data()
+        messages.success(request, "Data imported successfully!")
+        return redirect('/admin/')
+        
+def export_all_data_view(request):
+        export_all_data()
+        messages.success(request, "All data exported successfully!")
+        return redirect('/admin/')
+
+def import_all_data_view(request):
+        import_all_data()
+        messages.success(request, "All data imported successfully!")
+        return redirect('/admin/')
+
+def clear_database_view(request):
+        clear_database()
+        messages.warning(request, "Database cleared successfully!")
+        return redirect('/admin/')
 # Create your views here.
 def activity_contact(request):
     if request.method == 'POST':

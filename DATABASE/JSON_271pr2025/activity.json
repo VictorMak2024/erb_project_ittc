@@ -1,0 +1,50 @@
+[
+{
+    "model": "activities.activity",
+    "pk": 1,
+    "fields": {
+        "salesmen": 1,
+        "hotitem": false,
+        "title": "Empower the Logistics Industry and Hong Kong Enterprises to Implement Digital Transformation and Achieve Competency in Hong Kong",
+        "name": "Dissemination Seminar",
+        "description": "Organised by the Hong Kong Shippers' Council, implemented by the Hong Kong Productivity Council and funded by the Trade and Industry Department of the Hong Kong SAR Government's Trade and Industrial Organisation Support Fund, the “Empower the Logistics Industry and Hong Kong Enterprises to Implement Digital Transformation and Achieve Competency in Hong Kong” project has successfully held various seminars, logistic process interviews, and study tours over the past two years. These activities have shared digital transformation knowledge and practical cases with SMEs, promoting steady progress in the digital wave.\r\n\r\nThis seminar will summarize the project outcomes, helping the industry quickly grasp knowledge on digital transformation, and thus enhance digital literacy. It will also cover the latest topics such as the DeepSeek, GenAI technologies, as well as the future of Hong Kong's supply chain. This will continuously advance and optimize logistics management and operations, aiding SMEs in seizing market opportunities. Industry professionals and those interested in AI development are welcome to join and exchange ideas with experts. Highlights include:\r\n\r\n♦ Sharing project results and expert analysis of logistics process interviews to help SMEs overcome challenges\r\n\r\n♦ Successful cases in digital transformation \r\n♦ Expert Sharing — Application technologies and future trends of DeepSeek and GenAI in SMEs and logistics supply chains\r\n♦ Panel Discussion — Discussing how SMEs can leverage digital technology to optimize supply chain management",
+        "photo": "photos/2025/04/06/1316011368_kwKKpDL.jpg",
+        "date_start": "2025-04-08",
+        "date_end": "2025-04-08",
+        "time_start": "14:00:00",
+        "time_end": "18:00:00",
+        "location": "Theatre 2, 1/F, HKPC Building, 78 Tat Chee Avenue,",
+        "medium": "Cantonese",
+        "target": "Logistics, manufacturing, import/export, wholesale",
+        "trainer": "Mr. Jerry Ng",
+        "price": 0,
+        "total_sit": 24,
+        "onenquiry_sit": 4,
+        "phaseOut": false
+    }
+},
+{
+    "model": "activities.activity",
+    "pk": 5,
+    "fields": {
+        "salesmen": 1,
+        "hotitem": false,
+        "title": "ESG One MeetUp Drink: Carbon Neutral Futures:",
+        "name": "SMEs Leading the Decarbonization Change",
+        "description": "Sustainable development is becoming a priority, and SMEs in the Mainland China and Hong Kong are starting to realize how important it is to reduce carbon emissions. By embracing eco-friendly practices, your business can play a vital role in the journey towards carbon neutrality and open doors to partnerships with larger, well-established corporations. Let’s work together towards a sustainable future and discover new opportunities for growth in this coming MeetUp Drinks event!",
+        "photo": "photos/2025/04/07/AI-banner_2_wXWe8JJ.png",
+        "date_start": "2025-04-09",
+        "date_end": "2025-04-09",
+        "time_start": "16:00:00",
+        "time_end": "18:00:00",
+        "location": "ZEEKR Taikoo Shing Flagship Showroom",
+        "medium": "Cantonese",
+        "target": "Managers and representatives from SMEs",
+        "trainer": "John Leung",
+        "price": 0,
+        "total_sit": 50,
+        "onenquiry_sit": 2,
+        "phaseOut": false
+    }
+}
+]

@@ -1,0 +1,44 @@
+[
+{
+    "model": "contacts.course_contact",
+    "pk": 3,
+    "fields": {
+        "course": 1,
+        "name": " ",
+        "email": "ittc@ittc.com.hk",
+        "phone": "",
+        "message": "",
+        "contact_date": "2025-04-23T14:20:12.054Z",
+        "user_id": 1,
+        "is_paid": false
+    }
+},
+{
+    "model": "contacts.course_contact",
+    "pk": 11,
+    "fields": {
+        "course": 2,
+        "name": "wcng ",
+        "email": "wcng@ittc.com.hk",
+        "phone": "98681249",
+        "message": "",
+        "contact_date": "2025-04-24T02:25:28.568Z",
+        "user_id": 4,
+        "is_paid": false
+    }
+},
+{
+    "model": "contacts.course_contact",
+    "pk": 12,
+    "fields": {
+        "course": 1,
+        "name": "wcng ",
+        "email": "wcng@ittc.com.hk",
+        "phone": "98681249",
+        "message": "",
+        "contact_date": "2025-04-24T02:26:28.878Z",
+        "user_id": 4,
+        "is_paid": false
+    }
+}
+]

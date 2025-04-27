@@ -1,0 +1,230 @@
+[
+{
+    "model": "supportresources.supportresource",
+    "pk": 1,
+    "fields": {
+        "photo": "photos/2025/04/22/hkpc_bYcn2cd.png",
+        "title": "hkpc",
+        "description": "hkpc is strong parter",
+        "web_url": "https://www.hkpc.org/zh-HK",
+        "list_date": "2025-04-22T02:29:19Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 3,
+    "fields": {
+        "photo": "photos/2025/04/22/Smart_Factory_Laboratory.jpg",
+        "title": "Smart Factory Laboratory",
+        "description": "Smart Factory Laboratory can provide real practice experience.",
+        "web_url": "https://www.polyu.edu.hk/ise/research/research-laboratories-and-facilities/polyu-rhein-koester-joint-laboratory-on-smart-manufacturing/",
+        "list_date": "2025-04-22T10:56:00Z",
+        "sr_items": 6
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 4,
+    "fields": {
+        "photo": "photos/2025/04/22/DTSPP_sErikhW.png",
+        "title": "Digital Transformation Support Pilot Programme (DTSPP)",
+        "description": "Subsidises SMEs in Food & Beverage and Retail industries in applying the ready-to-use basic digital solutions so as to expedite the digital transformation of small and medium enterprises (SMEs). Up to HK$50,000 for each eligible SME.",
+        "web_url": "https://dtspp.cyberport.hk/",
+        "list_date": "2025-04-22T11:05:17Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 5,
+    "fields": {
+        "photo": "photos/2025/04/22/NITTP.png",
+        "title": "New Industrialisation and Technology Training Programme (NITTP)",
+        "description": "Subsidise local enterprises to train their staff in advanced technologies. $500,000 for each enterprise in each financial year.",
+        "web_url": "https://nittp.vtc.edu.hk/",
+        "list_date": "2025-04-22T11:36:15Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 6,
+    "fields": {
+        "photo": "photos/2025/04/22/STF.png",
+        "title": "Smart Traffic Fund (STF)",
+        "description": "To provide support for enterprises or local organisations for conducting research and application of innovation and technology with the objectives of enhancing commuting convenience, enhancing efficiency of the road network or road space, and improving driving safety. Research & application project up to HK$20 million per project; pure research project up to HK$8 million.",
+        "web_url": "https://stf.hkpc.org/",
+        "list_date": "2025-04-22T11:43:57Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 7,
+    "fields": {
+        "photo": "photos/2025/04/22/PAG.png",
+        "title": "Patent Application Grant (PAG)",
+        "description": "To provide funding support to encourage local companies and inventors to capitalise their intellectual work through patent registration. Up to HK$250,000 (Funding).",
+        "web_url": "https://bee.hkpc.org/funding-schemes/pag/",
+        "list_date": "2025-04-22T11:59:43Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 8,
+    "fields": {
+        "photo": "photos/2025/04/22/EMF.png",
+        "title": "SME Export Marketing Fund (EMF)",
+        "description": "To provide funding support to non-listed Hong Kong enterprises for participation in promotion activities to expand markets. HK$100,000 (cumulative funding ceiling per enterprise at HK$1,000,000).",
+        "web_url": "https://www.smefund.tid.gov.hk/tc_chi/emf/emf_update.html",
+        "list_date": "2025-04-22T12:18:57Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 9,
+    "fields": {
+        "photo": "photos/2025/04/22/TSF.png",
+        "title": "Trade and Industrial Organisation Support Fund (TSF)",
+        "description": "To provide funding support for non-profit-distributing organisations (such as trade and industrial organisations, professional bodies and research institutes) to implement projects which aim at enhancing the competitiveness of non-listed Hong Kong enterprises in general or in specific sectors. HK$5 million or 90% of the total approved project expenditure, whichever is the less.",
+        "web_url": "https://www.smefund.tid.gov.hk/english/tsf/tsf_objective.html",
+        "list_date": "2025-04-22T15:25:03Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 10,
+    "fields": {
+        "photo": "photos/2025/04/22/CIP.png",
+        "title": "Cyberport Incubation Programme",
+        "description": "To support entrepreneurs and start-ups with resources that aim to accelerate their growth. Up to HKD1.2 million including financial assistance, on-site rental subsidy and other support",
+        "web_url": "https://www.cyberport.hk/en/entrepreneurship/cyberport_incubation_programme/",
+        "list_date": "2025-04-22T15:59:00Z",
+        "sr_items": 5
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 11,
+    "fields": {
+        "photo": "photos/2025/04/23/Keyence.jpg",
+        "title": "Keyence",
+        "description": "Keyence can provide computer vision solution.",
+        "web_url": "https://www.keyence.com.tw/",
+        "list_date": "2025-04-21T16:02:31Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 12,
+    "fields": {
+        "photo": "photos/2025/04/23/astri.png",
+        "title": "Hong Kong Applied Science And Technology Research Institute Company Limited (ASTRI)",
+        "description": "ASTRI is a bigger scale of R & D centre.",
+        "web_url": "https://www.astri.org/",
+        "list_date": "2025-04-22T16:15:21Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 13,
+    "fields": {
+        "photo": "photos/2025/04/23/hkiit.jpg",
+        "title": "Hong Kong Institute of Information Technology (HKIIT)",
+        "description": "HKIIT provide professional IT courses for learner.",
+        "web_url": "https://hkiit.edu.hk/en/about-hkiit/index.html",
+        "list_date": "2025-04-22T16:27:47Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 14,
+    "fields": {
+        "photo": "photos/2025/04/23/RV.png",
+        "title": "RV Automation Technology Company Limited (RV)",
+        "description": "RV can provides robotics solution.",
+        "web_url": "https://www.rvautotech.com/",
+        "list_date": "2025-04-22T16:35:33Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 15,
+    "fields": {
+        "photo": "photos/2025/04/23/vtc.png",
+        "title": "Vocational Training Council (VTC)",
+        "description": "The Vocational Training Council (VTC) is the largest vocational education, training and professional development group in Hong Kong.",
+        "web_url": "https://www.vtc.edu.hk/en/home.html",
+        "list_date": "2025-04-22T16:37:53Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 16,
+    "fields": {
+        "photo": "photos/2025/04/23/IoT_centre.png",
+        "title": "IoT Innovation and Technology Centre",
+        "description": "Leveraging 5G technology, the IoT Innovation and Technology Centre is furnished with professional IoT software and equipment, as well as a multi-functional space and a co-creation space to offer students a well-equipped and ambient learning environment.",
+        "web_url": "https://engineering.vtc.edu.hk/en/PastHighlightsOthersDetails.php?EDLDID=94",
+        "list_date": "2025-04-22T16:46:10Z",
+        "sr_items": 6
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 17,
+    "fields": {
+        "photo": "photos/2025/04/23/aws.png",
+        "title": "Amazon Web Services (AWS)",
+        "description": "AWS gives you greatest choice and flexibility to meet your specific needs so you can choose the right tool for the job. AWS offers the widest variety of compute instances, storage classes, databases, and analytics, all purpose-built to deliver the best cost and performance. This includes the most comprehensive set of AI and data services, including your choice of leading FMs to build generative AI applications. Moving applications to the cloud with AWS makes it faster, easier, and more cost effective to migrate your applications to the cloud or build nearly anything you can imagine.",
+        "web_url": "https://aws.amazon.com/",
+        "list_date": "2025-04-22T17:08:42Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 18,
+    "fields": {
+        "photo": "photos/2025/04/23/nvidia.png",
+        "title": "Nvidia Corporation (NVIDIA)",
+        "description": "NVIDIA pioneered accelerated computing to tackle challenges no one else can solve. Our work in AI and digital twins is transforming the world's largest industries and profoundly impacting society.",
+        "web_url": "https://www.nvidia.com/zh-tw/",
+        "list_date": "2025-04-22T17:20:35Z",
+        "sr_items": 1
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 19,
+    "fields": {
+        "photo": "photos/2025/04/23/hardwarelab.png",
+        "title": "Hardware Lab",
+        "description": "Hardware Lab is aimed at nurturing high-potential startups and innovators in a wider range of cutting-edge chip prototyping projects and bringing together a talent pool that will facilitate product development from the board to system level and bring in more global leading industry partners and developers to boost Hong Kong to become a hub of hardware start-ups that are specialized in building core technologies.",
+        "web_url": "https://www.hkstp.org/en/rental/space/laboratory/hardware-lab",
+        "list_date": "2025-04-22T17:29:01Z",
+        "sr_items": 6
+    }
+},
+{
+    "model": "supportresources.supportresource",
+    "pk": 20,
+    "fields": {
+        "photo": "photos/2025/04/23/medical_device_testing_lab.png",
+        "title": "Medical Device Testing Lab",
+        "description": "Medical Device Testing Lab (MDTL) is committed to providing our customers with world-class testing and technical solution services with the highest integrity and impartiality",
+        "web_url": "https://www.hkstp.org/en/rental/space/laboratory/medical-device-testing-lab",
+        "list_date": "2025-04-22T17:34:58Z",
+        "sr_items": 6
+    }
+}
+]

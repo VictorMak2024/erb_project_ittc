@@ -1,0 +1,189 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$Qv3jox4uTxwaK9Z3jS7GEX$K75ySt6K+g/GvW7QImfVcrZJpsbdLXoFtjVMlUPpj1M=",
+        "last_login": "2025-04-23T15:46:57.290Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "ittc@ittc.com.hk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-13T15:00:02Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$c1Pk0CFfDBRw6ZMZRIfTZH$sDYm1MKb819PLfSEZdvxIZpoKXI5ShEmw/+S0a/jW9I=",
+        "last_login": "2025-04-16T16:17:22.730Z",
+        "is_superuser": false,
+        "username": "victor",
+        "first_name": "victor",
+        "last_name": "",
+        "email": "victor@ittc.com.hk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-16T15:50:45Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$brpShzR3LV7f08DgFYixAr$yGQYJOFt888Q5QCnCCGBasIiQP1j8XZrSGqaGuc34fE=",
+        "last_login": "2025-04-16T15:00:32Z",
+        "is_superuser": false,
+        "username": "tommy",
+        "first_name": "tommy",
+        "last_name": "",
+        "email": "tommy@ittc.com.hk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-16T15:50:45Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$FqYnV7gXjLGFylaqDWhjdF$+R8xtC/0Sxw6w+2Ev51n8QHbuTjmrN+dG4Q4v4x9Wr4=",
+        "last_login": "2025-04-24T01:17:13.207Z",
+        "is_superuser": false,
+        "username": "wcng",
+        "first_name": "wcng",
+        "last_name": "",
+        "email": "wcng@ittc.com.hk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-17T08:42:02Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$bap7cakBadGdluFhvKaxVv$6XILqKTqWEDHnFoze7gt9xcuB3QhQ9u1j4DDd7AT4Pc=",
+        "last_login": "2025-04-17T08:47:01Z",
+        "is_superuser": false,
+        "username": "fungchinsan",
+        "first_name": "chinsan",
+        "last_name": "fung",
+        "email": "fungchinsan@ittc.com.hk",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-17T08:46:16Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$0fG4mYYgQwk794fLmnBYF2$2qr0KERDXW2ygPwOXMpd98VFevkbgw0sdDTHGtzJjeM=",
+        "last_login": "2025-04-17T09:11:23Z",
+        "is_superuser": false,
+        "username": "test",
+        "first_name": "test",
+        "last_name": "",
+        "email": "test@ittc.com.hk",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-17T09:11:02Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$RacYkgFQYjHR3lDt5ANRf9$h6AgZ5aWA+6XJd0kQoEatPJ8PRDgG2hxHwaUBS/KPT0=",
+        "last_login": "2025-04-21T02:57:29.867Z",
+        "is_superuser": true,
+        "username": "nwcng",
+        "first_name": "",
+        "last_name": "",
+        "email": "nwcn0307@hotmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-04-21T02:56:28.280Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$JsOPFrriN6UntnblNnGcng$lo3Qnlf9gksespmumVY4Rgt/3ZjC/3dtP+zpwvHL8oY=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "anwcng",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-24T06:26:08.733Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$eFfjFI0F8VKJMC75PEfHBs$4EP1oqB8fCrrDocYf9rf1slUnpZ9w7/cP+ybq8zsU5E=",
+        "last_login": "2025-04-24T06:27:22.998Z",
+        "is_superuser": false,
+        "username": "anwc",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-24T06:27:10.378Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$DFlsPdyZO93PbCEltzwv2C$W0PX85iiMIg6AdLP3Sra4p4yPgcn0vqeL2IESmTe+TY=",
+        "last_login": "2025-04-24T09:20:19.140Z",
+        "is_superuser": false,
+        "username": "snowwhite",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-24T09:19:32.463Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$600000$6V4J32e0o3OtXncZ02XV5Z$TRegW8kccOoxtP+HkFgnqqNpkrDdfylL2kHwk4sZGtM=",
+        "last_login": "2025-04-25T09:43:11.276Z",
+        "is_superuser": false,
+        "username": "winnieyip",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-04-25T09:42:40.315Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

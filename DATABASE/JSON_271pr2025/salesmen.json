@@ -1,0 +1,41 @@
+[
+{
+    "model": "salesmens.salesmen",
+    "pk": 1,
+    "fields": {
+        "name": "Victor Ma",
+        "photo": "photos/2025/04/24/WhatsApp_Image_2025-04-16_at_18.54.432.jpeg",
+        "description": "activity section staff",
+        "phone": "98798907",
+        "email": "victormakwaitat@gmail.com",
+        "is_mvp": false,
+        "hire_date": "2025-04-06T10:52:08.090Z"
+    }
+},
+{
+    "model": "salesmens.salesmen",
+    "pk": 2,
+    "fields": {
+        "name": "Tommy",
+        "photo": "photos/2025/04/24/WhatsApp_Image_2025-04-16_at_18.54.431.jpeg",
+        "description": "course section staff",
+        "phone": "98988888",
+        "email": "atkincheung@gmail.com",
+        "is_mvp": false,
+        "hire_date": "2025-04-06T10:54:03.353Z"
+    }
+},
+{
+    "model": "salesmens.salesmen",
+    "pk": 3,
+    "fields": {
+        "name": "Cheong",
+        "photo": "photos/2025/04/24/WhatsApp_Image_2025-04-16_at_18.54.43_lCDkFjj.jpeg",
+        "description": "AI robot expert",
+        "phone": "93941234",
+        "email": "nwcn0307@hotmail.com",
+        "is_mvp": false,
+        "hire_date": "2025-04-06T10:56:08.711Z"
+    }
+}
+]

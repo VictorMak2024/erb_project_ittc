@@ -1,0 +1,26 @@
+[
+{
+    "model": "accounts.shoppingcart",
+    "pk": 1,
+    "fields": {
+        "user_id": [
+            "wcng"
+        ],
+        "is_paid": false,
+        "created_at": "2025-04-24T01:17:18.430Z",
+        "address": "rm D, 7/F, HongKong Inds. Building,",
+        "street": "5 hoi rord",
+        "district": "Kwun Tong",
+        "description": "jgkjl",
+        "total_Amount": 60000,
+        "is_shipped": false,
+        "is_completed": false,
+        "order_date": "2025-04-24T01:17:18.430Z",
+        "ship_date": "2025-04-24T01:17:18.430Z",
+        "orders": [
+            4,
+            12
+        ]
+    }
+}
+]

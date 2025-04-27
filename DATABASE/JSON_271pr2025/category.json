@@ -1,0 +1,29 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "title": "Cleaning Robot",
+        "description": "wet, dry, vacuum",
+        "photos": "photos/25/04/06/webp90.webp"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "title": "Robot Arm",
+        "description": "Welding, Pickup, packing",
+        "photos": "photos/25/04/06/welding_01.jpg"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "title": "Delivery Robot",
+        "description": "Food, Goods, Tray",
+        "photos": "photos/25/04/06/KettyBot_03.png"
+    }
+}
+]
